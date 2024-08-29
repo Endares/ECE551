@@ -38,7 +38,6 @@ submission system.
    at the prompt.
    This should work just like running ls at the regular prompt,
    and should show you the README.
-
    Now, let us try out a new command:
    
    status
