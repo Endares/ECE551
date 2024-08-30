@@ -43,12 +43,13 @@ Before we proceed, run this command in your eshell:
 
 cp /usr/local/ece551/unix1/* ./
 
+
 Note: you can copy and paste that:
   1. Go to the start of the line with the command
   2. Hit C-[space] (control + space) to set the mark
   3. Hit C-e (control+e ) to go to the end of the line.
   4. Hit M-w (escape then w) to copy
-  5. Hit C-o to go into eshell
+  5. Hit C-x o to go into eshell
   6. Hit C-y to paste
 
 How if you do ls, you should see this:

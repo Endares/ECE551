@@ -76,7 +76,7 @@ Now hit "C-x 3" to split the window verticlly.   You should now have
 to have two windows on the same buffer---e.g., to look at two parts
 of your code at one time). In this case, however, we want to change
 one of these *Man wget* windows to display *eshell*.  Use "C-x o" to
-get to the on you want to switch to *eshell* (it will move circularly
+get to the one you want to switch to *eshell* (it will move circularly
 through all windows) then do "C-x b".  If the default is *eshell*,
 then just hit enter. Otherwsise *e[TAB] should tab complete what you need.
 
