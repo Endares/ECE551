@@ -1,0 +1,16 @@
+Grading at 08/30/2024:00:00:00.708104
+For commit ID 09d98ef5e9f9e597ccf3459bbf019bc5af8ed0f5
+Grading at Thu Aug 29 08:00:00 PM EDT 2024
+Original 'copyme' exists (good)
+The file 'acopy' exists (good)
+  and is a copy of 'copyme' (good)
+The file 'renamed' exists (good)
+The file renameme does not exist (good)
+The file 'deleteme' does not exist (good)
+The directory mydir exists (good)
+The file 'file1' exists (good)
+The file 'mydir/file1' exists (good)
+The file 'file2' does not exist (good)
+The file 'mydir/file2' exists (good)
+
+Overall Grade: PASSED
