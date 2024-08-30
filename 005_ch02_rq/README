@@ -52,7 +52,6 @@ A. A value that can be placed into a box.
 B. A value that is elevated through the evaluation of an expression.
 C. A value that can be the left operand of an operator.
 D. None of the above
-
 4. What symbol ends statements in C?
 
 A. A period
