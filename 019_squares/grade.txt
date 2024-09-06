@@ -1,0 +1,1668 @@
+Grading at 09/06/2024:03:02:04.215106
+For commit ID f169bcdfdd55299d72478f432ab46e80fb6ec00a
+Grading at Thu Sep  5 11:02:02 PM EDT 2024
+Checking the syntax of your code in squares.c
+The code is legal, now testing its behavior.
+Checking squares(1,1, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+# 							      |	a # 
+ *							      |	 a *
+Checking squares(1,1, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+#  							      |	a #  
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(1,1, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+#     							      |	a #     
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(1,1, 1, 10)
+Your program produced the wrong output!
+Here are the differences:
+#          						      |	a #          
+ **********						      |	 a *a *a *a *a *a *a *a *a *a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ **********						      |	 a *a *a *a *a *a *a *a *a *a *
+Checking squares(1,1, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+# 							      |	a # 
+  								  
+  								  
+ *							      |	 a *
+Checking squares(1,1, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+#  							      |	a #  
+   								   
+   								   
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(1,1, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+#     							      |	a #     
+      								      
+      								      
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(1,1, 3, 11)
+Your program produced the wrong output!
+Here are the differences:
+#           						      |	a #           
+            							            
+            							            
+ ***********						      |	 a *a *a *a *a *a *a *a *a *a *a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ ***********						      |	 a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(1,1, 6, 1)
+Your program produced the wrong output!
+Here are the differences:
+# 							      |	a # 
+  								  
+  								  
+  								  
+  								  
+  								  
+ *							      |	 a *
+Checking squares(1,1, 6, 2)
+Your program produced the wrong output!
+Here are the differences:
+#  							      |	a #  
+   								   
+   								   
+   								   
+   								   
+   								   
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(1,1, 6, 5)
+Your program produced the wrong output!
+Here are the differences:
+#     							      |	a #     
+      								      
+      								      
+      								      
+      								      
+      								      
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(1,1, 6, 10)
+Your program produced the wrong output!
+Here are the differences:
+#          						      |	a #          
+           							           
+           							           
+           							           
+           							           
+           							           
+ **********						      |	 a *a *a *a *a *a *a *a *a *a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ **********						      |	 a *a *a *a *a *a *a *a *a *a *
+Checking squares(1,2, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+#  							      |	a #  
+  *							      |	  a *
+Checking squares(1,2, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+#   							      |	a #   
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(1,2, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+#      							      |	a #      
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(1,2, 1, 10)
+Your program produced the wrong output!
+Here are the differences:
+#           						      |	a #           
+  **********						      |	  a *a *a *a *a *a *a *a *a *a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  **********						      |	  a *a *a *a *a *a *a *a *a *a *
+Checking squares(1,2, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+#  							      |	a #  
+   								   
+   								   
+  *							      |	  a *
+Checking squares(1,2, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+#   							      |	a #   
+    								    
+    								    
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(1,2, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+#      							      |	a #      
+       								       
+       								       
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(1,2, 3, 11)
+Your program produced the wrong output!
+Here are the differences:
+#            						      |	a #            
+             							             
+             							             
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(1,2, 7, 1)
+Your program produced the wrong output!
+Here are the differences:
+#  							      |	a #  
+   								   
+   								   
+   								   
+   								   
+   								   
+   								   
+  *							      |	  a *
+Checking squares(1,2, 7, 2)
+Your program produced the wrong output!
+Here are the differences:
+#   							      |	a #   
+    								    
+    								    
+    								    
+    								    
+    								    
+    								    
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(1,2, 7, 5)
+Your program produced the wrong output!
+Here are the differences:
+#      							      |	a #      
+       								       
+       								       
+       								       
+       								       
+       								       
+       								       
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(1,2, 7, 9)
+Your program produced the wrong output!
+Here are the differences:
+#          						      |	a #          
+           							           
+           							           
+           							           
+           							           
+           							           
+           							           
+  *********						      |	  a *a *a *a *a *a *a *a *a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *********						      |	  a *a *a *a *a *a *a *a *a *
+Checking squares(1,5, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+#     							      |	a #     
+     *							      |	     a *
+Checking squares(1,5, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+#      							      |	a #      
+     **							      |	     a *a *
+     **							      |	     a *a *
+Checking squares(1,5, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+#         						      |	a #         
+     *****						      |	     a *a *a *a *a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *****						      |	     a *a *a *a *a *
+Checking squares(1,5, 1, 7)
+Your program produced the wrong output!
+Here are the differences:
+#           						      |	a #           
+     *******						      |	     a *a *a *a *a *a *a *
+     *     *						      |	     a *     a *
+     *     *						      |	     a *     a *
+     *     *						      |	     a *     a *
+     *     *						      |	     a *     a *
+     *     *						      |	     a *     a *
+     *******						      |	     a *a *a *a *a *a *a *
+Checking squares(1,5, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+#     							      |	a #     
+      								      
+      								      
+     *							      |	     a *
+Checking squares(1,5, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+#      							      |	a #      
+       								       
+       								       
+     **							      |	     a *a *
+     **							      |	     a *a *
+Checking squares(1,5, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+#         						      |	a #         
+          							          
+          							          
+     *****						      |	     a *a *a *a *a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *****						      |	     a *a *a *a *a *
+Checking squares(1,5, 3, 11)
+Your program produced the wrong output!
+Here are the differences:
+#               					      |	a #               
+                						                
+                						                
+     ***********					      |	     a *a *a *a *a *a *a *a *a *a *a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     *         *					      |	     a *         a *
+     ***********					      |	     a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(1,5, 7, 1)
+Your program produced the wrong output!
+Here are the differences:
+#     							      |	a #     
+      								      
+      								      
+      								      
+      								      
+      								      
+      								      
+     *							      |	     a *
+Checking squares(1,5, 7, 2)
+Your program produced the wrong output!
+Here are the differences:
+#      							      |	a #      
+       								       
+       								       
+       								       
+       								       
+       								       
+       								       
+     **							      |	     a *a *
+     **							      |	     a *a *
+Checking squares(1,5, 7, 5)
+Your program produced the wrong output!
+Here are the differences:
+#         						      |	a #         
+          							          
+          							          
+          							          
+          							          
+          							          
+          							          
+     *****						      |	     a *a *a *a *a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *****						      |	     a *a *a *a *a *
+Checking squares(1,5, 7, 8)
+Your program produced the wrong output!
+Here are the differences:
+#            						      |	a #            
+             							             
+             							             
+             							             
+             							             
+             							             
+             							             
+     ********						      |	     a *a *a *a *a *a *a *a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     ********						      |	     a *a *a *a *a *a *a *a *
+Checking squares(2,1, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+##							      |	a #a #
+#*							      |	a #a *
+Checking squares(2,1, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+## 							      |	a #a # 
+#**							      |	a #a *a *
+ **							      |	 a *a *
+Checking squares(2,1, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+##    							      |	a #a #    
+#*****							      |	a #a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(2,1, 1, 11)
+Your program produced the wrong output!
+Here are the differences:
+##          						      |	a #a #          
+#***********						      |	a #a *a *a *a *a *a *a *a *a *a *a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ ***********						      |	 a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(2,1, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+##							      |	a #a #
+##							      |	a #a #
+  								  
+ *							      |	 a *
+Checking squares(2,1, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+## 							      |	a #a # 
+## 							      |	a #a # 
+   								   
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(2,1, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+##    							      |	a #a #    
+##    							      |	a #a #    
+      								      
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(2,1, 3, 11)
+Your program produced the wrong output!
+Here are the differences:
+##          						      |	a #a #          
+##          						      |	a #a #          
+            							            
+ ***********						      |	 a *a *a *a *a *a *a *a *a *a *a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ *         *						      |	 a *         a *
+ ***********						      |	 a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(2,1, 8, 1)
+Your program produced the wrong output!
+Here are the differences:
+##							      |	a #a #
+##							      |	a #a #
+  								  
+  								  
+  								  
+  								  
+  								  
+  								  
+ *							      |	 a *
+Checking squares(2,1, 8, 2)
+Your program produced the wrong output!
+Here are the differences:
+## 							      |	a #a # 
+## 							      |	a #a # 
+   								   
+   								   
+   								   
+   								   
+   								   
+   								   
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(2,1, 8, 5)
+Your program produced the wrong output!
+Here are the differences:
+##    							      |	a #a #    
+##    							      |	a #a #    
+      								      
+      								      
+      								      
+      								      
+      								      
+      								      
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(2,1, 8, 9)
+Your program produced the wrong output!
+Here are the differences:
+##        						      |	a #a #        
+##        						      |	a #a #        
+          							          
+          							          
+          							          
+          							          
+          							          
+          							          
+ *********						      |	 a *a *a *a *a *a *a *a *a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *********						      |	 a *a *a *a *a *a *a *a *a *
+Checking squares(2,2, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+## 							      |	a #a # 
+##*							      |	a #a #a *
+Checking squares(2,2, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+##  							      |	a #a #  
+##**							      |	a #a #a *a *
+  **							      |	  a *a *
+Checking squares(2,2, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+##     							      |	a #a #     
+##*****							      |	a #a #a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(2,2, 1, 9)
+Your program produced the wrong output!
+Here are the differences:
+##         						      |	a #a #         
+##*********						      |	a #a #a *a *a *a *a *a *a *a *a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *********						      |	  a *a *a *a *a *a *a *a *a *
+Checking squares(2,2, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+## 							      |	a #a # 
+## 							      |	a #a # 
+   								   
+  *							      |	  a *
+Checking squares(2,2, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+##  							      |	a #a #  
+##  							      |	a #a #  
+    								    
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(2,2, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+##     							      |	a #a #     
+##     							      |	a #a #     
+       								       
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(2,2, 3, 11)
+Your program produced the wrong output!
+Here are the differences:
+##           						      |	a #a #           
+##           						      |	a #a #           
+             							             
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(2,2, 5, 1)
+Your program produced the wrong output!
+Here are the differences:
+## 							      |	a #a # 
+## 							      |	a #a # 
+   								   
+   								   
+   								   
+  *							      |	  a *
+Checking squares(2,2, 5, 2)
+Your program produced the wrong output!
+Here are the differences:
+##  							      |	a #a #  
+##  							      |	a #a #  
+    								    
+    								    
+    								    
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(2,2, 5, 5)
+Your program produced the wrong output!
+Here are the differences:
+##     							      |	a #a #     
+##     							      |	a #a #     
+       								       
+       								       
+       								       
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(2,2, 5, 7)
+Your program produced the wrong output!
+Here are the differences:
+##       						      |	a #a #       
+##       						      |	a #a #       
+         							         
+         							         
+         							         
+  *******						      |	  a *a *a *a *a *a *a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *******						      |	  a *a *a *a *a *a *a *
+Checking squares(2,3, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+##  							      |	a #a #  
+## *							      |	a #a # a *
+Checking squares(2,3, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+##   							      |	a #a #   
+## **							      |	a #a # a *a *
+   **							      |	   a *a *
+Checking squares(2,3, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+##      						      |	a #a #      
+## *****						      |	a #a # a *a *a *a *a *
+   *   *						      |	   a *   a *
+   *   *						      |	   a *   a *
+   *   *						      |	   a *   a *
+   *****						      |	   a *a *a *a *a *
+Checking squares(2,3, 1, 7)
+Your program produced the wrong output!
+Here are the differences:
+##        						      |	a #a #        
+## *******						      |	a #a # a *a *a *a *a *a *a *
+   *     *						      |	   a *     a *
+   *     *						      |	   a *     a *
+   *     *						      |	   a *     a *
+   *     *						      |	   a *     a *
+   *     *						      |	   a *     a *
+   *******						      |	   a *a *a *a *a *a *a *
+Checking squares(2,3, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+##  							      |	a #a #  
+##  							      |	a #a #  
+    								    
+   *							      |	   a *
+Checking squares(2,3, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+##   							      |	a #a #   
+##   							      |	a #a #   
+     								     
+   **							      |	   a *a *
+   **							      |	   a *a *
+Checking squares(2,3, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+##      						      |	a #a #      
+##      						      |	a #a #      
+        							        
+   *****						      |	   a *a *a *a *a *
+   *   *						      |	   a *   a *
+   *   *						      |	   a *   a *
+   *   *						      |	   a *   a *
+   *****						      |	   a *a *a *a *a *
+Checking squares(2,3, 3, 9)
+Your program produced the wrong output!
+Here are the differences:
+##          						      |	a #a #          
+##          						      |	a #a #          
+            							            
+   *********						      |	   a *a *a *a *a *a *a *a *a *
+   *       *						      |	   a *       a *
+   *       *						      |	   a *       a *
+   *       *						      |	   a *       a *
+   *       *						      |	   a *       a *
+   *       *						      |	   a *       a *
+   *       *						      |	   a *       a *
+   *       *						      |	   a *       a *
+   *********						      |	   a *a *a *a *a *a *a *a *a *
+Checking squares(2,3, 8, 1)
+Your program produced the wrong output!
+Here are the differences:
+##  							      |	a #a #  
+##  							      |	a #a #  
+    								    
+    								    
+    								    
+    								    
+    								    
+    								    
+   *							      |	   a *
+Checking squares(2,3, 8, 2)
+Your program produced the wrong output!
+Here are the differences:
+##   							      |	a #a #   
+##   							      |	a #a #   
+     								     
+     								     
+     								     
+     								     
+     								     
+     								     
+   **							      |	   a *a *
+   **							      |	   a *a *
+Checking squares(2,3, 8, 5)
+Your program produced the wrong output!
+Here are the differences:
+##      						      |	a #a #      
+##      						      |	a #a #      
+        							        
+        							        
+        							        
+        							        
+        							        
+        							        
+   *****						      |	   a *a *a *a *a *
+   *   *						      |	   a *   a *
+   *   *						      |	   a *   a *
+   *   *						      |	   a *   a *
+   *****						      |	   a *a *a *a *a *
+Checking squares(2,3, 8, 10)
+Your program produced the wrong output!
+Here are the differences:
+##           						      |	a #a #           
+##           						      |	a #a #           
+             							             
+             							             
+             							             
+             							             
+             							             
+             							             
+   **********						      |	   a *a *a *a *a *a *a *a *a *a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   **********						      |	   a *a *a *a *a *a *a *a *a *a *
+Checking squares(3,1, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+#*#							      |	a #a *a #
+###							      |	a #a #a #
+Checking squares(3,1, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+#**							      |	a #a *a *
+#**							      |	a #a *a *
+Checking squares(3,1, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+###   							      |	a #a #a #   
+#*****							      |	a #a *a *a *a *a *
+#*#  *							      |	a #a *a #  a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(3,1, 1, 7)
+Your program produced the wrong output!
+Here are the differences:
+###     						      |	a #a #a #     
+#*******						      |	a #a *a *a *a *a *a *a *
+#*#    *						      |	a #a *a #    a *
+ *     *						      |	 a *     a *
+ *     *						      |	 a *     a *
+ *     *						      |	 a *     a *
+ *     *						      |	 a *     a *
+ *******						      |	 a *a *a *a *a *a *a *
+Checking squares(3,1, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# #							      |	a # a #
+###							      |	a #a #a #
+ * 							      |	 a * 
+Checking squares(3,1, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# #							      |	a # a #
+###							      |	a #a #a #
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(3,1, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+###   							      |	a #a #a #   
+# #   							      |	a # a #   
+###   							      |	a #a #a #   
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(3,1, 3, 10)
+Your program produced the wrong output!
+Here are the differences:
+###        						      |	a #a #a #        
+# #        						      |	a # a #        
+###        						      |	a #a #a #        
+ **********						      |	 a *a *a *a *a *a *a *a *a *a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ *        *						      |	 a *        a *
+ **********						      |	 a *a *a *a *a *a *a *a *a *a *
+Checking squares(3,1, 8, 1)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# #							      |	a # a #
+###							      |	a #a #a #
+   								   
+   								   
+   								   
+   								   
+   								   
+ * 							      |	 a * 
+Checking squares(3,1, 8, 2)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# #							      |	a # a #
+###							      |	a #a #a #
+   								   
+   								   
+   								   
+   								   
+   								   
+ **							      |	 a *a *
+ **							      |	 a *a *
+Checking squares(3,1, 8, 5)
+Your program produced the wrong output!
+Here are the differences:
+###   							      |	a #a #a #   
+# #   							      |	a # a #   
+###   							      |	a #a #a #   
+      								      
+      								      
+      								      
+      								      
+      								      
+ *****							      |	 a *a *a *a *a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *   *							      |	 a *   a *
+ *****							      |	 a *a *a *a *a *
+Checking squares(3,1, 8, 9)
+Your program produced the wrong output!
+Here are the differences:
+###       						      |	a #a #a #       
+# #       						      |	a # a #       
+###       						      |	a #a #a #       
+          							          
+          							          
+          							          
+          							          
+          							          
+ *********						      |	 a *a *a *a *a *a *a *a *a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *********						      |	 a *a *a *a *a *a *a *a *a *
+Checking squares(3,2, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# *							      |	a # a *
+###							      |	a #a #a #
+Checking squares(3,2, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+### 							      |	a #a #a # 
+# **							      |	a # a *a *
+##**							      |	a #a #a *a *
+Checking squares(3,2, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+###    							      |	a #a #a #    
+# *****							      |	a # a *a *a *a *a *
+##*   *							      |	a #a #a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(3,2, 1, 11)
+Your program produced the wrong output!
+Here are the differences:
+###          						      |	a #a #a #          
+# ***********						      |	a # a *a *a *a *a *a *a *a *a *a *a *
+##*         *						      |	a #a #a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(3,2, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# #							      |	a # a #
+###							      |	a #a #a #
+  *							      |	  a *
+Checking squares(3,2, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+### 							      |	a #a #a # 
+# # 							      |	a # a # 
+### 							      |	a #a #a # 
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(3,2, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+###    							      |	a #a #a #    
+# #    							      |	a # a #    
+###    							      |	a #a #a #    
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(3,2, 3, 11)
+Your program produced the wrong output!
+Here are the differences:
+###          						      |	a #a #a #          
+# #          						      |	a # a #          
+###          						      |	a #a #a #          
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  *         *						      |	  a *         a *
+  ***********						      |	  a *a *a *a *a *a *a *a *a *a *a *
+Checking squares(3,2, 7, 1)
+Your program produced the wrong output!
+Here are the differences:
+###							      |	a #a #a #
+# #							      |	a # a #
+###							      |	a #a #a #
+   								   
+   								   
+   								   
+   								   
+  *							      |	  a *
+Checking squares(3,2, 7, 2)
+Your program produced the wrong output!
+Here are the differences:
+### 							      |	a #a #a # 
+# # 							      |	a # a # 
+### 							      |	a #a #a # 
+    								    
+    								    
+    								    
+    								    
+  **							      |	  a *a *
+  **							      |	  a *a *
+Checking squares(3,2, 7, 5)
+Your program produced the wrong output!
+Here are the differences:
+###    							      |	a #a #a #    
+# #    							      |	a # a #    
+###    							      |	a #a #a #    
+       								       
+       								       
+       								       
+       								       
+  *****							      |	  a *a *a *a *a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *   *							      |	  a *   a *
+  *****							      |	  a *a *a *a *a *
+Checking squares(3,2, 7, 7)
+Your program produced the wrong output!
+Here are the differences:
+###      						      |	a #a #a #      
+# #      						      |	a # a #      
+###      						      |	a #a #a #      
+         							         
+         							         
+         							         
+         							         
+  *******						      |	  a *a *a *a *a *a *a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *     *						      |	  a *     a *
+  *******						      |	  a *a *a *a *a *a *a *
+Checking squares(3,5, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+###   							      |	a #a #a #   
+# #  *							      |	a # a #  a *
+###   							      |	a #a #a #   
+Checking squares(3,5, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+###    							      |	a #a #a #    
+# #  **							      |	a # a #  a *a *
+###  **							      |	a #a #a #  a *a *
+Checking squares(3,5, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+###       						      |	a #a #a #       
+# #  *****						      |	a # a #  a *a *a *a *a *
+###  *   *						      |	a #a #a #  a *   a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *****						      |	     a *a *a *a *a *
+Checking squares(3,5, 1, 8)
+Your program produced the wrong output!
+Here are the differences:
+###          						      |	a #a #a #          
+# #  ********						      |	a # a #  a *a *a *a *a *a *a *a *
+###  *      *						      |	a #a #a #  a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     *      *						      |	     a *      a *
+     ********						      |	     a *a *a *a *a *a *a *a *
+Checking squares(3,5, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+###   							      |	a #a #a #   
+# #   							      |	a # a #   
+###   							      |	a #a #a #   
+     *							      |	     a *
+Checking squares(3,5, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+###    							      |	a #a #a #    
+# #    							      |	a # a #    
+###    							      |	a #a #a #    
+     **							      |	     a *a *
+     **							      |	     a *a *
+Checking squares(3,5, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+###       						      |	a #a #a #       
+# #       						      |	a # a #       
+###       						      |	a #a #a #       
+     *****						      |	     a *a *a *a *a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *****						      |	     a *a *a *a *a *
+Checking squares(3,5, 3, 10)
+Your program produced the wrong output!
+Here are the differences:
+###            						      |	a #a #a #            
+# #            						      |	a # a #            
+###            						      |	a #a #a #            
+     **********						      |	     a *a *a *a *a *a *a *a *a *a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     *        *						      |	     a *        a *
+     **********						      |	     a *a *a *a *a *a *a *a *a *a *
+Checking squares(3,5, 7, 1)
+Your program produced the wrong output!
+Here are the differences:
+###   							      |	a #a #a #   
+# #   							      |	a # a #   
+###   							      |	a #a #a #   
+      								      
+      								      
+      								      
+      								      
+     *							      |	     a *
+Checking squares(3,5, 7, 2)
+Your program produced the wrong output!
+Here are the differences:
+###    							      |	a #a #a #    
+# #    							      |	a # a #    
+###    							      |	a #a #a #    
+       								       
+       								       
+       								       
+       								       
+     **							      |	     a *a *
+     **							      |	     a *a *
+Checking squares(3,5, 7, 5)
+Your program produced the wrong output!
+Here are the differences:
+###       						      |	a #a #a #       
+# #       						      |	a # a #       
+###       						      |	a #a #a #       
+          							          
+          							          
+          							          
+          							          
+     *****						      |	     a *a *a *a *a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *   *						      |	     a *   a *
+     *****						      |	     a *a *a *a *a *
+Checking squares(3,5, 7, 9)
+Your program produced the wrong output!
+Here are the differences:
+###           						      |	a #a #a #           
+# #           						      |	a # a #           
+###           						      |	a #a #a #           
+              							              
+              							              
+              							              
+              							              
+     *********						      |	     a *a *a *a *a *a *a *a *a *
+     *       *						      |	     a *       a *
+     *       *						      |	     a *       a *
+     *       *						      |	     a *       a *
+     *       *						      |	     a *       a *
+     *       *						      |	     a *       a *
+     *       *						      |	     a *       a *
+     *       *						      |	     a *       a *
+     *********						      |	     a *a *a *a *a *a *a *a *a *
+Checking squares(9,1, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#*      #						      |	a #a *      a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#**     #						      |	a #a *a *     a #
+#**     #						      |	a #a *a *     a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#*****  #						      |	a #a *a *a *a *a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*****  #						      |	a #a *a *a *a *a *  a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 1, 7)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#*******#						      |	a #a *a *a *a *a *a *a *a #
+#*     *#						      |	a #a *     a *a #
+#*     *#						      |	a #a *     a *a #
+#*     *#						      |	a #a *     a *a #
+#*     *#						      |	a #a *     a *a #
+#*     *#						      |	a #a *     a *a #
+#*******#						      |	a #a *a *a *a *a *a *a *a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#*      #						      |	a #a *      a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#**     #						      |	a #a *a *     a #
+#**     #						      |	a #a *a *     a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#*****  #						      |	a #a *a *a *a *a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*****  #						      |	a #a *a *a *a *a *  a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 3, 9)
+Your program produced the wrong output!
+Here are the differences:
+######### 						      |	a #a #a #a #a #a #a #a #a # 
+#       # 						      |	a #       a # 
+#       # 						      |	a #       a # 
+#*********						      |	a #a *a *a *a *a *a *a *a *a *
+#*      #*						      |	a #a *      a #a *
+#*      #*						      |	a #a *      a #a *
+#*      #*						      |	a #a *      a #a *
+#*      #*						      |	a #a *      a #a *
+#*#######*						      |	a #a *a #a #a #a #a #a #a #a *
+ *       *						      |	 a *       a *
+ *       *						      |	 a *       a *
+ *********						      |	 a *a *a *a *a *a *a *a *a *
+Checking squares(9,1, 5, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#*      #						      |	a #a *      a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 5, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#**     #						      |	a #a *a *     a #
+#**     #						      |	a #a *a *     a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,1, 5, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#*****  #						      |	a #a *a *a *a *a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*   *  #						      |	a #a *   a *  a #
+#*###*###						      |	a #a *a #a #a #a *a #a #a #
+ *****   						      |	 a *a *a *a *a *   
+Checking squares(9,1, 5, 8)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#********						      |	a #a *a *a *a *a *a *a *a *
+#*      *						      |	a #a *      a *
+#*      *						      |	a #a *      a *
+#*######*						      |	a #a *a #a #a #a #a #a #a *
+ *      *						      |	 a *      a *
+ *      *						      |	 a *      a *
+ *      *						      |	 a *      a *
+ ********						      |	 a *a *a *a *a *a *a *a *
+Checking squares(9,2, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+# *     #						      |	a # a *     a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+# **    #						      |	a # a *a *    a #
+# **    #						      |	a # a *a *    a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+# ***** #						      |	a # a *a *a *a *a * a #
+# *   * #						      |	a # a *   a * a #
+# *   * #						      |	a # a *   a * a #
+# *   * #						      |	a # a *   a * a #
+# ***** #						      |	a # a *a *a *a *a * a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 1, 9)
+Your program produced the wrong output!
+Here are the differences:
+#########  						      |	a #a #a #a #a #a #a #a #a #  
+# *********						      |	a # a *a *a *a *a *a *a *a *a *
+# *     # *						      |	a # a *     a # a *
+# *     # *						      |	a # a *     a # a *
+# *     # *						      |	a # a *     a # a *
+# *     # *						      |	a # a *     a # a *
+# *     # *						      |	a # a *     a # a *
+# *     # *						      |	a # a *     a # a *
+##*###### *						      |	a #a #a *a #a #a #a #a #a # a *
+  *********						      |	  a *a *a *a *a *a *a *a *a *
+Checking squares(9,2, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+# *     #						      |	a # a *     a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+# **    #						      |	a # a *a *    a #
+# **    #						      |	a # a *a *    a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+# ***** #						      |	a # a *a *a *a *a * a #
+# *   * #						      |	a # a *   a * a #
+# *   * #						      |	a # a *   a * a #
+# *   * #						      |	a # a *   a * a #
+# ***** #						      |	a # a *a *a *a *a * a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 3, 10)
+Your program produced the wrong output!
+Here are the differences:
+#########   						      |	a #a #a #a #a #a #a #a #a #   
+#       #   						      |	a #       a #   
+#       #   						      |	a #       a #   
+# **********						      |	a # a *a *a *a *a *a *a *a *a *a *
+# *     #  *						      |	a # a *     a #  a *
+# *     #  *						      |	a # a *     a #  a *
+# *     #  *						      |	a # a *     a #  a *
+# *     #  *						      |	a # a *     a #  a *
+##*######  *						      |	a #a #a *a #a #a #a #a #a #  a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  *        *						      |	  a *        a *
+  **********						      |	  a *a *a *a *a *a *a *a *a *a *
+Checking squares(9,2, 7, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+# *     #						      |	a # a *     a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,2, 7, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+# **    #						      |	a # a *a *    a #
+##**#####						      |	a #a #a *a *a #a #a #a #a #
+Checking squares(9,2, 7, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+# ***** #						      |	a # a *a *a *a *a * a #
+##*###*##						      |	a #a #a *a #a #a #a *a #a #
+  *   *  						      |	  a *   a *  
+  *   *  						      |	  a *   a *  
+  *****  						      |	  a *a *a *a *a *  
+Checking squares(9,2, 7, 9)
+Your program produced the wrong output!
+Here are the differences:
+#########  						      |	a #a #a #a #a #a #a #a #a #  
+#       #  						      |	a #       a #  
+#       #  						      |	a #       a #  
+#       #  						      |	a #       a #  
+#       #  						      |	a #       a #  
+#       #  						      |	a #       a #  
+#       #  						      |	a #       a #  
+# *********						      |	a # a *a *a *a *a *a *a *a *a *
+##*###### *						      |	a #a #a *a #a #a #a #a #a # a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *       *						      |	  a *       a *
+  *********						      |	  a *a *a *a *a *a *a *a *a *
+Checking squares(9,3, 1, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#  *    #						      |	a #  a *    a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 1, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#  **   #						      |	a #  a *a *   a #
+#  **   #						      |	a #  a *a *   a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 1, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#  *****#						      |	a #  a *a *a *a *a *a #
+#  *   *#						      |	a #  a *   a *a #
+#  *   *#						      |	a #  a *   a *a #
+#  *   *#						      |	a #  a *   a *a #
+#  *****#						      |	a #  a *a *a *a *a *a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 1, 8)
+Your program produced the wrong output!
+Here are the differences:
+#########  						      |	a #a #a #a #a #a #a #a #a #  
+#  ********						      |	a #  a *a *a *a *a *a *a *a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+###********						      |	a #a #a #a *a *a *a *a *a *a *a *
+Checking squares(9,3, 3, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#  *    #						      |	a #  a *    a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 3, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#  **   #						      |	a #  a *a *   a #
+#  **   #						      |	a #  a *a *   a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 3, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#  *****#						      |	a #  a *a *a *a *a *a #
+#  *   *#						      |	a #  a *   a *a #
+#  *   *#						      |	a #  a *   a *a #
+#  *   *#						      |	a #  a *   a *a #
+#  *****#						      |	a #  a *a *a *a *a *a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 3, 8)
+Your program produced the wrong output!
+Here are the differences:
+#########  						      |	a #a #a #a #a #a #a #a #a #  
+#       #  						      |	a #       a #  
+#       #  						      |	a #       a #  
+#  ********						      |	a #  a *a *a *a *a *a *a *a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+#  *    # *						      |	a #  a *    a # a *
+###*##### *						      |	a #a #a #a *a #a #a #a #a # a *
+   *      *						      |	   a *      a *
+   ********						      |	   a *a *a *a *a *a *a *a *
+Checking squares(9,3, 7, 1)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#  *    #						      |	a #  a *    a #
+#########						      |	a #a #a #a #a #a #a #a #a #
+Checking squares(9,3, 7, 2)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#  **   #						      |	a #  a *a *   a #
+###**####						      |	a #a #a #a *a *a #a #a #a #
+Checking squares(9,3, 7, 5)
+Your program produced the wrong output!
+Here are the differences:
+#########						      |	a #a #a #a #a #a #a #a #a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#       #						      |	a #       a #
+#  *****#						      |	a #  a *a *a *a *a *a #
+###*###*#						      |	a #a #a #a *a #a #a #a *a #
+   *   * 						      |	   a *   a * 
+   *   * 						      |	   a *   a * 
+   ***** 						      |	   a *a *a *a *a * 
+Checking squares(9,3, 7, 10)
+Your program produced the wrong output!
+Here are the differences:
+#########    						      |	a #a #a #a #a #a #a #a #a #    
+#       #    						      |	a #       a #    
+#       #    						      |	a #       a #    
+#       #    						      |	a #       a #    
+#       #    						      |	a #       a #    
+#       #    						      |	a #       a #    
+#       #    						      |	a #       a #    
+#  **********						      |	a #  a *a *a *a *a *a *a *a *a *a *
+###*#####   *						      |	a #a #a #a *a #a #a #a #a #   a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   *        *						      |	   a *        a *
+   **********						      |	   a *a *a *a *a *a *a *a *a *a *
+Passed 0 out of 144 tests
+
+Overall Grade: D
