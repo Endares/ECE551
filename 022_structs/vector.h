@@ -6,12 +6,16 @@
 //and should have 3 doubles named x, y, and z.
 
 //YOUR CODE HERE
+struct vector_tag {
+  double x, y, z;
+};
 
 //write a typedef here which makes vector_t
 //and alias for struct vector_tag
 
 //YOUR CODE HERE
 
+typedef struct vector_tag vector_t;
 
 // you shouldnt need to modify these
 double dot_product(vector_t v1, vector_t v2);
