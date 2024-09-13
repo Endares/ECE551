@@ -1,0 +1,78 @@
+Grading at 09/13/2024:20:04:41.959382
+For commit ID 48639920027b9775b41e5a7c5da3e22bd05168fb
+Grading at Fri Sep 13 04:04:41 PM EDT 2024
+**Testing broken implementation 10 **
+-------------------------------------
+
+wrong answer! 3 power 3 should be 27, but you have 3
+
+**Testing broken implementation 11 **
+-------------------------------------
+
+correct answer! 3 power 3 should be 27, and you have 27
+wrong answer! -1 power 1 should be -1, but you have 7
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+wrong answer! 3 power 3 should be 27, but you have 3
+
+**Testing broken implementation 2 **
+-------------------------------------
+
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+correct answer! 3 power 3 should be 27, and you have 27
+correct answer! -1 power 1 should be -1, and you have -1
+correct answer! 2 power 5 should be 32, and you have 32
+wrong answer! 0 power 0 should be 1, but you have 0
+
+**Testing broken implementation 4 **
+-------------------------------------
+
+correct answer! 3 power 3 should be 27, and you have 27
+wrong answer! -1 power 1 should be -1, but you have 65535
+
+**Testing broken implementation 5 **
+-------------------------------------
+
+wrong answer! 3 power 3 should be 27, but you have 6
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+wrong answer! 3 power 3 should be 27, but you have 8
+
+**Testing broken implementation 7 **
+-------------------------------------
+
+correct answer! 3 power 3 should be 27, and you have 27
+wrong answer! -1 power 1 should be -1, but you have 3
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+wrong answer! 3 power 3 should be 27, but you have 9
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+wrong answer! 3 power 3 should be 27, but you have 0
+
+**Testing correct implementation **
+-------------------------------------
+
+correct answer! 3 power 3 should be 27, and you have 27
+correct answer! -1 power 1 should be -1, and you have -1
+correct answer! 2 power 5 should be 32, and you have 32
+correct answer! 0 power 0 should be 1, and you have 1
+correct answer! 0 power 2 should be 0, and you have 0
+correct answer! 3 power 0 should be 1, and you have 1
+correct answer! 5 power 2 should be 25, and you have 25
+
+All tests were ok.
+
+
+Overall Grade: PASSED
