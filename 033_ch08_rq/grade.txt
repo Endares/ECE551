@@ -1,11 +1,6 @@
-Grading at 09/15/2024:23:54:01.546906
-For commit ID 7b651ecab2cb0028fd7f78d532bcc70bab83e75e
-Grading at Sun Sep 15 07:54:01 PM EDT 2024
+Grading at 09/16/2024:00:05:02.905722
+For commit ID 66132e11bb70a7a5280102b11edaa15d9ef51010
+Grading at Sun Sep 15 08:05:02 PM EDT 2024
 Reading your quiz answers from answers.txt
-You got 2 questions incorrect.
-You might want to review these concepts:
-------------
-Aliasing
-------------
 
-Overall Grade: FAILED
+Overall Grade: PASSED
