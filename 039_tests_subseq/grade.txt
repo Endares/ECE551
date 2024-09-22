@@ -1,0 +1,136 @@
+Grading at 09/22/2024:00:01:42.647613
+For commit ID 2c92c604075249314c253907aff51e33f9dc0d06
+Grading at Sat Sep 21 08:01:41 PM EDT 2024
+**Testing broken implementation 10 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Correct answer!
+Case number 3: 
+Correct answer!
+Case number 4: 
+Correct answer!
+Case number 5: 
+Correct answer!
+Case number 6: 
+Correct answer!
+Case number 7: 
+Wrong answer! The answer should be 4, but you have 3
+
+**Testing broken implementation 11 **
+-------------------------------------
+
+Case number 1: 
+Wrong answer! The answer should be 1, but you have 2
+
+**Testing broken implementation 1 **
+-------------------------------------
+
+Case number 1: 
+Wrong answer! The answer should be 1, but you have 4
+
+**Testing broken implementation 2 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Wrong answer! The answer should be 0, but you have 1
+
+**Testing broken implementation 3 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Correct answer!
+Case number 3: 
+Correct answer!
+Case number 4: 
+Correct answer!
+Case number 5: 
+Wrong answer! The answer should be 1, but you have 2
+
+**Testing broken implementation 4 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Wrong answer! The answer should be 0, but you have 1
+
+**Testing broken implementation 5 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Correct answer!
+Case number 3: 
+Correct answer!
+Case number 4: 
+Wrong answer! The answer should be 2, but you have 3
+
+**Testing broken implementation 6 **
+-------------------------------------
+
+Case number 1: 
+Wrong answer! The answer should be 1, but you have 0
+
+**Testing broken implementation 7 **
+-------------------------------------
+
+Case number 1: 
+Wrong answer! The answer should be 1, but you have 18446744073709551615
+
+**Testing broken implementation 8 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Correct answer!
+Case number 3: 
+Correct answer!
+Case number 4: 
+Wrong answer! The answer should be 2, but you have 1
+
+**Testing broken implementation 9 **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Correct answer!
+Case number 3: 
+Correct answer!
+Case number 4: 
+Correct answer!
+Case number 5: 
+Correct answer!
+Case number 6: 
+Wrong answer! The answer should be 4, but you have 3
+
+**Testing correct implementation **
+-------------------------------------
+
+Case number 1: 
+Correct answer!
+Case number 2: 
+Correct answer!
+Case number 3: 
+Correct answer!
+Case number 4: 
+Correct answer!
+Case number 5: 
+Correct answer!
+Case number 6: 
+Correct answer!
+Case number 7: 
+Correct answer!
+
+All test programs were handled correctly
+
+Overall Grade: PASSED
