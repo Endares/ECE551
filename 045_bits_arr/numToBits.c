@@ -11,6 +11,8 @@ int getNthBit(uint32_t number, int bit) {
 }
 
 void numToBits(uint32_t * nums, int nNums, int * bits, int nBits) {
+  if (nNums == 0)
+    return;
   if ((double)nBits / (double)nNums != 32.0) {
     printf("Invalid call to numToBits! nBits is %d, nNums is %d\n", nBits, nNums);
     exit(EXIT_FAILURE);
