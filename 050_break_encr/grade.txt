@@ -1,12 +1,10 @@
-Grading at 09/29/2024:17:28:30.633290
-For commit ID 40e97ed194727240b8f20ba8783e674f89df0e20
-Grading at Sun Sep 29 01:28:20 PM EDT 2024
+Grading at 09/29/2024:17:38:00.957579
+For commit ID 00c420629a3722022b6e0849911ec3113b6718fe
+Grading at Sun Sep 29 01:37:50 PM EDT 2024
 Attempting to compile breaker.c 
 gcc -std=gnu99 -pedantic -Wall -c breaker.c
 gcc -o breaker breaker.o
-Error: wrong number of arguments.
- Usage: ./<program> <filename>
-testcase1 failed, your program didn't indicate this is a failure case
+testcase1 passed
 #################################################
 testcase2:
 testcase2 failed
