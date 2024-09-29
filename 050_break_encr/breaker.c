@@ -46,7 +46,9 @@ int main(int argc, char * argv[]) {
     fprintf(stderr, "Invalid key = %d\n", key);
     exit(EXIT_FAILURE);
   }
-  printRes(key, f);
+
+  fprintf(stdout, "%d\n", key);
+  //printRes(key, f);
   if (fclose(f) != 0) {
     fprintf(stderr, "Error closing file: %s\n", strerror(errno));
     exit(EXIT_FAILURE);
