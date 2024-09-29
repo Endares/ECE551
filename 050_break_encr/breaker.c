@@ -1,17 +1,20 @@
 #include <ctype.h>  // islower()
+#include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 void printRes(int key, FILE * f);
 
 int main(int argc, char * argv[]) {
   if (argc != 2) {
-    printf("Error: wrong number of arguments.\n Usage: ./<program> <filename>\n");
+    fprintf(stderr,
+            "Error: wrong number of arguments.\n Usage: ./<program> <filename>\n");
     exit(EXIT_FAILURE);
   }
   FILE * f = fopen(argv[1], "r");
   if (f == NULL) {
-    printf("Empty file %s\n", argv[1]);
+    fprintf(stderr, "Error opening file: %s\n", strerror(errno));
     exit(EXIT_FAILURE);
   }
 
@@ -41,7 +44,11 @@ int main(int argc, char * argv[]) {
   int key = (26 + mostFrequent + ('a' - 'e')) % 26;
 
   printRes(key, f);
-  fclose(f);
+  if (fclose(f) != 0) {
+    fprintf(stderr, "Error closing file: %s\n", strerror(errno));
+    exit(EXIT_FAILURE);
+  }
+
   return 0;
 }
 
