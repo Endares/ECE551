@@ -42,7 +42,10 @@ int main(int argc, char * argv[]) {
   }
   //  printf("Most frequent letter is %c.\n", (char)(mostFrequent + 'a'));
   int key = (26 + mostFrequent + ('a' - 'e')) % 26;
-
+  if (key < 0 || key >= 26) {
+    fprintf(stderr, "Invalid key = %d\n", key);
+    exit(EXIT_FAILURE);
+  }
   printRes(key, f);
   if (fclose(f) != 0) {
     fprintf(stderr, "Error closing file: %s\n", strerror(errno));
