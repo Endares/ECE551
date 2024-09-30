@@ -28,7 +28,7 @@ Hint 1: think about various error cases that the programmer
 might have forgotten!
 
 Hint 2: The trickiest of these is one in which the programmer
-did not pay attention to a rather subtle, but common mistake
+id not pay attention to a rather subtle, but common mistake
 pointed out in AOP!
 
 Hint 3:  If you find yourself needing to create an input
