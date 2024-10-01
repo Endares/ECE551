@@ -3,3 +3,5 @@ launches-step1 missingfile
 launches-step2 sol.txt
 launches-step2 missingfile
 launches-step3 sol.txt launches1.txt
+launches-step4 simple.txt launches_simple.txt
+launches-step4 sol.txt launches1.txt
