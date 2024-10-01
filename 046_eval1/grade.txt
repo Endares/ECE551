@@ -1,6 +1,6 @@
-Grading at 10/01/2024:23:23:28.487947
-For commit ID 34a02bbc84968ea2ef6b078fc9f460f46680241c
-Grading at Tue Oct  1 07:23:22 PM EDT 2024
+Grading at 10/01/2024:23:37:06.806054
+For commit ID 469cb216224899d84af377ed838e9470e5993a1f
+Grading at Tue Oct  1 07:36:58 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -22,11 +22,22 @@ We agreed on this testcase and valgrind was clean
  This test case will run 
  launches-step1 
  With arguments 
+ neg.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
+-------------------------
+ This test case will run 
+ launches-step1 
+ With arguments 
  sol_floating.txt 
 -------------------------
 Running our code...
 Running your code
-We agreed on this testcase and valgrind was clean
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
 -------------------------
  This test case will run 
  launches-step1 
@@ -58,7 +69,7 @@ We agreed on this testcase and valgrind was clean
  This test case will run 
  launches-step2 
  With arguments 
- missingfile 
+ sol_floating.txt 
 -------------------------
 Running our code...
 Running your code
@@ -82,6 +93,16 @@ gcc -o launches-step3 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step3.o myinput
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ launches-step3 
+ With arguments 
+ sol_floating.txt launches1.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
 -------------------------
  This test case will run 
  launches-step4 
@@ -110,6 +131,16 @@ We agreed on this testcase and valgrind was clean
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ launches-step4 
+ With arguments 
+ sol_floating.txt launches1.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
 
