@@ -1,6 +1,6 @@
-Grading at 10/01/2024:22:53:57.143056
-For commit ID e557ac4b4d39382028479b448efb04872f2f7ecd
-Grading at Tue Oct  1 06:53:51 PM EDT 2024
+Grading at 10/01/2024:23:23:28.487947
+For commit ID 34a02bbc84968ea2ef6b078fc9f460f46680241c
+Grading at Tue Oct  1 07:23:22 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -15,6 +15,15 @@ rm -f iter_target.o myinput.o planet_util.o step1.o step2.o step3.o step4.o targ
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 step1.c
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 myinput.c
 gcc -o launches-step1 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step1.o myinput.o provided.o dummy-s2.o dummy-s3.o -lm
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ launches-step1 
+ With arguments 
+ sol_floating.txt 
+-------------------------
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
