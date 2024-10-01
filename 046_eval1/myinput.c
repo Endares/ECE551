@@ -50,6 +50,20 @@ void parse_planet_info(planet_t * planet, char * line) {
     radius = radius * 10 + (*ptr - '0');
     ++ptr;
   }
+  // floating point
+  if (ptr && *ptr == '.') {
+    ++ptr;
+    double factor = 10;
+    while (ptr && isdigit(*ptr)) {
+      if (radius > DBL_MAX - (*ptr - '0') / factor) {
+        fprintf(stderr, "Invalid input: radius too big, overflowing double-type.\n");
+        exit(EXIT_FAILURE);
+      }
+      radius += (*ptr - '0') / factor;
+      factor *= 10;
+      ++ptr;
+    }
+  }
 
   if (!ptr || *ptr != ':') {
     fprintf(stderr, "Invalid input: missing ':' between radius and period.\n");
@@ -73,6 +87,21 @@ void parse_planet_info(planet_t * planet, char * line) {
     ++ptr;
   }
 
+  // floating point
+  if (ptr && *ptr == '.') {
+    ++ptr;
+    double factor = 10;
+    while (ptr && isdigit(*ptr)) {
+      if (period > DBL_MAX - (*ptr - '0') / factor) {
+        fprintf(stderr, "Invalid input: period too big, overflowing double-type.\n");
+        exit(EXIT_FAILURE);
+      }
+      period += (*ptr - '0') / factor;
+      factor *= 10;
+      ++ptr;
+    }
+  }
+
   if (!ptr || *ptr != ':') {
     fprintf(stderr, "Invalid input: missing ':' between period and intial position.\n");
     exit(EXIT_FAILURE);
@@ -81,7 +110,7 @@ void parse_planet_info(planet_t * planet, char * line) {
     ++ptr;
   }
 
-  // 4.period
+  // 4.initial position -- angle(deg to radians)
   if (!ptr || !isdigit(*ptr)) {
     fprintf(stderr, "Invalid input: missing initial position!\n");
     exit(EXIT_FAILURE);
@@ -95,6 +124,23 @@ void parse_planet_info(planet_t * planet, char * line) {
     initPos = initPos * 10 + (*ptr - '0');
     ++ptr;
   }
+
+  // floating point
+  if (ptr && *ptr == '.') {
+    ++ptr;
+    double factor = 10;
+    while (ptr && isdigit(*ptr)) {
+      if (initPos > DBL_MAX - (*ptr - '0') / factor) {
+        fprintf(stderr,
+                "Invalid input:initial position too big, overflowing double-type.\n");
+        exit(EXIT_FAILURE);
+      }
+      initPos += (*ptr - '0') / factor;
+      factor *= 10;
+      ++ptr;
+    }
+  }
+
   if (!ptr && *ptr != '\n') {
     fprintf(stderr, "Invalid input: missing newline character.\n");
     exit(EXIT_FAILURE);
