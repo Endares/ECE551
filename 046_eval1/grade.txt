@@ -1,6 +1,6 @@
-Grading at 10/01/2024:02:58:58.574639
-For commit ID 84308450559afc0fd46c53b570d99726a0e68750
-Grading at Mon Sep 30 10:58:54 PM EDT 2024
+Grading at 10/01/2024:22:53:57.143056
+For commit ID e557ac4b4d39382028479b448efb04872f2f7ecd
+Grading at Tue Oct  1 06:53:51 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -11,7 +11,7 @@ Running your test cases
 I need to compile your code for launches-step1 (make launches-step1)
 
 Compiling launches-step1
-rm -f myinput.o planet_util.o step1.o step2.o step3.o target.o *~ launches-step? launches-step4-debug
+rm -f iter_target.o myinput.o planet_util.o step1.o step2.o step3.o step4.o target.o *~ launches-step? launches-step4-debug
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 step1.c
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 myinput.c
 gcc -o launches-step1 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step1.o myinput.o provided.o dummy-s2.o dummy-s3.o -lm
@@ -70,6 +70,34 @@ gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 myinput.c
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 planet_util.c
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 target.c
 gcc -o launches-step3 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step3.o myinput.o provided.o planet_util.o target.o -lm
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ launches-step4 
+ With arguments 
+ simple.txt launches_simple.txt 
+-------------------------
+I need to compile your code for launches-step4 (make launches-step4)
+
+Compiling launches-step4
+rm -f myinput.o planet_util.o step3.o target.o *~ launches-step? launches-step4-debug
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 step4.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 myinput.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 planet_util.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 target.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 iter_target.c
+gcc -o launches-step4 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step4.o myinput.o provided.o planet_util.o target.o iter_target.o -lm
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ launches-step4 
+ With arguments 
+ sol.txt launches1.txt 
+-------------------------
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
