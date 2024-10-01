@@ -1,6 +1,6 @@
-Grading at 10/01/2024:00:59:46.098400
-For commit ID 4ed8f86d37097c01dff34acba9b9a81d4735b1b0
-Grading at Mon Sep 30 08:59:43 PM EDT 2024
+Grading at 10/01/2024:02:57:01.242155
+For commit ID 9858a01257434c11fbd12afb5bb6f0813d432e96
+Grading at Mon Sep 30 10:56:58 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -11,7 +11,7 @@ Running your test cases
 I need to compile your code for launches-step1 (make launches-step1)
 
 Compiling launches-step1
-rm -f myinput.o planet_util.o step1.o step2.o *~ launches-step? launches-step4-debug
+rm -f myinput.o planet_util.o step1.o step2.o step3.o target.o *~ launches-step? launches-step4-debug
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 step1.c
 gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 myinput.c
 gcc -o launches-step1 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step1.o myinput.o provided.o dummy-s2.o dummy-s3.o -lm
@@ -55,6 +55,14 @@ Running our code...
 Running your code
 We agreed this was an error, and you printed something to stderr
 And valgrind reported no errors
+-------------------------
+ This test case will run 
+ launched-step3 
+ With arguments 
+ sol.txt launches1.txt 
+-------------------------
+launched-step3 does not seem to be a valid command for this assignment
+Skipping this testcase
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
 
