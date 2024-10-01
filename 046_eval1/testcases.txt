@@ -1,4 +1,5 @@
 launches-step1 sol.txt
+launches-step1 sol_floating.txt
 launches-step1 missingfile
 launches-step2 sol.txt
 launches-step2 missingfile
