@@ -1,6 +1,6 @@
-Grading at 10/01/2024:02:57:54.441787
-For commit ID cda53071da55c7f48ff37297a545fcc20e8c547d
-Grading at Mon Sep 30 10:57:51 PM EDT 2024
+Grading at 10/01/2024:02:58:58.574639
+For commit ID 84308450559afc0fd46c53b570d99726a0e68750
+Grading at Mon Sep 30 10:58:54 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -57,12 +57,22 @@ We agreed this was an error, and you printed something to stderr
 And valgrind reported no errors
 -------------------------
  This test case will run 
- ./launched-step3 
+ launches-step3 
  With arguments 
  sol.txt launches1.txt 
 -------------------------
-./launched-step3 does not seem to be a valid command for this assignment
-Skipping this testcase
+I need to compile your code for launches-step3 (make launches-step3)
+
+Compiling launches-step3
+rm -f myinput.o planet_util.o step2.o *~ launches-step? launches-step4-debug
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 step3.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 myinput.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 planet_util.c
+gcc -c -Wall -Werror --std=gnu99 -pedantic -ggdb3 target.c
+gcc -o launches-step3 -Wall -Werror --std=gnu99 -pedantic -ggdb3 step3.o myinput.o provided.o planet_util.o target.o -lm
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
 
