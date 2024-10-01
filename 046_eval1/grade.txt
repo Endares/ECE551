@@ -1,6 +1,6 @@
-Grading at 10/01/2024:02:57:01.242155
-For commit ID 9858a01257434c11fbd12afb5bb6f0813d432e96
-Grading at Mon Sep 30 10:56:58 PM EDT 2024
+Grading at 10/01/2024:02:57:54.441787
+For commit ID cda53071da55c7f48ff37297a545fcc20e8c547d
+Grading at Mon Sep 30 10:57:51 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -57,11 +57,11 @@ We agreed this was an error, and you printed something to stderr
 And valgrind reported no errors
 -------------------------
  This test case will run 
- launched-step3 
+ ./launched-step3 
  With arguments 
  sol.txt launches1.txt 
 -------------------------
-launched-step3 does not seem to be a valid command for this assignment
+./launched-step3 does not seem to be a valid command for this assignment
 Skipping this testcase
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
