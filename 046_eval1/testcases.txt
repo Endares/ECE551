@@ -2,7 +2,9 @@ launches-step1 sol.txt
 launches-step1 sol_floating.txt
 launches-step1 missingfile
 launches-step2 sol.txt
-launches-step2 missingfile
+launches-step2 sol_floating.txt
 launches-step3 sol.txt launches1.txt
+launches-step3 sol_floating.txt launches1.txt
 launches-step4 simple.txt launches_simple.txt
 launches-step4 sol.txt launches1.txt
+launches-step4 sol_floating.txt launches1.txt
