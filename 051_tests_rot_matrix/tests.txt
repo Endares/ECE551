@@ -8,4 +8,4 @@ input7.txt
 input8.txt
 
 lll
-input3.txt w
+input3.txt w\\
