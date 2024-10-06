@@ -44,25 +44,24 @@ void addRandomMine(board_t * b) {
 
 board_t * makeBoard(int w, int h, int numMines) {
   // WRITE ME!
-  board_t * myBoard = malloc(sizeof(myBoard));
+  board_t * myBoard = malloc(sizeof(*myBoard));
   myBoard->width = w;
   myBoard->height = h;
   myBoard->totalMines = numMines;
-  int ** board = malloc(h * sizeof(*board));
-  myBoard->board = board;
-  if (board == NULL) {
+  myBoard->board = malloc(h * sizeof(*myBoard->board));
+  if (myBoard->board == NULL) {
     fprintf(stderr, "Memory allocation failed\n");
     exit(EXIT_FAILURE);
   }
 
   for (int i = 0; i < h; ++i) {
-    board[i] = malloc(w * sizeof(*board[i]));
-    if (board[i] == NULL) {
+    myBoard->board[i] = malloc(w * sizeof(*myBoard->board[i]));
+    if (myBoard->board[i] == NULL) {
       fprintf(stderr, "Memory allocation failed\n");
       exit(EXIT_FAILURE);
     }
     for (int j = 0; j < w; ++j) {
-      board[i][j] = UNKNOWN;
+      myBoard->board[i][j] = UNKNOWN;
     }
   }
 
