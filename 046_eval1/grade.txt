@@ -1,6 +1,6 @@
-Grading at 10/01/2024:23:40:45.295874
-For commit ID 2ecd1960f843d2cd4c50c6abce7bf5267b5a1563
-Grading at Tue Oct  1 07:40:36 PM EDT 2024
+Grading at 10/06/2024:18:44:29.995127
+For commit ID f8f889db62bb6c5cfa8709b53ac1cf8a4bc68885
+Grading at Sun Oct  6 02:44:20 PM EDT 2024
 Running your test cases
 -------------------------
  This test case will run 
@@ -37,6 +37,25 @@ And valgrind reported no errors
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ launches-step1 
+ With arguments 
+ sol_positive.txt 
+-------------------------
+Running our code...
+Running your code
+We both agreed this was not an error, but your output is different from ours
+Your output on the left, ours on the right
+Mercury      has radius     57900000.23, year length     2111	Mercury      has radius     57900000.23, year length     2111
+Venus        has radius           10.82, year length     5387	Venus        has radius           10.82, year length     5387
+Earth        has radius         1496.00, year length     8766 |	Earth        has radius         1496.00, year length     8766
+Mars         has radius    228000000.77, year length    16478 |	Mars         has radius    228000000.77, year length    16478
+Jupiter      has radius       779300.00, year length      103	Jupiter      has radius       779300.00, year length      103
+Saturn       has radius   1427000000.93, year length   258070	Saturn       has radius   1427000000.93, year length   258070
+Neptune      has radius       287100.00, year length   735928	Neptune      has radius       287100.00, year length   735928
+Pluto        has radius      5913000.00, year length  2177736	Pluto        has radius      5913000.00, year length  2177736
+Your file did not match the expected output
 -------------------------
  This test case will run 
  launches-step1 
@@ -137,7 +156,7 @@ We agreed on this testcase and valgrind was clean
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
-You have PASSED all of your test cases
-Keep adding test cases until you are satisfied your program is correct
+You have FAILED one or more of your test cases
+Keep debugging
 
 Overall Grade: NO GRADE YET
