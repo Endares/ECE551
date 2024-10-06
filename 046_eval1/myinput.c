@@ -38,6 +38,9 @@ void parse_planet_info(planet_t * planet, char * line) {
   }
 
   // 2.radius
+  if (ptr && *ptr == '+') {
+    ++ptr;
+  }
   if (!ptr || !isdigit(*ptr)) {
     fprintf(stderr, "Invalid input: missing radius!\n");
     exit(EXIT_FAILURE);
@@ -65,6 +68,11 @@ void parse_planet_info(planet_t * planet, char * line) {
     }
   }
 
+  if (radius == 0) {
+    fprintf(stderr, "Invalid input: radius is 0\n");
+    exit(EXIT_FAILURE);
+  }
+
   if (!ptr || *ptr != ':') {
     fprintf(stderr, "Invalid input: missing ':' between radius and period.\n");
     exit(EXIT_FAILURE);
@@ -74,6 +82,9 @@ void parse_planet_info(planet_t * planet, char * line) {
   }
 
   // 3.period
+  if (ptr && *ptr == '+') {
+    ++ptr;
+  }
   if (!ptr || !isdigit(*ptr)) {
     fprintf(stderr, "Invalid input: missing period!\n");
     exit(EXIT_FAILURE);
@@ -101,6 +112,10 @@ void parse_planet_info(planet_t * planet, char * line) {
       ++ptr;
     }
   }
+  if (period == 0) {
+    fprintf(stderr, "Invalid input: period is 0.\n");
+    exit(EXIT_FAILURE);
+  }
 
   if (!ptr || *ptr != ':') {
     fprintf(stderr, "Invalid input: missing ':' between period and intial position.\n");
@@ -111,6 +126,9 @@ void parse_planet_info(planet_t * planet, char * line) {
   }
 
   // 4.initial position -- angle(deg to radians)
+  if (ptr && *ptr == '+') {
+    ++ptr;
+  }
   if (!ptr || !isdigit(*ptr)) {
     fprintf(stderr, "Invalid input: missing initial position!\n");
     exit(EXIT_FAILURE);
