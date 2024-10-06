@@ -14,6 +14,9 @@
 
 #define IS_MINE(x) ((x) == HAS_MINE || (x) == KNOWN_MINE)
 
+#define MAX(a, b) ((a) > (b) ? (a) : (b))
+#define MIN(a, b) ((a) < (b) ? (a) : (b))
+
 struct _board_t {
   int ** board;
   int width;
@@ -41,7 +44,34 @@ void addRandomMine(board_t * b) {
 
 board_t * makeBoard(int w, int h, int numMines) {
   // WRITE ME!
-  return NULL;
+  board_t * myBoard = malloc(sizeof(myBoard));
+  myBoard->width = w;
+  myBoard->height = h;
+  myBoard->totalMines = numMines;
+  int ** board = malloc(h * sizeof(*board));
+  myBoard->board = board;
+  if (board == NULL) {
+    fprintf(stderr, "Memory allocation failed\n");
+    exit(EXIT_FAILURE);
+  }
+
+  for (int i = 0; i < h; ++i) {
+    board[i] = malloc(w * sizeof(*board[i]));
+    if (board[i] == NULL) {
+      fprintf(stderr, "Memory allocation failed\n");
+      exit(EXIT_FAILURE);
+    }
+    for (int j = 0; j < w; ++j) {
+      board[i][j] = UNKNOWN;
+    }
+  }
+
+  // place mine
+  for (int i = 0; i < numMines; ++i) {
+    addRandomMine(myBoard);
+  }
+
+  return myBoard;
 }
 
 /* Print the board with 
@@ -102,7 +132,17 @@ void printBoard(board_t * b) {
 
 int countMines(board_t * b, int x, int y) {
   // WRITE ME!
-  return 0;
+  int cnt = 0;
+  int h1 = MAX(0, y - 1), h2 = MIN(b->height - 1, y + 1);
+  int w1 = MAX(0, x - 1), w2 = MIN(b->width - 1, x + 1);
+  for (int i = h1; i <= h2; ++i) {
+    for (int j = w1; j <= w2; ++j) {
+      if (!(i == y && j == x) && IS_MINE(b->board[i][j])) {
+        ++cnt;
+      }
+    }
+  }
+  return cnt;
 }
 
 /* Determine action of selected square
@@ -141,6 +181,11 @@ int checkWin(board_t * b) {
 
 void freeBoard(board_t * b) {
   // WRITE ME!
+  for (int i = 0; i < b->height; ++i) {
+    free(b->board[i]);
+  }
+  free(b->board);
+  free(b);
 }
 
 /* Read and validate positive integer from player */
