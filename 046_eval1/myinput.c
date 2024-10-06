@@ -163,9 +163,6 @@ void parse_planet_info(planet_t * planet, char * line) {
     fprintf(stderr, "Invalid input: missing newline character.\n");
     exit(EXIT_FAILURE);
   }
-  while (initPos > 360) {
-    initPos = initPos - 360;
-  }
   // degree to radians
   initPos = initPos * M_PI / 180.0;
 
