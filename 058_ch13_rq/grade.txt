@@ -1,12 +1,11 @@
-Grading at 10/07/2024:21:06:37.389693
-For commit ID 1359bf590498a1a256f9497c7770fabbbbc79d23
-Grading at Mon Oct  7 05:06:37 PM EDT 2024
+Grading at 10/07/2024:23:48:01.779223
+For commit ID 04e94358f618a38cf6cf59f03cb146c56c2cfa1b
+Grading at Mon Oct  7 07:48:01 PM EDT 2024
 Reading your quiz answers from answers.txt
 You got 2 questions incorrect.
 You might want to review these concepts:
 ------------
 A Modestly Sized Example
-Commenting and Documentation
 ------------
 
 Overall Grade: FAILED
