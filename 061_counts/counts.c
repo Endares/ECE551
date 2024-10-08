@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// for some particular string, how many times have we seen it so far.
 counts_t * createCounts(void) {
   //WRITE ME
   counts_t * counts = malloc(sizeof(*counts));
@@ -12,6 +13,8 @@ counts_t * createCounts(void) {
   counts->countsArray = NULL;
   return counts;
 }
+
+// add a name to the counts_t
 void addCount(counts_t * c, const char * name) {
   //WRITE ME
   if (name == NULL) {
