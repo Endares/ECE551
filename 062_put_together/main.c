@@ -89,6 +89,7 @@ int main(int argc, char ** argv) {
       exit(EXIT_FAILURE);
     }
     //free the memory for outName and c
+    free(outputFileName);  // malloc led by computeoutputfilename()
     freeCounts(currCount);
   }
   //free the memory for kv
