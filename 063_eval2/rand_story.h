@@ -9,12 +9,18 @@
 const char * chooseWord(char * category, catarray_t * cats);
 void printWords(catarray_t * cats);
 
-/*substitute the _word_ in file f with rules in cats, print the result to stdout*/
+/*substitute the _word_ in file f with rules in cats, print the result to stdout, words can be reused*/
 void substituteAndPrint(FILE * f, catarray_t * cats);
+// words can't be reused
+void substituteAndPrint_2(FILE * f, catarray_t * cats, int reuse);
 // ONLY for story-step1
 void substituteAndPrint_1(FILE * f);
 // make substitution of words according to rules
 const char * substituteWord(catarray_t * cats, char * name, category_t * reference);
+// make substitution of words according to rules without reusing
+const char * substituteWord_2(catarray_t * cats, char * name, category_t * reference);
+// remove a word from cats->arr[index]
+void removeWord(catarray_t * cats, size_t index, char * word);
 
 // add the most recently used substitution of word into reference
 void addToReference(category_t * reference, char * word);

@@ -124,7 +124,8 @@ int isInteger(const char * str) {
 /* substitute word according to name: 
    1. name is valid number: backtrack in references
    2. name is in cats: substitude with a word
-   3. else: invalid input, exit with failure satus
+   3. else: invalid input, exit with failure status
+   NOT consider reusing issue: reusing of word is permitted
 */
 const char * substituteWord(catarray_t * cats, char * name, category_t * reference) {
   int num = atoi(name);
@@ -134,6 +135,46 @@ const char * substituteWord(catarray_t * cats, char * name, category_t * referen
   }
   else if (findCat(name, cats) != -1) {
     return chooseWord(name, cats);
+  }
+  else {  // invalid input
+    fprintf(stderr, "Invalid catagory name: %s!\n", name);
+    exit(EXIT_FAILURE);
+  }
+  return NULL;
+}
+
+// remove a word from cats->arr[index]
+void removeWord(catarray_t * cats, size_t index, char * word) {
+  int index_j = findWordInName(cats, index, word);
+  if (index_j == -1) {
+    fprintf(stderr, "Error: %s not found in %s\n", word, cats->arr[index].name);
+    exit(EXIT_FAILURE);
+  }
+  char * temp = cats->arr[index].words[(size_t)index_j];
+  for (size_t j = (size_t)index_j; j < cats->arr[index].n_words - 1; ++j) {
+    cats->arr[index].words[j] = cats->arr[index].words[j + 1];
+  }
+  cats->arr[index].words[cats->arr[index].n_words - 1] = NULL;
+  --(cats->arr[index].n_words);
+  cats->arr[index].words =
+      realloc(cats->arr[index].words, (cats->arr[index].n_words) * sizeof(char *));
+  free(temp);
+}
+
+// substitute without reusing
+const char * substituteWord_2(catarray_t * cats, char * name, category_t * reference) {
+  int num = atoi(name);
+  // num > 0 must be infront of &&, make sure correctness of int to size_t transform
+  int index = findCat(name, cats);
+  if (isInteger(name) && num > 0 && (size_t)num <= reference->n_words) {
+    const char * res = strdup(reference->words[reference->n_words - (size_t)num]);
+    return res;
+  }
+  else if (index != -1) {
+    const char * choice = strdup(chooseWord(name, cats));
+    // remove choice from name
+    removeWord(cats, (size_t)index, (char *)choice);
+    return choice;
   }
   else {  // invalid input
     fprintf(stderr, "Invalid catagory name: %s!\n", name);
@@ -224,6 +265,61 @@ void substituteAndPrint(FILE * f, catarray_t * cats) {
       addToReference(reference, newWord);
       fprintf(stdout, "%s", newWord);
       free(word);
+    }
+    else {
+      fprintf(stdout, "%c", c);
+    }
+  }
+  freeReference(reference);
+}
+
+/* read file f and substitute each _word_, print res to stdout
+   words can't be reused*/
+void substituteAndPrint_2(FILE * f, catarray_t * cats, int reuse) {
+  category_t * reference = makeReference();
+  int c;         // fgetc returns an int
+  int flag = 0;  // 1: encoutering left _ without right _
+  while ((c = fgetc(f)) != EOF) {
+    if (flag == 0 && c == '_') {
+      flag = 1;
+      char * word = malloc(sizeof(*word));
+      int wordLen = 0;
+      while ((c = fgetc(f)) != EOF) {
+        if (c == '_') {  // encountering right _
+          flag = 0;
+          ++wordLen;  // for '\0'
+          word = realloc(word, wordLen * sizeof(*word));
+          if (word == NULL) {
+            fprintf(stderr, "Memory allocation failed\n");
+            exit(EXIT_FAILURE);
+          }
+          word[wordLen - 1] = '\0';
+          break;
+        }
+        else {
+          wordLen += 1;
+          word = realloc(word, wordLen * sizeof(*word));
+          if (word == NULL) {
+            fprintf(stderr, "Memory allocation failed\n");
+            exit(EXIT_FAILURE);
+          }
+          word[wordLen - 1] = c;
+        }
+      }
+      char * newWord;
+      if (reuse) {  // reusing not allowed
+        newWord = (char *)substituteWord_2(cats, word, reference);
+        addToReference(reference, newWord);
+        fprintf(stdout, "%s", newWord);
+        free(newWord);
+        free(word);
+      }
+      else {
+        newWord = (char *)substituteWord(cats, word, reference);
+        addToReference(reference, newWord);
+        fprintf(stdout, "%s", newWord);
+        free(word);
+      }
     }
     else {
       fprintf(stdout, "%c", c);
