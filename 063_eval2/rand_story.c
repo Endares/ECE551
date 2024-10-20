@@ -143,22 +143,19 @@ const char * substituteWord(catarray_t * cats, char * name, category_t * referen
   return NULL;
 }
 
-// remove a word from cats->arr[index]
+/* remove a word from cats->arr[index], by switching its place with
+   the last word in arr[index], and free it.*/
 void removeWord(catarray_t * cats, size_t index, char * word) {
   int index_j = findWordInName(cats, index, word);
   if (index_j == -1) {
     fprintf(stderr, "Error: %s not found in %s\n", word, cats->arr[index].name);
     exit(EXIT_FAILURE);
   }
-  char * temp = cats->arr[index].words[(size_t)index_j];
-  for (size_t j = (size_t)index_j; j < cats->arr[index].n_words - 1; ++j) {
-    cats->arr[index].words[j] = cats->arr[index].words[j + 1];
-  }
-  cats->arr[index].words[cats->arr[index].n_words - 1] = NULL;
+  free(cats->arr[index].words[(size_t)index_j]);
+  cats->arr[index].words[index_j] = cats->arr[index].words[cats->arr[index].n_words - 1];
   --(cats->arr[index].n_words);
   cats->arr[index].words =
       realloc(cats->arr[index].words, (cats->arr[index].n_words) * sizeof(char *));
-  free(temp);
 }
 
 // substitute without reusing
@@ -229,7 +226,10 @@ void addToReference(category_t * reference, char * word) {
   }
 }
 
-// read file f and substitute each _word_, print res to stdout
+/* read file f and print char by char.
+   when encoutering _word_, call function `substituteWord`,   
+   return a substitution of this word and print it out.
+*/
 void substituteAndPrint(FILE * f, catarray_t * cats) {
   category_t * reference = makeReference();
   int c;         // fgetc returns an int
@@ -274,7 +274,20 @@ void substituteAndPrint(FILE * f, catarray_t * cats) {
 }
 
 /* read file f and substitute each _word_, print res to stdout
-   words can't be reused*/
+   words can't be reused.
+   To avoid reusing word, I removed the word from cat whenever
+   it is used as a substitution (reusing in reference backtrack
+   is allowed, so no need to remove the word if it is used as 
+   _#_). 
+   We need to make sure the word is not removed before printed,
+   so `substituteWord_2` is slightly different from 
+   `substituteWord` in implementation, the former need to make 
+   a copy of the returned word before removing the same word 
+   from cats and returning to `substitueAndPrint2`, then print
+   the substitution, then free the copy.
+   By contrast, calling `substituteWord` won't need an extra 
+   step of removing in the caller.
+*/
 void substituteAndPrint_2(FILE * f, catarray_t * cats, int reuse) {
   category_t * reference = makeReference();
   int c;         // fgetc returns an int
