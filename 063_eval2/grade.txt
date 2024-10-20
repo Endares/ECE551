@@ -1,11 +1,11 @@
-Grading at 10/20/2024:19:25:46.514020
-For commit ID 8b4a6fd8681881cf894de48bac043c434174166b
-Grading at Sun Oct 20 03:25:42 PM EDT 2024
+Grading at 10/20/2024:20:39:47.254655
+For commit ID 4003cdcc4a344800f2677a783c9355a697b70cfc
+Grading at Sun Oct 20 04:39:42 PM EDT 2024
 Doing some basic checking for your submission
 
 Step 1
 Checking that story-step1 compiles
-rm -f *~ story-step1 story-step2 story-step3  story-step1.o story-step2.o story-step3.o rand_story.o
+rm -f *~ story-step1 story-step2 story-step3 story-step4 story-step1.o story-step2.o story-step3.o story-step4.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step1.c
 gcc -o story-step1 story-step1.o rand_story.o provided.o
@@ -29,7 +29,7 @@ Valgrind was clean
 
 Step 2
 Checking that story-step2 compiles
-rm -f *~ story-step1 story-step2 story-step3  story-step1.o story-step2.o story-step3.o rand_story.o
+rm -f *~ story-step1 story-step2 story-step3 story-step4 story-step1.o story-step2.o story-step3.o story-step4.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step2.c
 gcc -o story-step2 story-step2.o rand_story.o provided.o
@@ -45,7 +45,7 @@ Valgrind was clean
 
 Step 3
 Checking that story-step3 compiles
-rm -f *~ story-step1 story-step2 story-step3  story-step1.o story-step2.o story-step3.o rand_story.o
+rm -f *~ story-step1 story-step2 story-step3 story-step4 story-step1.o story-step2.o story-step3.o story-step4.o rand_story.o
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
 gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step3.c
 gcc -o story-step3 story-step3.o rand_story.o provided.o
@@ -71,7 +71,163 @@ Valgrind was clean
 
 Step 4
 Checking that story-step4 compiles
-rm -f *~ story-step1 story-step2 story-step3  story-step1.o story-step2.o story-step3.o rand_story.o
-The code did not compile!
+rm -f *~ story-step1 story-step2 story-step3 story-step4 story-step1.o story-step2.o story-step3.o story-step4.o rand_story.o
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c rand_story.c
+gcc -std=gnu99 -pedantic -Wall -Werror -ggdb3 -c story-step4.c
+gcc -o story-step4 story-step4.o rand_story.o provided.o
+rm story-step4.o
+The code compiled (good)
+Executable story-step4 exists (good)
+Now running YOUR tests for step 4
+
+4.1: Current test is story-step4 words.txt story2.txt
+-----------------------------
+It looks like you got different output from us on that case.
+Here is the diff (yours on left, ours on right):
+
+animal:							      <
+  dragon						      <
+  walrus						      <
+place:							      <
+  cave							      <
+adjective:						      <
+  peculiar						      <
+  scary							      <
+  peaceful						      <
+Once upon a time, there was a walrus. This walrus lived in a 	Once upon a time, there was a walrus. This walrus lived in a 
+peculiar cave. One day, it left its peculiar cave and met a w	peculiar cave. One day, it left its peculiar cave and met a w
+Your file did not match the expected output
+
+
+4.2: Current test is story-step4 -n words.txt story2.txt
+-----------------------------
+It looks like you got different output from us on that case.
+Here is the diff (yours on left, ours on right):
+
+animal:							      <
+  dragon						      <
+  walrus						      <
+place:							      <
+  cave							      <
+adjective:						      <
+  peculiar						      <
+  scary							      <
+  peaceful						      <
+Once upon a time, there was a walrus. This walrus lived in a 	Once upon a time, there was a walrus. This walrus lived in a 
+peculiar cave. One day, it left its peculiar cave and met a d	peculiar cave. One day, it left its peculiar cave and met a d
+Your file did not match the expected output
+
+
+4.3: Current test is story-step4 trickywords.txt trickystory.txt
+-----------------------------
+It looks like you got different output from us on that case.
+Here is the diff (yours on left, ours on right):
+
+place:							      <
+  Hope's Peak Academy					      <
+  Despair Hotel						      <
+  Jabberwock Island					      <
+character:						      <
+  Makoto Naegi						      <
+  Kyoko Kirigiri					      <
+  Hajime Hinata						      <
+character2:						      <
+  Monokuma						      <
+  Nagito Komaeda					      <
+  Junko Enoshima					      <
+adjective:						      <
+  optimistic						      <
+  despairing						      <
+  cunning						      <
+adjective2:						      <
+  malevolent						      <
+  hopeful						      <
+  twisted						      <
+event:							      <
+  class trial						      <
+  mutual killing game					      <
+  final showdown					      <
+skill:							      <
+  deduction						      <
+  luck							      <
+  bravery						      <
+emotion:						      <
+  heartbreaking						      <
+  exciting						      <
+  despairing						      <
+-1:							      <
+  double kill						      <
+1:							      <
+  WRONG							      <
+11037a:							      <
+  disc							      <
+  knife							      <
+  crystal ball						      <
+Once upon a time, in a very Hope's Peak Academy, there was a 	Once upon a time, in a very Hope's Peak Academy, there was a 
+One day, they encountered Monokuma, and the two were caught i	One day, they encountered Monokuma, and the two were caught i
+The Kyoko Kirigiri had to use all their deduction to survive,	The Kyoko Kirigiri had to use all their deduction to survive,
+It was a exciting battle, and only one of them could survive.	It was a exciting battle, and only one of them could survive.
+Evidence of the first murder case are knife, disc and knife. 	Evidence of the first murder case are knife, disc and knife. 
+The third murder case is a double kill.				The third murder case is a double kill.
+Your file did not match the expected output
+
+
+4.4: Current test is story-step4 -n trickywords.txt trickystory.txt
+-----------------------------
+It looks like you got different output from us on that case.
+Here is the diff (yours on left, ours on right):
+
+place:							      <
+  Hope's Peak Academy					      <
+  Despair Hotel						      <
+  Jabberwock Island					      <
+character:						      <
+  Makoto Naegi						      <
+  Kyoko Kirigiri					      <
+  Hajime Hinata						      <
+character2:						      <
+  Monokuma						      <
+  Nagito Komaeda					      <
+  Junko Enoshima					      <
+adjective:						      <
+  optimistic						      <
+  despairing						      <
+  cunning						      <
+adjective2:						      <
+  malevolent						      <
+  hopeful						      <
+  twisted						      <
+event:							      <
+  class trial						      <
+  mutual killing game					      <
+  final showdown					      <
+skill:							      <
+  deduction						      <
+  luck							      <
+  bravery						      <
+emotion:						      <
+  heartbreaking						      <
+  exciting						      <
+  despairing						      <
+-1:							      <
+  double kill						      <
+1:							      <
+  WRONG							      <
+11037a:							      <
+  disc							      <
+  knife							      <
+  crystal ball						      <
+Once upon a time, in a very Hope's Peak Academy, there was a 	Once upon a time, in a very Hope's Peak Academy, there was a 
+One day, they encountered Monokuma, and the two were caught i	One day, they encountered Monokuma, and the two were caught i
+The Makoto Naegi had to use all their deduction to survive, w	The Makoto Naegi had to use all their deduction to survive, w
+It was a exciting battle, and only one of them could survive.	It was a exciting battle, and only one of them could survive.
+Evidence of the first murder case are knife, disc and crystal	Evidence of the first murder case are knife, disc and crystal
+The third murder case is a double kill.				The third murder case is a double kill.
+Your file did not match the expected output
+
+
+You have NOT passed your test cases!
+You should go and figure out/understand where thing went wrong
+And fix the problem(s) before the deadline
 
 Overall Grade: NO GRADE YET
