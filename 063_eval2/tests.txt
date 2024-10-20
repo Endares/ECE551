@@ -6,3 +6,5 @@ story-step3 words.txt story2.txt
 story-step3 trickywords.txt trickystory.txt
 story-step4 words.txt story2.txt
 story-step4 -n words.txt story2.txt
+story-step4 trickywords.txt trickystory.txt
+story-step4 -n trickywords.txt trickystory.txt
