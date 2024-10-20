@@ -1,0 +1,29 @@
+place:Hope's Peak Academy
+place:Despair Hotel
+place:Jabberwock Island
+character:Makoto Naegi
+character:Kyoko Kirigiri
+character:Hajime Hinata
+character2:Monokuma
+character2:Nagito Komaeda
+character2:Junko Enoshima
+adjective:optimistic
+adjective:despairing
+adjective:cunning
+adjective2:malevolent
+adjective2:hopeful
+adjective2:twisted
+event:class trial
+event:mutual killing game
+event:final showdown
+skill:deduction
+skill:luck
+skill:bravery
+emotion:heartbreaking
+emotion:exciting
+emotion:despairing
+-1:double kill
+1:WRONG
+11037a:disc
+11037a:knife
+11037a:crystal ball
