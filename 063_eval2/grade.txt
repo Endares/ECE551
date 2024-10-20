@@ -1,6 +1,6 @@
-Grading at 10/20/2024:20:39:47.254655
-For commit ID 4003cdcc4a344800f2677a783c9355a697b70cfc
-Grading at Sun Oct 20 04:39:42 PM EDT 2024
+Grading at 10/20/2024:20:40:43.961089
+For commit ID 55ff69581058deff19acd02dc715004f8b8eaa42
+Grading at Sun Oct 20 04:40:37 PM EDT 2024
 Doing some basic checking for your submission
 
 Step 1
@@ -82,152 +82,26 @@ Now running YOUR tests for step 4
 
 4.1: Current test is story-step4 words.txt story2.txt
 -----------------------------
-It looks like you got different output from us on that case.
-Here is the diff (yours on left, ours on right):
-
-animal:							      <
-  dragon						      <
-  walrus						      <
-place:							      <
-  cave							      <
-adjective:						      <
-  peculiar						      <
-  scary							      <
-  peaceful						      <
-Once upon a time, there was a walrus. This walrus lived in a 	Once upon a time, there was a walrus. This walrus lived in a 
-peculiar cave. One day, it left its peculiar cave and met a w	peculiar cave. One day, it left its peculiar cave and met a w
-Your file did not match the expected output
-
+Your output looks good. Lets check valgrind
+Valgrind was clean
 
 4.2: Current test is story-step4 -n words.txt story2.txt
 -----------------------------
-It looks like you got different output from us on that case.
-Here is the diff (yours on left, ours on right):
-
-animal:							      <
-  dragon						      <
-  walrus						      <
-place:							      <
-  cave							      <
-adjective:						      <
-  peculiar						      <
-  scary							      <
-  peaceful						      <
-Once upon a time, there was a walrus. This walrus lived in a 	Once upon a time, there was a walrus. This walrus lived in a 
-peculiar cave. One day, it left its peculiar cave and met a d	peculiar cave. One day, it left its peculiar cave and met a d
-Your file did not match the expected output
-
+Your output looks good. Lets check valgrind
+Valgrind was clean
 
 4.3: Current test is story-step4 trickywords.txt trickystory.txt
 -----------------------------
-It looks like you got different output from us on that case.
-Here is the diff (yours on left, ours on right):
-
-place:							      <
-  Hope's Peak Academy					      <
-  Despair Hotel						      <
-  Jabberwock Island					      <
-character:						      <
-  Makoto Naegi						      <
-  Kyoko Kirigiri					      <
-  Hajime Hinata						      <
-character2:						      <
-  Monokuma						      <
-  Nagito Komaeda					      <
-  Junko Enoshima					      <
-adjective:						      <
-  optimistic						      <
-  despairing						      <
-  cunning						      <
-adjective2:						      <
-  malevolent						      <
-  hopeful						      <
-  twisted						      <
-event:							      <
-  class trial						      <
-  mutual killing game					      <
-  final showdown					      <
-skill:							      <
-  deduction						      <
-  luck							      <
-  bravery						      <
-emotion:						      <
-  heartbreaking						      <
-  exciting						      <
-  despairing						      <
--1:							      <
-  double kill						      <
-1:							      <
-  WRONG							      <
-11037a:							      <
-  disc							      <
-  knife							      <
-  crystal ball						      <
-Once upon a time, in a very Hope's Peak Academy, there was a 	Once upon a time, in a very Hope's Peak Academy, there was a 
-One day, they encountered Monokuma, and the two were caught i	One day, they encountered Monokuma, and the two were caught i
-The Kyoko Kirigiri had to use all their deduction to survive,	The Kyoko Kirigiri had to use all their deduction to survive,
-It was a exciting battle, and only one of them could survive.	It was a exciting battle, and only one of them could survive.
-Evidence of the first murder case are knife, disc and knife. 	Evidence of the first murder case are knife, disc and knife. 
-The third murder case is a double kill.				The third murder case is a double kill.
-Your file did not match the expected output
-
+Your output looks good. Lets check valgrind
+Valgrind was clean
 
 4.4: Current test is story-step4 -n trickywords.txt trickystory.txt
 -----------------------------
-It looks like you got different output from us on that case.
-Here is the diff (yours on left, ours on right):
+Your output looks good. Lets check valgrind
+Valgrind was clean
 
-place:							      <
-  Hope's Peak Academy					      <
-  Despair Hotel						      <
-  Jabberwock Island					      <
-character:						      <
-  Makoto Naegi						      <
-  Kyoko Kirigiri					      <
-  Hajime Hinata						      <
-character2:						      <
-  Monokuma						      <
-  Nagito Komaeda					      <
-  Junko Enoshima					      <
-adjective:						      <
-  optimistic						      <
-  despairing						      <
-  cunning						      <
-adjective2:						      <
-  malevolent						      <
-  hopeful						      <
-  twisted						      <
-event:							      <
-  class trial						      <
-  mutual killing game					      <
-  final showdown					      <
-skill:							      <
-  deduction						      <
-  luck							      <
-  bravery						      <
-emotion:						      <
-  heartbreaking						      <
-  exciting						      <
-  despairing						      <
--1:							      <
-  double kill						      <
-1:							      <
-  WRONG							      <
-11037a:							      <
-  disc							      <
-  knife							      <
-  crystal ball						      <
-Once upon a time, in a very Hope's Peak Academy, there was a 	Once upon a time, in a very Hope's Peak Academy, there was a 
-One day, they encountered Monokuma, and the two were caught i	One day, they encountered Monokuma, and the two were caught i
-The Makoto Naegi had to use all their deduction to survive, w	The Makoto Naegi had to use all their deduction to survive, w
-It was a exciting battle, and only one of them could survive.	It was a exciting battle, and only one of them could survive.
-Evidence of the first murder case are knife, disc and crystal	Evidence of the first murder case are knife, disc and crystal
-The third murder case is a double kill.				The third murder case is a double kill.
-Your file did not match the expected output
-
-
-You have NOT passed your test cases!
-You should go and figure out/understand where thing went wrong
-And fix the problem(s) before the deadline
+You have passed the test cases YOU provided
+If your tests are good, this is great. 
+If your tests are insufficient, you should do much more testing
 
 Overall Grade: NO GRADE YET
