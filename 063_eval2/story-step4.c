@@ -24,7 +24,7 @@ int main(int argc, char ** argv) {
   }
 
   catarray_t * cats = readWord(f_word);
-  printWords(cats);
+  // printWords(cats);
 
   if (fclose(f_word) != 0) {
     fprintf(stderr, "Error closing file: %s\n", strerror(errno));
