@@ -1,9 +1,9 @@
-myProgram: code.o
-	g++ -o myProgram code.o 
+code: code.o
+	g++ -o code code.o 
 
 code.o: code.cpp
 	g++ -std=c++17 -pedantic -Wall -c code.cpp
 
 clean:  
-	rm -f myProgram *.o *.cpp~
+	rm -f code *.o *.cpp~
 .PHONY: clean
