@@ -4,13 +4,24 @@
 #include <cstdio>
 using std::sqrt;
 
-/* write your class implementation in this file
- */
-/*This function initializes x and y to be the arguments passed in.*/
-void Vector2D::initVector(double init_x, double init_y) {
+/*072*/
+Vector2D::Vector2D() {
+  x = 0;
+  y = 0;
+}
+
+Vector2D::Vector2D(double init_x, double init_y) {
   x = init_x;
   y = init_y;
 }
+
+/* 067 write your class implementation in this file
+ */
+/*This function initializes x and y to be the arguments passed in.*/
+/*void Vector2D::initVector(double init_x, double init_y) {
+  x = init_x;
+  y = init_y;
+  }*/
 /*This function returns the magnitude of the vector from the origin
   (0, 0) to (x, y).*/
 
