@@ -1,9 +1,11 @@
-Grading at 10/22/2024:17:44:29.010962
-For commit ID 3ab9f856f8d9be7ac2488a55a3e3e0ca956b4778
-Grading at Tue Oct 22 01:44:28 PM EDT 2024
+Grading at 10/22/2024:17:45:39.302414
+For commit ID 7a9551a42f6212361226a51a4bfa0b503c51c2be
+Grading at Tue Oct 22 01:45:39 PM EDT 2024
 Attempting to compile:
 g++ -std=c++17 -pedantic -Wall -c code.cpp
-g++ -o myProgram code.o 
-Your Makefile did not produce a binary called 'code'.   Please correct that
+g++ -o code code.o 
+Your Makefile produced a binary called 'code'
+Your file matched the expected output
+Your output matched what we expected
 
-Overall Grade: FAILED
+Overall Grade: PASSED
