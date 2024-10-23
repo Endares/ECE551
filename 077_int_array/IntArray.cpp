@@ -74,14 +74,19 @@ bool IntArray::operator!=(const IntArray & rhs) const {
   return !(*this == rhs);
 }
 
+/* As << is not a friend of class IntArray, we need to use public 
+   interface to visit private field of IntArray:
+   rhs[] instead of rhs.data[]
+   rhs.size() instead of rhs.numelements
+*/
 std::ostream & operator<<(std::ostream & s, const IntArray & rhs) {
   s << "{";
-  for (int i = 0; i < rhs.numElements; ++i) {
-    s << rhs.data[i];
-    if (i < rhs.numElements - 1) {
+  for (int i = 0; i < rhs.size(); ++i) {
+    s << rhs[i];
+    if (i < rhs.size() - 1) {
       s << ", ";
     }
   }
-  s << "}\n";
+  s << "}";
   return s;
 }
