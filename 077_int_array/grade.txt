@@ -1,0 +1,38 @@
+Grading at 10/23/2024:20:09:24.437579
+For commit ID a1296663c6300809d0405d89b58fe19abdf3e4f0
+Grading at Wed Oct 23 04:09:23 PM EDT 2024
+Attempting to compile:
+rm -f *.o  *~ intArrayTest
+The code did not compile!
+IntArray.cpp: In function ‘std::ostream& operator<<(std::ostream&, const IntArray&)’:
+IntArray.cpp:79:27: error: ‘int IntArray::numElements’ is private within this context
+   79 |   for (int i = 0; i < rhs.numElements; ++i) {
+      |                           ^~~~~~~~~~~
+In file included from IntArray.cpp:1:
+IntArray.h:9:7: note: declared private here
+    9 |   int numElements;
+      |       ^~~~~~~~~~~
+IntArray.cpp:79:27: note: field ‘int IntArray::numElements’ can be accessed via ‘int IntArray::size() const’
+   79 |   for (int i = 0; i < rhs.numElements; ++i) {
+      |                           ^~~~~~~~~~~
+      |                           size()
+IntArray.cpp:80:14: error: ‘int* IntArray::data’ is private within this context
+   80 |     s << rhs.data[i];
+      |              ^~~~
+In file included from IntArray.cpp:1:
+IntArray.h:8:9: note: declared private here
+    8 |   int * data;
+      |         ^~~~
+IntArray.cpp:81:17: error: ‘int IntArray::numElements’ is private within this context
+   81 |     if (i < rhs.numElements - 1) {
+      |                 ^~~~~~~~~~~
+In file included from IntArray.cpp:1:
+IntArray.h:9:7: note: declared private here
+    9 |   int numElements;
+      |       ^~~~~~~~~~~
+IntArray.cpp:81:17: note: field ‘int IntArray::numElements’ can be accessed via ‘int IntArray::size() const’
+   81 |     if (i < rhs.numElements - 1) {
+      |                 ^~~~~~~~~~~
+      |                 size()
+
+Overall Grade: F
