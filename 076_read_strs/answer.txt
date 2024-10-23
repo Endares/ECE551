@@ -9,4 +9,3 @@ ans = elp
 ans = elpp
 ans = elppA
 f(Apple) = elppA
-
