@@ -3,8 +3,8 @@ IntArray from the previous problem.
 
 First, you should make a symbolic link to your IntArray code in this
 directory: 
-  ln -s ../072_int_array/IntArray.cpp ./
-  ln -s ../072_int_array/IntArray.h ./
+  ln -s ../077_int_array/IntArray.cpp ./
+  ln -s ../077_int_array/IntArray.h ./
 This makes IntArray.cpp in the current directory another name for
 IntArray.cpp in ../072_int_array/ (and the same for IntArray.h). These
 are basically pointers (on the filesystem, rather than in memory) to
