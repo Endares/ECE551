@@ -35,19 +35,21 @@ IntMatrix::~IntMatrix() {
 }
 IntMatrix & IntMatrix::operator=(const IntMatrix & rhs) {
   if (this != &rhs) {
-    IntArray ** temp = new IntArray *[rhs.numRows];
-    for (int i = 0; i < rhs.numRows; ++i) {
-      temp[i] = new IntArray(*rhs.rows[i]);
+    // delete old data
+    if (numColumns != 0) {
+      for (int i = 0; i < numRows; ++i) {
+        delete rows[i];
+      }
+      delete[] rows;  // if numColumns == 0, rows == NULL
     }
-    // delete original data
-    for (int i = 0; i < numRows; ++i) {
-      delete rows[i];
-    }
-    delete[] rows;
 
-    rows = temp;
+    // copy
     numRows = rhs.numRows;
     numColumns = rhs.numColumns;
+    rows = new IntArray *[numRows];
+    for (int i = 0; i < numRows; ++i) {
+      rows[i] = new IntArray(*rhs.rows[i]);
+    }
   }
   return *this;
 }
@@ -85,15 +87,15 @@ bool IntMatrix::operator==(const IntMatrix & rhs) const {
 IntMatrix IntMatrix::operator+(const IntMatrix & rhs) const {
   assert(this->numRows == rhs.numRows && this->numColumns == rhs.numColumns);
 
-  IntMatrix * res = new IntMatrix(numRows, numColumns);
+  IntMatrix res(numRows, numColumns);
   for (int i = 0; i < numRows; ++i) {
     for (int j = 0; j < numColumns; ++j) {
       int a = (*rows[i])[j];
       int b = (*(rhs.rows[i]))[j];
-      (*(res->rows[i]))[j] = a + b;
+      (*(res.rows[i]))[j] = a + b;
     }
   }
-  return *res;
+  return res;
 }
 
 std::ostream & operator<<(std::ostream & s, const IntMatrix & rhs) {
