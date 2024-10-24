@@ -1,37 +1,47 @@
-Grading at 10/24/2024:17:26:06.050636
-For commit ID 84222b1de40bfbf7b89ec0be552fa2bd14b17e67
-Grading at Thu Oct 24 01:25:57 PM EDT 2024
+Grading at 10/24/2024:17:38:32.092308
+For commit ID f61e46be10d34fe73d1c28bc5499d0120061c18d
+Grading at Thu Oct 24 01:38:16 PM EDT 2024
 Attempting to compile:
 rm -f *.o  *~ intMatrixTest
 #################################################
 testcase1:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase2:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase3:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase4:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase5:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase6:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase7:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase8:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase9:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 #################################################
 testcase10:
-valgrind reported memory errors
+Your output is correct
+valgrind was clean
 
-Overall Grade: F
+Overall Grade: A
