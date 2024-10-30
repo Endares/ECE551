@@ -1,6 +1,6 @@
-Grading at 10/30/2024:18:26:54.182399
-For commit ID 9eefe0700f9c740e46fafdbcdbd01dcc7584870d
-Grading at Wed Oct 30 02:26:48 PM EDT 2024
+Grading at 10/30/2024:18:34:50.594972
+For commit ID 782569dba23cbe5035acc13babd62e14622a0781
+Grading at Wed Oct 30 02:34:44 PM EDT 2024
 Looking for malloc in your files
 No uses found (good).
 Looking for free in your files
@@ -19,7 +19,8 @@ g++ -o sortLines sortLines.o
 Using sortLines..
 #################################################
 testcase1:
-testcase1 failed, your program didn't indicate this is a failure case
+testcase1 passed, your program successfully indicated a failure
+valgrind was clean
 #################################################
 testcase2:
 Your output is correct
@@ -33,4 +34,4 @@ testcase4:
 Your output is correct
 valgrind was clean
 
-Overall Grade: B
+Overall Grade: A
