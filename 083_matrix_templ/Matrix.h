@@ -38,11 +38,11 @@ class Matrix {
   // operator[]
   // need to have both const and non-const version so as to be called on const/non-const Matrix
   const std::vector<T> & operator[](int index) const {
-    assert(index >= 0 && (size_t)index < this->size());
+    assert(index >= 0 && (size_t)index < rows.size());
     return rows[index];
   }
   std::vector<T> & operator[](int index) {
-    assert(index >= 0 && (size_t)index < this->size());
+    assert(index >= 0 && (size_t)index < rows.size());
     return rows[index];
   }
 
