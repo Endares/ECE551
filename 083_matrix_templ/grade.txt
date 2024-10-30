@@ -1,0 +1,39 @@
+Grading at 10/30/2024:20:25:24.180303
+For commit ID 80bf0ba7e9daaea97cd9d0298db89f4df6c87bdd
+Grading at Wed Oct 30 04:25:16 PM EDT 2024
+-----------------------------------------------
+testcase 1 : Testing with Matrix<int>
+...compiling...
+The code compiled.
+Your file matched the expected output
+Testcase passed 
+-----------------------------------------------
+testcase 2 : Testing with Matrix<std::string>
+...compiling...
+The code compiled.
+Your file matched the expected output
+Testcase passed 
+-----------------------------------------------
+testcase 3 : Testing with Matrix<(a custom class we wrote)>
+...compiling...
+The code compiled.
+Your file matched the expected output
+Testcase passed 
+--------------------------------------------
+Preparing to test assert fails...
+Compiling assertion failure tester...
+Compiled.
+-----------------------------------------------
+testcase 4 :  operator[]: row number too high
+Valgrind reported errors (test failed).
+-----------------------------------------------
+testcase 5 :  operator[]: row number too low
+Valgrind reported errors (test failed).
+-----------------------------------------------
+testcase 6 :  operator+: different number of rows
+Valgrind reported errors (test failed).
+-----------------------------------------------
+testcase 7 :  operator+: different number of columns
+Valgrind reported errors (test failed).
+
+Overall Grade: C
