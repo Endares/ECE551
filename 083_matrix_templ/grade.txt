@@ -1,39 +1,64 @@
-Grading at 10/30/2024:20:25:24.180303
-For commit ID 80bf0ba7e9daaea97cd9d0298db89f4df6c87bdd
-Grading at Wed Oct 30 04:25:16 PM EDT 2024
+Grading at 10/30/2024:20:28:50.284348
+For commit ID f5793dc2bddffa575e94bec59f77ecb2bab7e462
+Grading at Wed Oct 30 04:28:49 PM EDT 2024
 -----------------------------------------------
 testcase 1 : Testing with Matrix<int>
 ...compiling...
-The code compiled.
-Your file matched the expected output
-Testcase passed 
+In file included from Matrix.h:4,
+                 from test.cpp:1:
+Matrix.h: In instantiation of ‘std::vector<T>& Matrix<T>::operator[](int) [with T = int]’:
+test.cpp:24:11:   required from here
+Matrix.h:45:48: error: ‘class Matrix<int>’ has no member named ‘size’
+   45 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+Matrix.h: In instantiation of ‘const std::vector<T>& Matrix<T>::operator[](int) const [with T = int]’:
+test.cpp:73:60:   required from here
+Matrix.h:41:48: error: ‘const class Matrix<int>’ has no member named ‘size’
+   41 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+The code did not compile.  This test failed.
 -----------------------------------------------
 testcase 2 : Testing with Matrix<std::string>
 ...compiling...
-The code compiled.
-Your file matched the expected output
-Testcase passed 
+In file included from Matrix.h:4,
+                 from test.cpp:1:
+Matrix.h: In instantiation of ‘std::vector<T>& Matrix<T>::operator[](int) [with T = std::__cxx11::basic_string<char>]’:
+test.cpp:24:11:   required from here
+Matrix.h:45:48: error: ‘class Matrix<std::__cxx11::basic_string<char> >’ has no member named ‘size’
+   45 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+Matrix.h: In instantiation of ‘const std::vector<T>& Matrix<T>::operator[](int) const [with T = std::__cxx11::basic_string<char>]’:
+test.cpp:73:60:   required from here
+Matrix.h:41:48: error: ‘const class Matrix<std::__cxx11::basic_string<char> >’ has no member named ‘size’
+   41 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+The code did not compile.  This test failed.
 -----------------------------------------------
 testcase 3 : Testing with Matrix<(a custom class we wrote)>
 ...compiling...
-The code compiled.
-Your file matched the expected output
-Testcase passed 
+In file included from Matrix.h:4,
+                 from test.cpp:1:
+Matrix.h: In instantiation of ‘std::vector<T>& Matrix<T>::operator[](int) [with T = Tester]’:
+test.cpp:24:11:   required from here
+Matrix.h:45:48: error: ‘class Matrix<Tester>’ has no member named ‘size’
+   45 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+Matrix.h: In instantiation of ‘const std::vector<T>& Matrix<T>::operator[](int) const [with T = Tester]’:
+test.cpp:73:60:   required from here
+Matrix.h:41:48: error: ‘const class Matrix<Tester>’ has no member named ‘size’
+   41 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+The code did not compile.  This test failed.
 --------------------------------------------
 Preparing to test assert fails...
 Compiling assertion failure tester...
-Compiled.
------------------------------------------------
-testcase 4 :  operator[]: row number too high
-Valgrind reported errors (test failed).
------------------------------------------------
-testcase 5 :  operator[]: row number too low
-Valgrind reported errors (test failed).
------------------------------------------------
-testcase 6 :  operator+: different number of rows
-Valgrind reported errors (test failed).
------------------------------------------------
-testcase 7 :  operator+: different number of columns
-Valgrind reported errors (test failed).
+In file included from Matrix.h:4,
+                 from testAbort.cpp:1:
+Matrix.h: In instantiation of ‘std::vector<T>& Matrix<T>::operator[](int) [with T = int]’:
+testAbort.cpp:32:11:   required from here
+Matrix.h:45:48: error: ‘class Matrix<int>’ has no member named ‘size’
+   45 |     assert(index >= 0 && (size_t)index < this->size());
+      |                                          ~~~~~~^~~~
+This code did not compile. Skipping remaining tests.
 
-Overall Grade: C
+Overall Grade: F
