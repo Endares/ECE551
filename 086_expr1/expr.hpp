@@ -4,6 +4,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <sstream>
 
 // abstract class with all methods abstract
 class Expression {
@@ -22,7 +23,12 @@ class NumExpression : public Expression {
  public:
   // constructor
   NumExpression(long num) : op1(num) {}
-  std::string toString() const override { return std::to_string(op1); }
+  // override
+  std::string toString() const {
+    std::stringstream ss;
+    ss << op1;
+    return ss.str();  // str(): turns ss into a string, including '-' prefix
+  }
   // Negative numbers will have "-" prefix.
 };
 
@@ -36,7 +42,8 @@ class BinaryExpression : public Expression {
   // constructor
   BinaryExpression(Expression * lhs, Expression * rhs, char operand) :
       expr1(lhs), expr2(rhs), opr(operand) {}
-  std::string toString() const override {
+  // override
+  std::string toString() const {
     std::string res;
     res = "(" + expr1->toString() + std::string(opr, 1) + expr2->toString() + ")";
     return res;
