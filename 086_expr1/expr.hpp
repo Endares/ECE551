@@ -44,9 +44,9 @@ class BinaryExpression : public Expression {
       expr1(lhs), expr2(rhs), opr(operand) {}
   // override
   std::string toString() const {
-    std::string res;
-    res = "(" + expr1->toString() + std::string(opr, 1) + expr2->toString() + ")";
-    return res;
+    std::stringstream ss;
+    ss << "(" << expr1->toString() << " " << opr << " " << expr2->toString() << ")";
+    return ss.str();
   }
 
   virtual ~BinaryExpression() {
