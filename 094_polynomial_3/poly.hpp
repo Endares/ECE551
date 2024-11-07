@@ -155,7 +155,7 @@ class Polynomial {
     NumT term = NumT(1);
     for (size_t i = 0; i < poly_size; ++i) {
       if (i > 0)
-        term *= x;
+        term *= x;  // don;t use pow in complex number! it is likely lead to nan
       res += factors[i] * term;
     }
     return res;
