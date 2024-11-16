@@ -1,0 +1,24 @@
+Grading at 11/16/2024:21:42:40.438571
+For commit ID ef2b00d94d26e533b2848b55e249f677fe9583fa
+Grading at Sat Nov 16 04:42:37 PM EST 2024
+Doing make clean
+rm -rf *.o *~ ships-step1
+Running your test cases
+-------------------------
+ This test case will run 
+ ships-step1 
+ With arguments 
+ inputs/ships0.txt 
+-------------------------
+I need to compile your code for ships-step1 (make ships-step1)
+
+Compiling ships-step1
+g++ -o ships-step1 -Wall -Werror -ggdb3 -pedantic --std=gnu++11 step1.cpp 
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+ *** This is one of the three test cases for step 1 early start EC **
+You have PASSED all of your test cases
+Keep adding test cases until you are satisfied your program is correct
+
+Overall Grade: NO GRADE YET
