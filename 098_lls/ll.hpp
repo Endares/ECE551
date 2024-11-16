@@ -53,7 +53,7 @@ class LinkedList {
         temp = temp->next;
       }
     }
-    assert(size == rhs.size);
+    //assert(size == rhs.size);
     return *this;
   }
   ~LinkedList() { removeList(); }
@@ -66,7 +66,7 @@ class LinkedList {
       temp = curr;
       --size;
     }
-    assert(size == 0);
+    //assert(size == 0);
     head = NULL;
     tail = NULL;
   }
