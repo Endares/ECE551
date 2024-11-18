@@ -1,6 +1,6 @@
-Grading at 11/18/2024:03:02:25.495707
-For commit ID 715a68cb5a031966c6e6ba2a6c8996499b25bf20
-Grading at Sun Nov 17 10:02:07 PM EST 2024
+Grading at 11/18/2024:03:10:20.869979
+For commit ID 6e937997d0a45b387457d03e9af94a370bdf1f0b
+Grading at Sun Nov 17 10:10:05 PM EST 2024
 Doing make clean
 rm -rf *.o *~ ships-step1 ships-step2
 Running your test cases
@@ -2242,45 +2242,7 @@ Not a container type!
  This test case will run 
  ships-step2 
  With arguments 
- inputs/ships2.txt inputs/cargo0.txt 
--------------------------
-Running our code...
-Running your code
-You said this was an error (exit status was 1), but we said it was valid
-Note: this may happen if your code timed out too...
-Here is what you printed to stderr:
-------
-Not a container type!
-------
--------------------------
- This test case will run 
- ships-step2 
- With arguments 
- inputs/ships2.txt inputs/cargo1.txt 
--------------------------
-Running our code...
-Running your code
-You said this was an error (exit status was 1), but we said it was valid
-Note: this may happen if your code timed out too...
-Here is what you printed to stderr:
-------
-Not a container type!
-------
--------------------------
- This test case will run 
- ships-step2 
- With arguments 
- inputs/ships3.txt inputs/cargo2.txt 
--------------------------
-Running our code...
-Running your code
-We agreed this was an error, and you printed something to stderr
-And valgrind reported no errors
--------------------------
- This test case will run 
- ships-step2 
- With arguments 
- inputs/ships3.txt inputs/cargo0.txt 
+ inputs/ships4.txt inputs/cargo0.txt 
 -------------------------
 Running our code...
 Running your code
@@ -2308,6 +2270,7 @@ We agreed this was an error, and you printed something to stderr
 And valgrind reported no errors
 You have already pass the basic tests for step1:
 **step1 basic tests passed for sz318 at 1731793445** : de18f67c09b5562155301bb2c51766c805d4d6c8  -
+You have already pass the basic tests for step2:
 **step2 basic tests passed for sz318 at 1731898945** : aaddb87b3a4265215286e7100f649d5a4e46b9ae  -
 You have FAILED one or more of your test cases
 Keep debugging
