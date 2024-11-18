@@ -152,6 +152,7 @@ class LinkedList {
       if (temp->data == item) {
         return i;
       }
+      temp = temp->next;
     }
     return -1;
   }
