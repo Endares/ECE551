@@ -81,10 +81,10 @@ void makeContainer(std::vector<std::string> & line, Container & c) {
     std::cerr << "Invalid input: missing info of the ship's type." << std::endl;
     exit(EXIT_FAILURE);
   }
-  if (typeInfo[0] != "Container") {
+  /*  if (typeInfo[0] != "Container") {
     std::cerr << "Not a container type!" << std::endl;
     exit(EXIT_FAILURE);
-  }
+    }*/
   size_t slotNum = stoull(typeInfo[1]);
   std::unordered_set<std::string> hazmat;
   // hazmat info
