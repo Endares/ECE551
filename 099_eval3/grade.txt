@@ -1,6 +1,6 @@
-Grading at 11/17/2024:05:40:06.218338
-For commit ID 6a7ba2aef3840b842007f9d4a69143f0299981be
-Grading at Sun Nov 17 12:39:54 AM EST 2024
+Grading at 11/18/2024:03:02:25.495707
+For commit ID 715a68cb5a031966c6e6ba2a6c8996499b25bf20
+Grading at Sun Nov 17 10:02:07 PM EST 2024
 Doing make clean
 rm -rf *.o *~ ships-step1 ships-step2
 Running your test cases
@@ -50,61 +50,8 @@ Compiling ships-step2
 g++ -o ships-step2 -Wall -Werror -ggdb3 -pedantic --std=gnu++11 step2.cpp 
 Running our code...
 Running your code
-We both agreed this was not an error, but your output is different from ours
-Your output on the left, ours on the right
-3 ships can carry the toy cars from Mordor to Sarth		3 ships can carry the toy cars from Mordor to Sarth
-  The Majestic Dreadnought					  The Majestic Dreadnought
-  The Swift Shark					      <
-  The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  The Swift Shark
-							      >	  **Loading the cargo onto The Majestic Dreadnought**
-2 ships can carry the fireworks from Mordor to Sarth		2 ships can carry the fireworks from Mordor to Sarth
-  The Majestic Dreadnought					  The Majestic Dreadnought
-  The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  **Loading the cargo onto The Majestic Dreadnought**
-							      >	1 ships can carry the used batteries from Mordor to Luthadel
-							      >	  The Majestic Kraken
-							      >	  **Loading the cargo onto The Majestic Kraken**
-2 ships can carry the radioactive waste from Mordor to Sarth	2 ships can carry the radioactive waste from Mordor to Sarth
-  The Majestic Dreadnought					  The Majestic Dreadnought
-  The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  **Loading the cargo onto The Majestic Dreadnought**
-2 ships can carry the radioactive waste from Mordor to Sarth	2 ships can carry the radioactive waste from Mordor to Sarth
-  The Majestic Dreadnought					  The Majestic Dreadnought
-  The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  **Loading the cargo onto The Majestic Dreadnought**
-1 ships can carry the radioactive waste from Mordor to Sarth	1 ships can carry the radioactive waste from Mordor to Sarth
-  The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Shining Turtle**.		      |	  **Loading the cargo onto The Shining Turtle**
-1 ships can carry the radioactive waste from Mordor to Luthad	1 ships can carry the radioactive waste from Mordor to Luthad
-  The Majestic Kraken						  The Majestic Kraken
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
-1 ships can carry the cloth from Mordor to Luthadel		1 ships can carry the cloth from Mordor to Luthadel
-  The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
-No ships can carry the rat poison from Mordor to Sarth		No ships can carry the rat poison from Mordor to Sarth
----Done Loading---Here are the ships---				---Done Loading---Here are the ships---
-The Container Ship The Majestic Dreadnought(320/1550) is carr |	The Container Ship The Majestic Dreadnought(320/1550) is carr
-toy cars  (20)						      |	  toy cars(20)
-fireworks  (100)					      |	  fireworks(100)
-radioactive waste  (100)				      |	  radioactive waste(100)
-radioactive waste  (100)				      |	  radioactive waste(100)
-  (0) slots remain						  (0) slots remain
-The Container Ship The Majestic Kraken(500/650) is carrying : |	The Container Ship The Majestic Kraken(550/650) is carrying :
-radioactive waste  (500)				      |	  used batteries(50)
-  (8) slots remain					      |	  radioactive waste(500)
-The Container Ship The Misty Dreadnought(0/1550) is carrying  |	  (7) slots remain
-							      >	The Container Ship The Misty Dreadnought(0/1550) is carrying 
-  (3) slots remain						  (3) slots remain
-The Container Ship The Night Eagle(200/1500) is carrying :    |	The Container Ship The Night Eagle(200/1500) is carrying : 
-cloth  (200)						      |	  cloth(200)
-  (5) slots remain						  (5) slots remain
-The Container Ship The Swift Shark(0/2500) is carrying :      |	The Container Ship The Swift Shark(0/2500) is carrying : 
-  (5) slots remain						  (5) slots remain
-The Container Ship The Shining Turtle(100/500) is carrying :  |	The Container Ship The Shining Turtle(100/500) is carrying : 
-radioactive waste  (100)				      |	  radioactive waste(100)
-  (2) slots remain						  (2) slots remain
-Your file did not match the expected output
+We agreed on this testcase and valgrind was clean
+ *** This is the test case for step 2 early start EC **
 -------------------------
  This test case will run 
  ships-step2 
@@ -131,17 +78,17 @@ No ships can carry the paper from Luthadel to Midgar		No ships can carry the pap
 							      >	No ships can carry the birds from Luthadel to Midgar
 							      >	No ships can carry the milk from Luthadel to Midgar
 ---Done Loading---Here are the ships---				---Done Loading---Here are the ships---
-The Container Ship The Majestic Dreadnought(0/1550) is carryi |	The Container Ship The Majestic Dreadnought(0/1550) is carryi
+The Container Ship The Majestic Dreadnought(0/1550) is carryi	The Container Ship The Majestic Dreadnought(0/1550) is carryi
   (4) slots remain						  (4) slots remain
-The Container Ship The Majestic Kraken(0/650) is carrying :   |	The Container Ship The Majestic Kraken(0/650) is carrying : 
+The Container Ship The Majestic Kraken(0/650) is carrying : 	The Container Ship The Majestic Kraken(0/650) is carrying : 
   (9) slots remain						  (9) slots remain
-The Container Ship The Misty Dreadnought(0/1550) is carrying  |	The Container Ship The Misty Dreadnought(0/1550) is carrying 
+The Container Ship The Misty Dreadnought(0/1550) is carrying 	The Container Ship The Misty Dreadnought(0/1550) is carrying 
   (3) slots remain						  (3) slots remain
-The Container Ship The Night Eagle(0/1500) is carrying :      |	The Container Ship The Night Eagle(0/1500) is carrying : 
+The Container Ship The Night Eagle(0/1500) is carrying : 	The Container Ship The Night Eagle(0/1500) is carrying : 
   (6) slots remain						  (6) slots remain
-The Container Ship The Swift Shark(0/2500) is carrying :      |	The Container Ship The Swift Shark(0/2500) is carrying : 
+The Container Ship The Swift Shark(0/2500) is carrying : 	The Container Ship The Swift Shark(0/2500) is carrying : 
   (5) slots remain						  (5) slots remain
-The Container Ship The Shining Turtle(0/500) is carrying :    |	The Container Ship The Shining Turtle(0/500) is carrying : 
+The Container Ship The Shining Turtle(0/500) is carrying : 	The Container Ship The Shining Turtle(0/500) is carrying : 
   (3) slots remain						  (3) slots remain
 Your file did not match the expected output
 -------------------------
@@ -164,7 +111,7 @@ Your output on the left, ours on the right
 2 ships can carry the cargo7 from Mordor to Luthadel		2 ships can carry the cargo7 from Mordor to Luthadel
   The Majestic Kraken						  The Majestic Kraken
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
+  **Loading the cargo onto The Majestic Kraken**		  **Loading the cargo onto The Majestic Kraken**
 No ships can carry the cargo8 from Midgar to Sarth		No ships can carry the cargo8 from Midgar to Sarth
 No ships can carry the cargo9 from Luthadel to Sarth		No ships can carry the cargo9 from Luthadel to Sarth
 							      >	No ships can carry the cargo10 from Sarth to Mordor
@@ -195,10 +142,9 @@ No ships can carry the cargo33 from Luthadel to Mordor		No ships can carry the c
 							      >	No ships can carry the cargo35 from Elantris to Mordor
 3 ships can carry the cargo36 from Mordor to Sarth		3 ships can carry the cargo36 from Mordor to Sarth
   The Majestic Dreadnought					  The Majestic Dreadnought
-  The Swift Shark					      <
   The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  The Swift Shark
-							      >	  **Loading the cargo onto The Majestic Dreadnought**
+  The Swift Shark						  The Swift Shark
+  **Loading the cargo onto The Majestic Dreadnought**		  **Loading the cargo onto The Majestic Dreadnought**
 							      >	No ships can carry the cargo37 from Mordor to Luthadel
 							      >	No ships can carry the cargo38 from Mordor to Midgar
 							      >	No ships can carry the cargo39 from Luthadel to Mordor
@@ -293,10 +239,9 @@ No ships can carry the cargo124 from Luthadel to Elantris	No ships can carry the
 No ships can carry the cargo128 from Midgar to Sarth		No ships can carry the cargo128 from Midgar to Sarth
 3 ships can carry the cargo129 from Mordor to Sarth		3 ships can carry the cargo129 from Mordor to Sarth
   The Majestic Dreadnought					  The Majestic Dreadnought
-  The Swift Shark					      <
   The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  The Swift Shark
-							      >	  **Loading the cargo onto The Majestic Dreadnought**
+  The Swift Shark						  The Swift Shark
+  **Loading the cargo onto The Majestic Dreadnought**		  **Loading the cargo onto The Majestic Dreadnought**
 							      >	No ships can carry the cargo130 from Elantris to Midgar
 							      >	No ships can carry the cargo131 from Mordor to Midgar
 							      >	No ships can carry the cargo132 from Luthadel to Mordor
@@ -321,11 +266,11 @@ No ships can carry the cargo148 from Midgar to Sarth		No ships can carry the car
 							      >	No ships can carry the cargo151 from Luthadel to Sarth
 1 ships can carry the cargo152 from Mordor to Luthadel		1 ships can carry the cargo152 from Mordor to Luthadel
   The Majestic Kraken						  The Majestic Kraken
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
+  **Loading the cargo onto The Majestic Kraken**		  **Loading the cargo onto The Majestic Kraken**
 2 ships can carry the cargo153 from Mordor to Sarth		2 ships can carry the cargo153 from Mordor to Sarth
   The Majestic Dreadnought					  The Majestic Dreadnought
   The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  **Loading the cargo onto The Majestic Dreadnought**
+  **Loading the cargo onto The Majestic Dreadnought**		  **Loading the cargo onto The Majestic Dreadnought**
 No ships can carry the cargo154 from Luthadel to Elantris	No ships can carry the cargo154 from Luthadel to Elantris
 No ships can carry the cargo155 from Luthadel to Mordor		No ships can carry the cargo155 from Luthadel to Mordor
 No ships can carry the cargo156 from Sarth to Mordor		No ships can carry the cargo156 from Sarth to Mordor
@@ -340,7 +285,7 @@ No ships can carry the cargo164 from Mordor to Elantris		No ships can carry the 
 							      >	No ships can carry the cargo165 from Mordor to Sarth
 1 ships can carry the cargo166 from Mordor to Sarth		1 ships can carry the cargo166 from Mordor to Sarth
   The Majestic Dreadnought					  The Majestic Dreadnought
-**Loading the cargo onto The Majestic Dreadnought**.	      |	  **Loading the cargo onto The Majestic Dreadnought**
+  **Loading the cargo onto The Majestic Dreadnought**		  **Loading the cargo onto The Majestic Dreadnought**
 							      >	No ships can carry the cargo167 from Elantris to Midgar
 No ships can carry the cargo168 from Elantris to Midgar		No ships can carry the cargo168 from Elantris to Midgar
 No ships can carry the cargo169 from Luthadel to Mordor		No ships can carry the cargo169 from Luthadel to Mordor
@@ -350,10 +295,9 @@ No ships can carry the cargo171 from Midgar to Mordor		No ships can carry the ca
 							      >	No ships can carry the cargo173 from Midgar to Luthadel
 							      >	No ships can carry the cargo174 from Luthadel to Elantris
 2 ships can carry the cargo175 from Mordor to Sarth		2 ships can carry the cargo175 from Mordor to Sarth
-  The Swift Shark					      <
   The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Swift Shark**.		      |	  The Swift Shark
-							      >	  **Loading the cargo onto The Shining Turtle**
+  The Swift Shark						  The Swift Shark
+  **Loading the cargo onto The Shining Turtle**			  **Loading the cargo onto The Shining Turtle**
 No ships can carry the cargo176 from Luthadel to Elantris	No ships can carry the cargo176 from Luthadel to Elantris
 							      >	No ships can carry the cargo177 from Sarth to Midgar
 							      >	No ships can carry the cargo178 from Luthadel to Midgar
@@ -402,7 +346,7 @@ No ships can carry the cargo219 from Luthadel to Mordor		No ships can carry the 
 2 ships can carry the cargo221 from Mordor to Luthadel		2 ships can carry the cargo221 from Mordor to Luthadel
   The Majestic Kraken						  The Majestic Kraken
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
+  **Loading the cargo onto The Majestic Kraken**		  **Loading the cargo onto The Majestic Kraken**
 							      >	No ships can carry the cargo222 from Midgar to Luthadel
 							      >	No ships can carry the cargo223 from Midgar to Mordor
 No ships can carry the cargo224 from Sarth to Elantris		No ships can carry the cargo224 from Sarth to Elantris
@@ -419,7 +363,7 @@ No ships can carry the cargo234 from Mordor to Elantris		No ships can carry the 
 2 ships can carry the cargo235 from Mordor to Luthadel		2 ships can carry the cargo235 from Mordor to Luthadel
   The Majestic Kraken						  The Majestic Kraken
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
+  **Loading the cargo onto The Majestic Kraken**		  **Loading the cargo onto The Majestic Kraken**
 							      >	No ships can carry the cargo236 from Mordor to Sarth
 							      >	No ships can carry the cargo237 from Midgar to Mordor
 							      >	No ships can carry the cargo238 from Midgar to Elantris
@@ -468,7 +412,7 @@ No ships can carry the cargo279 from Midgar to Luthadel		No ships can carry the 
 No ships can carry the cargo281 from Mordor to Midgar		No ships can carry the cargo281 from Mordor to Midgar
 1 ships can carry the cargo282 from Mordor to Luthadel		1 ships can carry the cargo282 from Mordor to Luthadel
   The Majestic Kraken						  The Majestic Kraken
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
+  **Loading the cargo onto The Majestic Kraken**		  **Loading the cargo onto The Majestic Kraken**
 							      >	No ships can carry the cargo283 from Midgar to Mordor
 No ships can carry the cargo284 from Mordor to Elantris		No ships can carry the cargo284 from Mordor to Elantris
 							      >	No ships can carry the cargo285 from Sarth to Mordor
@@ -489,7 +433,7 @@ No ships can carry the cargo297 from Luthadel to Mordor		No ships can carry the 
 							      >	No ships can carry the cargo300 from Luthadel to Midgar
 1 ships can carry the cargo301 from Mordor to Luthadel		1 ships can carry the cargo301 from Mordor to Luthadel
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
+  **Loading the cargo onto The Night Eagle**			  **Loading the cargo onto The Night Eagle**
 							      >	No ships can carry the cargo302 from Elantris to Luthadel
 No ships can carry the cargo303 from Elantris to Midgar		No ships can carry the cargo303 from Elantris to Midgar
 No ships can carry the cargo304 from Midgar to Luthadel		No ships can carry the cargo304 from Midgar to Luthadel
@@ -499,7 +443,7 @@ No ships can carry the cargo304 from Midgar to Luthadel		No ships can carry the 
 							      >	No ships can carry the cargo308 from Elantris to Mordor
 1 ships can carry the cargo309 from Mordor to Luthadel		1 ships can carry the cargo309 from Mordor to Luthadel
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
+  **Loading the cargo onto The Night Eagle**			  **Loading the cargo onto The Night Eagle**
 No ships can carry the cargo310 from Mordor to Midgar		No ships can carry the cargo310 from Mordor to Midgar
 							      >	No ships can carry the cargo311 from Mordor to Luthadel
 No ships can carry the cargo312 from Elantris to Sarth		No ships can carry the cargo312 from Elantris to Sarth
@@ -517,10 +461,10 @@ No ships can carry the cargo314 from Midgar to Luthadel		No ships can carry the 
 							      >	No ships can carry the cargo324 from Luthadel to Midgar
 1 ships can carry the cargo325 from Mordor to Sarth		1 ships can carry the cargo325 from Mordor to Sarth
   The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Shining Turtle**.		      |	  **Loading the cargo onto The Shining Turtle**
+  **Loading the cargo onto The Shining Turtle**			  **Loading the cargo onto The Shining Turtle**
 1 ships can carry the cargo326 from Mordor to Luthadel		1 ships can carry the cargo326 from Mordor to Luthadel
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
+  **Loading the cargo onto The Night Eagle**			  **Loading the cargo onto The Night Eagle**
 							      >	No ships can carry the cargo327 from Luthadel to Sarth
 No ships can carry the cargo328 from Luthadel to Midgar		No ships can carry the cargo328 from Luthadel to Midgar
 							      >	No ships can carry the cargo329 from Luthadel to Mordor
@@ -530,7 +474,7 @@ No ships can carry the cargo332 from Mordor to Elantris		No ships can carry the 
 							      >	No ships can carry the cargo333 from Midgar to Elantris
 1 ships can carry the cargo334 from Mordor to Sarth		1 ships can carry the cargo334 from Mordor to Sarth
   The Shining Turtle						  The Shining Turtle
-**Loading the cargo onto The Shining Turtle**.		      |	  **Loading the cargo onto The Shining Turtle**
+  **Loading the cargo onto The Shining Turtle**			  **Loading the cargo onto The Shining Turtle**
 							      >	No ships can carry the cargo335 from Mordor to Elantris
 No ships can carry the cargo336 from Mordor to Midgar		No ships can carry the cargo336 from Mordor to Midgar
 No ships can carry the cargo337 from Mordor to Sarth		No ships can carry the cargo337 from Mordor to Sarth
@@ -677,7 +621,7 @@ No ships can carry the cargo475 from Mordor to Elantris		No ships can carry the 
 							      >	No ships can carry the cargo478 from Elantris to Sarth
 1 ships can carry the cargo479 from Mordor to Luthadel		1 ships can carry the cargo479 from Mordor to Luthadel
   The Majestic Kraken						  The Majestic Kraken
-**Loading the cargo onto The Majestic Kraken**.		      |	  **Loading the cargo onto The Majestic Kraken**
+  **Loading the cargo onto The Majestic Kraken**		  **Loading the cargo onto The Majestic Kraken**
 							      >	No ships can carry the cargo480 from Luthadel to Mordor
 							      >	No ships can carry the cargo481 from Luthadel to Elantris
 							      >	No ships can carry the cargo482 from Mordor to Sarth
@@ -754,11 +698,10 @@ No ships can carry the cargo549 from Midgar to Elantris		No ships can carry the 
 							      >	No ships can carry the cargo553 from Midgar to Mordor
 							      >	No ships can carry the cargo554 from Midgar to Elantris
 No ships can carry the cargo555 from Sarth to Luthadel		No ships can carry the cargo555 from Sarth to Luthadel
-2 ships can carry the cargo557 from Mordor to Sarth	      |	No ships can carry the cargo556 from Sarth to Mordor
-							      >	1 ships can carry the cargo557 from Mordor to Sarth
+							      >	No ships can carry the cargo556 from Sarth to Mordor
+1 ships can carry the cargo557 from Mordor to Sarth		1 ships can carry the cargo557 from Mordor to Sarth
   The Swift Shark						  The Swift Shark
-  The Shining Turtle					      |	  **Loading the cargo onto The Swift Shark**
-**Loading the cargo onto The Swift Shark**.		      <
+  **Loading the cargo onto The Swift Shark**			  **Loading the cargo onto The Swift Shark**
 No ships can carry the cargo558 from Mordor to Midgar		No ships can carry the cargo558 from Mordor to Midgar
 No ships can carry the cargo559 from Luthadel to Mordor		No ships can carry the cargo559 from Luthadel to Mordor
 No ships can carry the cargo560 from Sarth to Luthadel		No ships can carry the cargo560 from Sarth to Luthadel
@@ -816,11 +759,11 @@ No ships can carry the cargo611 from Sarth to Elantris		No ships can carry the c
 							      >	No ships can carry the cargo612 from Elantris to Mordor
 							      >	No ships can carry the cargo613 from Sarth to Elantris
 No ships can carry the cargo614 from Mordor to Midgar		No ships can carry the cargo614 from Mordor to Midgar
-2 ships can carry the cargo616 from Mordor to Sarth	      |	No ships can carry the cargo615 from Mordor to Midgar
-							      >	1 ships can carry the cargo616 from Mordor to Sarth
+							      >	No ships can carry the cargo615 from Mordor to Midgar
+1 ships can carry the cargo616 from Mordor to Sarth		1 ships can carry the cargo616 from Mordor to Sarth
   The Swift Shark						  The Swift Shark
-  The Shining Turtle					      |	  **Loading the cargo onto The Swift Shark**
-**Loading the cargo onto The Swift Shark**.		      |	No ships can carry the cargo617 from Luthadel to Mordor
+  **Loading the cargo onto The Swift Shark**			  **Loading the cargo onto The Swift Shark**
+							      >	No ships can carry the cargo617 from Luthadel to Mordor
 							      >	No ships can carry the cargo618 from Mordor to Midgar
 No ships can carry the cargo619 from Midgar to Mordor		No ships can carry the cargo619 from Midgar to Mordor
 							      >	No ships can carry the cargo620 from Mordor to Midgar
@@ -842,9 +785,8 @@ No ships can carry the cargo629 from Midgar to Luthadel		No ships can carry the 
 							      >	No ships can carry the cargo636 from Mordor to Midgar
 							      >	No ships can carry the cargo637 from Luthadel to Mordor
 No ships can carry the cargo638 from Mordor to Midgar		No ships can carry the cargo638 from Mordor to Midgar
-1 ships can carry the cargo639 from Mordor to Sarth	      |	No ships can carry the cargo639 from Mordor to Sarth
-  The Shining Turtle					      |	No ships can carry the cargo640 from Midgar to Mordor
-**Loading the cargo onto The Shining Turtle**.		      <
+No ships can carry the cargo639 from Mordor to Sarth		No ships can carry the cargo639 from Mordor to Sarth
+							      >	No ships can carry the cargo640 from Midgar to Mordor
 No ships can carry the cargo641 from Mordor to Luthadel		No ships can carry the cargo641 from Mordor to Luthadel
 							      >	No ships can carry the cargo642 from Elantris to Midgar
 							      >	No ships can carry the cargo643 from Midgar to Mordor
@@ -855,7 +797,7 @@ No ships can carry the cargo641 from Mordor to Luthadel		No ships can carry the 
 							      >	No ships can carry the cargo648 from Midgar to Elantris
 1 ships can carry the cargo649 from Mordor to Luthadel		1 ships can carry the cargo649 from Mordor to Luthadel
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
+  **Loading the cargo onto The Night Eagle**			  **Loading the cargo onto The Night Eagle**
 							      >	No ships can carry the cargo650 from Luthadel to Sarth
 							      >	No ships can carry the cargo651 from Midgar to Elantris
 							      >	No ships can carry the cargo652 from Mordor to Sarth
@@ -950,7 +892,7 @@ No ships can carry the cargo737 from Mordor to Midgar		No ships can carry the ca
 							      >	No ships can carry the cargo741 from Midgar to Luthadel
 1 ships can carry the cargo742 from Mordor to Luthadel		1 ships can carry the cargo742 from Mordor to Luthadel
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
+  **Loading the cargo onto The Night Eagle**			  **Loading the cargo onto The Night Eagle**
 							      >	No ships can carry the cargo743 from Elantris to Midgar
 							      >	No ships can carry the cargo744 from Luthadel to Sarth
 No ships can carry the cargo745 from Sarth to Mordor		No ships can carry the cargo745 from Sarth to Mordor
@@ -978,7 +920,7 @@ No ships can carry the cargo764 from Sarth to Mordor		No ships can carry the car
 							      >	No ships can carry the cargo767 from Midgar to Luthadel
 1 ships can carry the cargo768 from Mordor to Luthadel		1 ships can carry the cargo768 from Mordor to Luthadel
   The Night Eagle						  The Night Eagle
-**Loading the cargo onto The Night Eagle**.		      |	  **Loading the cargo onto The Night Eagle**
+  **Loading the cargo onto The Night Eagle**			  **Loading the cargo onto The Night Eagle**
 							      >	No ships can carry the cargo769 from Mordor to Midgar
 							      >	No ships can carry the cargo770 from Mordor to Luthadel
 							      >	No ships can carry the cargo771 from Luthadel to Mordor
@@ -1091,7 +1033,7 @@ No ships can carry the cargo877 from Luthadel to Sarth		No ships can carry the c
 							      >	No ships can carry the cargo878 from Midgar to Luthadel
 1 ships can carry the cargo879 from Mordor to Sarth		1 ships can carry the cargo879 from Mordor to Sarth
   The Swift Shark						  The Swift Shark
-**Loading the cargo onto The Swift Shark**.		      |	  **Loading the cargo onto The Swift Shark**
+  **Loading the cargo onto The Swift Shark**			  **Loading the cargo onto The Swift Shark**
 No ships can carry the cargo880 from Midgar to Mordor		No ships can carry the cargo880 from Midgar to Mordor
 							      >	No ships can carry the cargo881 from Elantris to Luthadel
 No ships can carry the cargo882 from Elantris to Luthadel	No ships can carry the cargo882 from Elantris to Luthadel
@@ -1527,7 +1469,7 @@ No ships can carry the cargo1310 from Mordor to Sarth		No ships can carry the ca
 No ships can carry the cargo1312 from Luthadel to Sarth		No ships can carry the cargo1312 from Luthadel to Sarth
 1 ships can carry the cargo1313 from Mordor to Sarth		1 ships can carry the cargo1313 from Mordor to Sarth
   The Swift Shark						  The Swift Shark
-**Loading the cargo onto The Swift Shark**.		      |	  **Loading the cargo onto The Swift Shark**
+  **Loading the cargo onto The Swift Shark**			  **Loading the cargo onto The Swift Shark**
 							      >	No ships can carry the cargo1314 from Mordor to Midgar
 							      >	No ships can carry the cargo1315 from Mordor to Luthadel
 No ships can carry the cargo1316 from Luthadel to Midgar	No ships can carry the cargo1316 from Luthadel to Midgar
@@ -1614,9 +1556,9 @@ No ships can carry the cargo1394 from Sarth to Midgar		No ships can carry the ca
 							      >	No ships can carry the cargo1397 from Midgar to Luthadel
 							      >	No ships can carry the cargo1398 from Luthadel to Sarth
 No ships can carry the cargo1399 from Mordor to Luthadel	No ships can carry the cargo1399 from Mordor to Luthadel
-No ships can carry the cargo1400 from Mordor to Sarth	      |	1 ships can carry the cargo1400 from Mordor to Sarth
-							      >	  The Swift Shark
-							      >	  **Loading the cargo onto The Swift Shark**
+1 ships can carry the cargo1400 from Mordor to Sarth		1 ships can carry the cargo1400 from Mordor to Sarth
+  The Swift Shark						  The Swift Shark
+  **Loading the cargo onto The Swift Shark**			  **Loading the cargo onto The Swift Shark**
 No ships can carry the cargo1401 from Midgar to Sarth		No ships can carry the cargo1401 from Midgar to Sarth
 							      >	No ships can carry the cargo1402 from Elantris to Midgar
 							      >	No ships can carry the cargo1403 from Mordor to Midgar
@@ -2217,41 +2159,41 @@ No ships can carry the cargo1997 from Luthadel to Mordor	No ships can carry the 
 No ships can carry the cargo1998 from Mordor to Sarth		No ships can carry the cargo1998 from Mordor to Sarth
 							      >	No ships can carry the cargo1999 from Midgar to Luthadel
 ---Done Loading---Here are the ships---				---Done Loading---Here are the ships---
-The Container Ship The Majestic Dreadnought(560/1550) is carr |	The Container Ship The Majestic Dreadnought(560/1550) is carr
-cargo36  (285)						      |	  cargo36(285)
-cargo129  (80)						      |	  cargo129(80)
-cargo153  (85)						      |	  cargo153(85)
-cargo166  (110)						      |	  cargo166(110)
+The Container Ship The Majestic Dreadnought(560/1550) is carr	The Container Ship The Majestic Dreadnought(560/1550) is carr
+  cargo36(285)							  cargo36(285)
+  cargo129(80)							  cargo129(80)
+  cargo153(85)							  cargo153(85)
+  cargo166(110)							  cargo166(110)
   (0) slots remain						  (0) slots remain
-The Container Ship The Majestic Kraken(645/650) is carrying : |	The Container Ship The Majestic Kraken(645/650) is carrying :
-cargo7  (195)						      |	  cargo7(195)
-cargo152  (65)						      |	  cargo152(65)
-cargo221  (75)						      |	  cargo221(75)
-cargo235  (100)						      |	  cargo235(100)
-cargo282  (135)						      |	  cargo282(135)
-cargo479  (75)						      |	  cargo479(75)
+The Container Ship The Majestic Kraken(645/650) is carrying :	The Container Ship The Majestic Kraken(645/650) is carrying :
+  cargo7(195)							  cargo7(195)
+  cargo152(65)							  cargo152(65)
+  cargo221(75)							  cargo221(75)
+  cargo235(100)							  cargo235(100)
+  cargo282(135)							  cargo282(135)
+  cargo479(75)							  cargo479(75)
   (3) slots remain						  (3) slots remain
-The Container Ship The Misty Dreadnought(0/1550) is carrying  |	The Container Ship The Misty Dreadnought(0/1550) is carrying 
+The Container Ship The Misty Dreadnought(0/1550) is carrying 	The Container Ship The Misty Dreadnought(0/1550) is carrying 
   (3) slots remain						  (3) slots remain
-The Container Ship The Night Eagle(1215/1500) is carrying :   |	The Container Ship The Night Eagle(1215/1500) is carrying : 
-cargo301  (195)						      |	  cargo301(195)
-cargo309  (290)						      |	  cargo309(290)
-cargo326  (165)						      |	  cargo326(165)
-cargo649  (295)						      |	  cargo649(295)
-cargo742  (135)						      |	  cargo742(135)
-cargo768  (135)						      |	  cargo768(135)
+The Container Ship The Night Eagle(1215/1500) is carrying : 	The Container Ship The Night Eagle(1215/1500) is carrying : 
+  cargo301(195)							  cargo301(195)
+  cargo309(290)							  cargo309(290)
+  cargo326(165)							  cargo326(165)
+  cargo649(295)							  cargo649(295)
+  cargo742(135)							  cargo742(135)
+  cargo768(135)							  cargo768(135)
   (0) slots remain						  (0) slots remain
-The Container Ship The Swift Shark(810/2500) is carrying :    |	The Container Ship The Swift Shark(750/2500) is carrying : 
-cargo175  (175)						      |	  cargo557(185)
-cargo557  (185)						      |	  cargo616(80)
-cargo616  (80)						      |	  cargo879(95)
-cargo879  (95)						      |	  cargo1313(275)
-cargo1313  (275)					      |	  cargo1400(115)
+The Container Ship The Swift Shark(750/2500) is carrying : 	The Container Ship The Swift Shark(750/2500) is carrying : 
+  cargo557(185)							  cargo557(185)
+  cargo616(80)							  cargo616(80)
+  cargo879(95)							  cargo879(95)
+  cargo1313(275)						  cargo1313(275)
+  cargo1400(115)						  cargo1400(115)
   (0) slots remain						  (0) slots remain
-The Container Ship The Shining Turtle(345/500) is carrying :  |	The Container Ship The Shining Turtle(320/500) is carrying : 
-cargo325  (115)						      |	  cargo175(175)
-cargo334  (30)						      |	  cargo325(115)
-cargo639  (200)						      |	  cargo334(30)
+The Container Ship The Shining Turtle(320/500) is carrying : 	The Container Ship The Shining Turtle(320/500) is carrying : 
+  cargo175(175)							  cargo175(175)
+  cargo325(115)							  cargo325(115)
+  cargo334(30)							  cargo334(30)
   (0) slots remain						  (0) slots remain
 Your file did not match the expected output
 -------------------------
@@ -2296,8 +2238,77 @@ Here is what you printed to stderr:
 ------
 Not a container type!
 ------
+-------------------------
+ This test case will run 
+ ships-step2 
+ With arguments 
+ inputs/ships2.txt inputs/cargo0.txt 
+-------------------------
+Running our code...
+Running your code
+You said this was an error (exit status was 1), but we said it was valid
+Note: this may happen if your code timed out too...
+Here is what you printed to stderr:
+------
+Not a container type!
+------
+-------------------------
+ This test case will run 
+ ships-step2 
+ With arguments 
+ inputs/ships2.txt inputs/cargo1.txt 
+-------------------------
+Running our code...
+Running your code
+You said this was an error (exit status was 1), but we said it was valid
+Note: this may happen if your code timed out too...
+Here is what you printed to stderr:
+------
+Not a container type!
+------
+-------------------------
+ This test case will run 
+ ships-step2 
+ With arguments 
+ inputs/ships3.txt inputs/cargo2.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
+-------------------------
+ This test case will run 
+ ships-step2 
+ With arguments 
+ inputs/ships3.txt inputs/cargo0.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
+-------------------------
+ This test case will run 
+ ships-step2 
+ With arguments 
+ inputs/ships4.txt inputs/cargo1.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
+-------------------------
+ This test case will run 
+ ships-step2 
+ With arguments 
+ inputs/ships4.txt inputs/cargo2.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed this was an error, and you printed something to stderr
+And valgrind reported no errors
 You have already pass the basic tests for step1:
 **step1 basic tests passed for sz318 at 1731793445** : de18f67c09b5562155301bb2c51766c805d4d6c8  -
+**step2 basic tests passed for sz318 at 1731898945** : aaddb87b3a4265215286e7100f649d5a4e46b9ae  -
 You have FAILED one or more of your test cases
 Keep debugging
 
