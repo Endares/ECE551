@@ -164,8 +164,9 @@ void readLoadCargo(std::istream & is, std::vector<Container> & containerList) {
     if (flag_con) {
       handleCargo(containerList, line);
     }
-    else {
-      //
+    else {  // not container typed cargo
+      std::cout << "No ships can carry the " << line[0] << " from " << line[1] << " to "
+                << line[2] << std::endl;
     }
   }
 }
