@@ -1,26 +1,23 @@
-Grading at 11/16/2024:19:10:37.108229
-For commit ID 5b7995a07f6e3a83c1ebc58634009dcbe069e756
-Grading at Sat Nov 16 02:10:33 PM EST 2024
+Grading at 11/18/2024:00:55:46.602300
+For commit ID dd695c361c920c74e2d773285c1079f9fc4551de
+Grading at Sun Nov 17 07:55:43 PM EST 2024
 -----------------------------------------------
 testcase 1 : Testing with LinkedList<int>
 ...compiling...
 The code compiled.
-Line_82_did_not_match
-Your file did not match the expected output
-Testcase failed 
+Your file matched the expected output
+Testcase passed 
 -----------------------------------------------
 testcase 2 : Testing with LinkedList<std::string>
 ...compiling...
 The code compiled.
-Line_82_did_not_match
-Your file did not match the expected output
-Testcase failed 
+Your file matched the expected output
+Testcase passed 
 -----------------------------------------------
 testcase 3 : Testing with LinkedList<(a custom class we wrote)>
 ...compiling...
 The code compiled.
-Line_82_did_not_match
-Your file did not match the expected output
-Testcase failed 
+Your file matched the expected output
+Testcase passed 
 
-Overall Grade: F
+Overall Grade: A
