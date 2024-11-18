@@ -7,3 +7,9 @@ ships-step2 inputs/ships0.txt inputs/cargo2.txt
 ships-step2 inputs/ships1.txt inputs/cargo0.txt
 ships-step2 inputs/ships1.txt inputs/cargo1.txt
 ships-step2 inputs/ships1.txt inputs/cargo2.txt
+ships-step2 inputs/ships2.txt inputs/cargo0.txt
+ships-step2 inputs/ships2.txt inputs/cargo1.txt
+ships-step2 inputs/ships3.txt inputs/cargo2.txt
+ships-step2 inputs/ships3.txt inputs/cargo0.txt
+ships-step2 inputs/ships4.txt inputs/cargo1.txt
+ships-step2 inputs/ships4.txt inputs/cargo2.txt

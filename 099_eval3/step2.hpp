@@ -10,8 +10,10 @@
 #include <vector>
 
 #include "ship.hpp"
-void makeContainer(std::vector<std::string> & line, Container & c);
-void readShipData(std::istream & is, std::vector<Container> & containerList) {
+
+void readRouteData2(
+    std::istream & is,
+    std::map<std::string, std::vector<std::vector<std::string> > > & routeInfo) {
   std::string curr;
   while (getline(is, curr)) {
     std::string temp;
@@ -24,12 +26,44 @@ void readShipData(std::istream & is, std::vector<Container> & containerList) {
       std::cerr << "Invalid input, wrong number of fields.\n" << std::endl;
       exit(EXIT_FAILURE);
     }
-    /*    Container c;
-    makeContainer(line, c);
-    containerList.push_back(c);
-    */
+    std::string route = line[2] + "->" + line[3];
+    routeInfo[route].push_back(line);
+  }
+}
+
+void makeContainer(std::vector<std::string> & line, Container & c);
+
+// read ship data and sort by map, finally print into a vector
+void readShipData(std::istream & is,
+                  std::vector<Container> & containerList,
+                  std::vector<std::string> & containerNameList) {
+  std::string curr;
+  std::map<std::string, std::vector<std::string> > sortedShipList;
+  while (getline(is, curr)) {
+    std::string temp;
+    std::vector<std::string> line;
+    std::istringstream iss(curr);
+    while (getline(iss, temp, ':')) {
+      line.push_back(temp);
+    }
+    if (line.size() != 5) {
+      std::cerr << "Invalid input, wrong number of fields.\n" << std::endl;
+      exit(EXIT_FAILURE);
+    }
+    // duplicated ship name is not legal
+    if (sortedShipList.count(line[0])) {
+      std::cerr << "Duplicated ship name." << std::endl;
+      exit(EXIT_FAILURE);
+    }
+    else {
+      sortedShipList[line[0]] = line;
+    }
+    // keep the order of container as the input order
+    containerNameList.push_back(line[0]);
+  }
+  for (auto & p : sortedShipList) {  // use emplace to guarantee deep copy
     containerList.emplace_back();
-    makeContainer(line, containerList.back());
+    makeContainer(p.second, containerList.back());
   }
 }
 
@@ -76,14 +110,14 @@ void printCapableList(std::vector<Container *> & capableList, Cargo & c) {
 
 // load Cargo c onto Container con
 void loadCargo(Container & con, Cargo & c) {
-  std::cout << "**Loading the cargo onto " << con.getName() << "**." << std::endl;
+  std::cout << "  **Loading the cargo onto " << con.getName() << "**" << std::endl;
   con.addCargo(c);
 }
 
 /* make a cargo object, print the capable ships, and load the cargo onto the first capable one.*/
 void handleCargo(std::vector<Container> & containerList, std::vector<std::string> line) {
   std::vector<std::string> hazmat;
-  for (size_t i = 5; i < line.size(); ++i) {
+  for (size_t i = 4; i < line.size(); ++i) {
     std::string s = line[i];
     // check property prefix and delete prefix
     if (s.find("hazardous-") == 0) {
@@ -94,7 +128,7 @@ void handleCargo(std::vector<Container> & containerList, std::vector<std::string
     }
     hazmat.push_back(s);
   }
-  Cargo curr = Cargo(line[0], line[1], line[2], stoull(line[3]), line[4], hazmat);
+  Cargo curr = Cargo(line[0], line[1], line[2], stoull(line[3]), "container", hazmat);
 
   std::vector<Container *> capableList;
   for (Container & c : containerList) {
@@ -108,26 +142,46 @@ void handleCargo(std::vector<Container> & containerList, std::vector<std::string
   }
 }
 
-void readPrintLoadCargo(std::istream & is, std::vector<Container> & containerList) {
+void readLoadCargo(std::istream & is, std::vector<Container> & containerList) {
   std::string curr;
   while (getline(is, curr)) {
     std::string temp;
     std::vector<std::string> line;
     std::istringstream iss(curr);
+    bool flag_con = false;  // if thi cargo has "container"
     while (getline(iss, temp, ',')) {
-      line.push_back(temp);
+      if (temp == "container") {
+        flag_con = true;
+      }
+      else {
+        line.push_back(temp);
+      }
     }
-    if (line.size() < 5) {
+    if (line.size() < 4) {
       std::cerr << "Invalid input: too few fields in the cargo." << std::endl;
       exit(EXIT_FAILURE);
     }
-    if (line[4] == "container") {
+    if (flag_con) {
       handleCargo(containerList, line);
     }
+    else {
+      //
+    }
   }
+}
+
+// print in the order in input file, what the hell?
+void printCargo(std::vector<Container> & containerList,
+                std::vector<std::string> & containerNameList) {
   // print status of each container after all cargoes are loaded
   std::cout << "---Done Loading---Here are the ships---" << std::endl;
-  for (Container & con : containerList) {
-    con.printStatus();
+  for (std::string & s : containerNameList) {
+    for (auto & c : containerList) {
+      //      std::cout << s << "##" << c.getName() << std::endl;
+      if (c.getName() == s) {
+        c.printStatus();
+        break;
+      }
+    }
   }
 }

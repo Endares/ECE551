@@ -18,14 +18,18 @@ int main(int argc, char * argv[]) {
     std::cerr << "Usage: programName shipFile cargoFile" << std::endl;
     exit(EXIT_FAILURE);
   }
-  // ship
+
+  // read ship
   std::ifstream f(argv[1]);
   if (!f) {
     std::cerr << "Failed to open the file " << argv[1] << std::endl;
     exit(EXIT_FAILURE);
   }
+  // name in aphabetic order
   std::vector<Container> containerList;
-  readShipData(f, containerList);
+  // name in input order
+  std::vector<std::string> containerNameList;
+  readShipData(f, containerList, containerNameList);
   f.close();
   // cargo
   std::ifstream f2(argv[2]);
@@ -33,8 +37,9 @@ int main(int argc, char * argv[]) {
     std::cerr << "Failed to open the file " << argv[2] << std::endl;
     exit(EXIT_FAILURE);
   }
-  readPrintLoadCargo(f2, containerList);
+  readLoadCargo(f2, containerList);
   f2.close();
-
+  // print in the order in input file
+  printCargo(containerList, containerNameList);
   return 0;
 }

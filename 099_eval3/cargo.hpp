@@ -27,7 +27,7 @@ class Cargo {
         std::string & src,
         std::string & dest,
         uint64_t x,
-        std::string & type,
+        std::string type,  // immediate
         std::vector<std::string> & prop) :
       name(s),
       source(src),

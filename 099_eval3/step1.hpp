@@ -4,12 +4,14 @@
 #include <fstream>
 #include <iostream>
 #include <map>
+#include <set>
 #include <sstream>
 #include <string>
 #include <unordered_map>
 #include <vector>
 
 void readRouteData(std::istream & is, std::map<std::string, uint64_t> & routeInfo) {
+  std::set<std::string> nameSet;
   std::string curr;
   while (getline(is, curr)) {
     std::string temp;
@@ -21,6 +23,13 @@ void readRouteData(std::istream & is, std::map<std::string, uint64_t> & routeInf
     if (line.size() != 5) {
       std::cerr << "Invalid input, wrong number of fields.\n" << std::endl;
       exit(EXIT_FAILURE);
+    }
+    if (nameSet.count(line[0])) {
+      std::cerr << "Duplicated ship name!" << std::endl;
+      exit(EXIT_FAILURE);
+    }
+    else {
+      nameSet.insert(line[0]);
     }
     std::string route = line[2] + "->" + line[3];
     routeInfo[route] += std::stoull(line[4]);

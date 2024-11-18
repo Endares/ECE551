@@ -32,16 +32,6 @@ class Ship {
       destination(rhs.destination),
       capacity(rhs.capacity),
       load(rhs.load) {}
-  /* Ship & operator=(const Ship & other) {
-    if (this != &other) {  // 避免自赋值
-      name = other.name;
-      source = other.source;
-      destination = other.destination;
-      capacity = other.capacity;
-      load = other.load;  // 确保正确复制 load
-    }
-    return *this;  // 返回自身引用
-    }*/
   std::string getName() const { return name; }
 };
 
@@ -115,21 +105,10 @@ class Container : public Ship {
 
   void printStatus() {
     std::cout << "The Container Ship " << name << "(" << load << "/" << capacity
-              << ") is carrying :" << std::endl;
+              << ") is carrying : " << std::endl;
     for (Cargo c : cargoes) {
-      std::cout << c.name << "  (" << c.weight << ")" << std::endl;
+      std::cout << "  " << c.name << "(" << c.weight << ")" << std::endl;
     }
     std::cout << "  (" << slotNum - cargoes.size() << ") slots remain" << std::endl;
   }
-
-  /*Container & operator=(const Container & other) {
-    if (this != &other) {
-      Ship::operator=(other);  // 调用基类的赋值运算符
-      slotNum = other.slotNum;
-      properties = other.properties;
-      cargoes = other.cargoes;
-      load = other.load;  // 确保正确复制 load
-    }
-    return *this;
-    }*/
 };
