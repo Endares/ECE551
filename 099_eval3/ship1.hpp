@@ -54,8 +54,6 @@ class Container : public Ship {
             uint64_t capacity,
             size_t slots) :
       Ship(name, source, destination, capacity), slotNum(slots) {}
-  Container(const Container & rhs) :
-      Ship(rhs), slotNum(rhs.slotNum), properties(rhs.properties) {}
 
   virtual void addProperty(std::string & p) override { properties.insert(p); }
 

@@ -51,26 +51,3 @@ class Cargo {
   friend class Tanker;
   friend class AnimalShip;
 };
-/*
-class Fluid : public Cargo {
- protected:
-  int mintemp;
-  int maxtemp;
-
-  // friend is not inheritable
-  friend class Ship;
-  friend class Tanker;
-};
-
-class Animal {
- protected:
-  std::string name;
-  std::string source;
-  std::string destination;
-  uint64_t weight;
-  bool isRoamer;
-
-  friend class Ship;
-  friend class AnimalShip;
-};
-*/
