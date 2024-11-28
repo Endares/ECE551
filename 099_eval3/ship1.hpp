@@ -39,6 +39,11 @@ class Ship {
 
   virtual bool canAdd(Cargo * c) const = 0;
   virtual void printStatus() const = 0;
+  // calculate remaining capacity
+  uint64_t getRemain() const {
+    assert(load <= capacity);
+    return capacity - load;
+  }
 };
 
 class Container : public Ship {

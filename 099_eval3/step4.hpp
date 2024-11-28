@@ -1,5 +1,6 @@
 #include <stdlib.h>
 
+#include <algorithm>
 #include <climits>
 #include <cstdint>
 #include <fstream>
@@ -11,7 +12,21 @@
 #include <unordered_set>
 #include <vector>
 
+#include "avl11.hpp"
 #include "ship1.hpp"
+
+// Sort cargoes by weight, from heavy to light
+void sortCargo(std::vector<Cargo *> & cargoList) {
+  /* Lambda: 
+     [capture](parameters) -> return_type {
+     // function body
+     };
+  */
+  std::stable_sort(cargoList.begin(), cargoList.end(), [](Cargo * a, Cargo * b) {
+    return a->weight > b->weight;
+    // true: a will be front of b
+  });
+}
 
 Ship * makeShip(std::vector<std::string> & line) {
   /* ship type (reside in line[1]):
@@ -115,23 +130,40 @@ void printCapableList(Cargo * c, std::map<std::string, Ship *> & capableList) {
 
 // load Cargo c onto Container con
 void loadCargo(Ship * sh, Cargo * c) {
-  std::cout << "  **Loading the cargo onto " << sh->getName() << "**" << std::endl;
+  //  std::cout << "  **Loading the cargo onto " << sh->getName() << "**" << std::endl;
   sh->addCargo(c);
+  std::cout << "Loading " << c->getName() << " onto " << sh->getName() << " from "
+            << c->getSrc() << " to " << c->getDest() << " " << sh->getRemain()
+            << " capacity remains" << std::endl;
 }
 
+/* Compare function, ship with smaller remaining capacity has higher priority */
+struct compareByRemain {
+  bool operator()(const uint64_t a, const uint64_t b) const { return a < b; }
+};
+
 /* Handle each cargo: spcify which ships it can load onto */
-void handleCargo(Cargo * ca, std::vector<Ship *> shipList) {
+/* capable ships are sorted by:
+   1. remaining capacity;
+   2. name's alphabetic order (set<V> will automatically do that)
+ */
+void handleCargo2(Cargo * ca, std::vector<Ship *> shipList) {
   // sorted by name's alphabetic order
-  std::map<std::string, Ship *> capableList;
+  AVLMultiMap<uint64_t, std::string, compareByRemain> capableList;
+  std::map<std::string, Ship *> nameList;  // name -> Ship*
   for (Ship * sh : shipList) {
     if (sh->canAdd(ca)) {
-      capableList[sh->getName()] = sh;
+      capableList.add(sh->getRemain(), sh->getName());
+      nameList[sh->getName()] = sh;
     }
   }
-  printCapableList(ca, capableList);
   // load onto the first ship in the list
   if (!capableList.empty()) {
-    loadCargo(capableList.begin()->second, ca);
+    loadCargo(nameList[capableList.getMin()], ca);
+  }
+  else {
+    std::cout << "No ships can carry the " << ca->getName() << " from " << ca->getSrc()
+              << " to " << ca->getDest() << std::endl;
   }
 }
 

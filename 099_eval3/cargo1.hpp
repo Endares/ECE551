@@ -50,4 +50,6 @@ class Cargo {
   friend class Container;
   friend class Tanker;
   friend class AnimalShip;
+  // need to visit weight
+  friend void sortCargo(std::vector<Cargo *> & cargoList);
 };
