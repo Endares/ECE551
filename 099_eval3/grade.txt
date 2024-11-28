@@ -1,6 +1,6 @@
-Grading at 11/28/2024:03:52:23.551553
-For commit ID 08e5875cc2cb93edd24c40eba9124708bbfc4c72
-Grading at Wed Nov 27 10:52:02 PM EST 2024
+Grading at 11/28/2024:04:13:15.205016
+For commit ID 6a15ca5a21f5584d9c23f81504f31d6f128689c8
+Grading at Wed Nov 27 11:12:53 PM EST 2024
 Doing make clean
 rm -rf *.o *~ ships-step1 ships-step2 ships-step3
 Running your test cases
@@ -167,6 +167,7 @@ You have already pass the basic tests for step1:
 **step1 basic tests passed for sz318 at 1731793445** : de18f67c09b5562155301bb2c51766c805d4d6c8  -
 You have already pass the basic tests for step2:
 **step2 basic tests passed for sz318 at 1731898945** : aaddb87b3a4265215286e7100f649d5a4e46b9ae  -
+You have already pass the basic tests for step3:
 **step3 basic tests passed for sz318 at 1732765943** : 35badb612dfd216d684ec2ea06a037ae6876efd2  -
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
