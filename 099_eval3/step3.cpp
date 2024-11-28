@@ -44,6 +44,7 @@ int main(int argc, char * argv[]) {
   for (Cargo * ca : cargoList) {
     handleCargo(ca, shipList);
   }
+
   // print in the order in input file
   printCargo(shipList);
 

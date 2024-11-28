@@ -125,7 +125,6 @@ void loadCargo(Ship * sh, Cargo * c) {
 void handleCargo(Cargo * ca, std::vector<Ship *> shipList) {
   // sorted by name's alphabetic order
   std::map<std::string, Ship *> capableList;
-  std::string cargoType = ca->getType();
   for (Ship * sh : shipList) {
     if (sh->canAdd(ca)) {
       capableList[sh->getName()] = sh;
@@ -134,7 +133,7 @@ void handleCargo(Cargo * ca, std::vector<Ship *> shipList) {
   printCapableList(ca, capableList);
   // load onto the first ship in the list
   if (!capableList.empty()) {
-    loadCargo(capableList[0], ca);
+    loadCargo(capableList.begin()->second, ca);
   }
 }
 

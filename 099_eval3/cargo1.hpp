@@ -38,7 +38,7 @@ class Cargo {
   std::string getDest() const { return destination; }
 
   // if this cargo has any hazard property
-  bool isHazard() { return properties.empty(); }
+  bool isHazard() { return !properties.empty(); }
   void setTempRange(int min, int max) {
     minTemp = min;
     maxTemp = max;

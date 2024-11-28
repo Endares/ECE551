@@ -197,7 +197,7 @@ void Tanker::addToTank(Cargo * c) {
 
 bool Tanker::canAdd(Cargo * c) const {
   // if the cargo has the "liquid" or "gas" type
-  if (c->shippingType != "liquid" || c->shippingType != "gas") {
+  if (c->shippingType != "liquid" && c->shippingType != "gas") {
     return false;
   }
   // different route
@@ -209,6 +209,10 @@ bool Tanker::canAdd(Cargo * c) const {
     if (properties.find(s) == properties.end()) {
       return false;
     }
+  }
+  // temperature range of the ship and the cargo has intersection
+  if (c->maxTemp < minTemp || c->minTemp > maxTemp) {
+    return false;
   }
   // the tanker has sufficient capacity remaining
   // can't use subtraction here. unsigned!
@@ -233,7 +237,7 @@ void Tanker::printStatus() const {
       ++tankUsed;
     }
   }
-  std::cout << "The Container Ship " << name << "(" << load << "/" << capacity
+  std::cout << "The Tanker Ship " << name << "(" << load << "/" << capacity
             << ") is carrying : " << std::endl;
   for (Cargo * c : cargoes) {
     std::cout << "  " << c->name << "(" << c->weight << ")" << std::endl;
@@ -283,7 +287,7 @@ void AnimalShip::addCargo(Cargo * c) {
 }
 
 void AnimalShip::printStatus() const {
-  std::cout << "The Container Ship " << name << "(" << load << "/" << capacity
+  std::cout << "The Animals Ship " << name << "(" << load << "/" << capacity
             << ") is carrying : " << std::endl;
   for (Cargo * c : cargoes) {
     std::cout << "  " << c->name << "(" << c->weight << ")" << std::endl;
