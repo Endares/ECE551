@@ -1,6 +1,6 @@
-Grading at 11/28/2024:03:32:01.973376
-For commit ID 0082968e920b1fb81edabb539c42c56cb035bcbd
-Grading at Wed Nov 27 10:31:41 PM EST 2024
+Grading at 11/28/2024:03:52:23.551553
+For commit ID 08e5875cc2cb93edd24c40eba9124708bbfc4c72
+Grading at Wed Nov 27 10:52:02 PM EST 2024
 Doing make clean
 rm -rf *.o *~ ships-step1 ships-step2 ships-step3
 Running your test cases
@@ -104,7 +104,7 @@ And valgrind reported no errors
  This test case will run 
  ships-step3 
  With arguments 
- inputs/ships0.txt inputs/cargo0.txt 
+ inputs/ships0.txt inputs/cargo1.txt 
 -------------------------
 I need to compile your code for ships-step3 (make ships-step3)
 
@@ -113,26 +113,7 @@ g++ -o ships-step3 -Wall -Werror -ggdb3 -pedantic --std=gnu++11 step3.cpp
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
--------------------------
- This test case will run 
- ships-step3 
- With arguments 
- inputs/ships1.txt inputs/cargo1.txt 
--------------------------
-Running our code...
-Running your code
-We agreed on this testcase and valgrind was clean
- *** This is one of the four cases for step 3 early start EC **
--------------------------
- This test case will run 
- ships-step3 
- With arguments 
- inputs/ships2.txt inputs/cargo2.txt 
--------------------------
-Running our code...
-Running your code
-We agreed on this testcase and valgrind was clean
- *** This is one of the four cases for step 3 early start EC **
+ *** This is one of the four test cases for step 3 early start EC **
 -------------------------
  This test case will run 
  ships-step3 
@@ -147,11 +128,31 @@ We agreed on this testcase and valgrind was clean
  This test case will run 
  ships-step3 
  With arguments 
- inputs/ships2.txt inputs/cargo1.txt 
+ inputs/ships1.txt inputs/cargo1.txt 
 -------------------------
 Running our code...
 Running your code
 We agreed on this testcase and valgrind was clean
+ *** This is one of the four cases for step 3 early start EC **
+-------------------------
+ This test case will run 
+ ships-step3 
+ With arguments 
+ inputs/ships1.txt inputs/cargo2.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+-------------------------
+ This test case will run 
+ ships-step3 
+ With arguments 
+ inputs/ships2.txt inputs/cargo2.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+ *** This is one of the four cases for step 3 early start EC **
 -------------------------
  This test case will run 
  ships-step3 
@@ -166,6 +167,7 @@ You have already pass the basic tests for step1:
 **step1 basic tests passed for sz318 at 1731793445** : de18f67c09b5562155301bb2c51766c805d4d6c8  -
 You have already pass the basic tests for step2:
 **step2 basic tests passed for sz318 at 1731898945** : aaddb87b3a4265215286e7100f649d5a4e46b9ae  -
+**step3 basic tests passed for sz318 at 1732765943** : 35badb612dfd216d684ec2ea06a037ae6876efd2  -
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
 
