@@ -1,8 +1,8 @@
-Grading at 11/28/2024:04:13:15.205016
-For commit ID 6a15ca5a21f5584d9c23f81504f31d6f128689c8
-Grading at Wed Nov 27 11:12:53 PM EST 2024
+Grading at 11/28/2024:21:05:29.824463
+For commit ID 1d46019fa8949d7c246623d3c1cc6e1eef869296
+Grading at Thu Nov 28 04:05:01 PM EST 2024
 Doing make clean
-rm -rf *.o *~ ships-step1 ships-step2 ships-step3
+rm -rf *.o *~ ships-step1 ships-step2 ships-step3 ships-step4
 Running your test cases
 -------------------------
  This test case will run 
@@ -163,12 +163,57 @@ Running our code...
 Running your code
 We agreed this was an error, and you printed something to stderr
 And valgrind reported no errors
+-------------------------
+ This test case will run 
+ ships-step4 
+ With arguments 
+ inputs/ships0.txt inputs/cargo1.txt 
+-------------------------
+I need to compile your code for ships-step4 (make ships-step4)
+
+Compiling ships-step4
+g++ -o ships-step4 -Wall -Werror -ggdb3 -pedantic --std=gnu++11 step4.cpp 
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+ *** This is one of the four cases for step 4 early start EC **
+-------------------------
+ This test case will run 
+ ships-step4 
+ With arguments 
+ inputs/ships1.txt inputs/cargo0.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+ *** This is one of the four cases for step 4 early start EC **
+-------------------------
+ This test case will run 
+ ships-step4 
+ With arguments 
+ inputs/ships1.txt inputs/cargo1.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+ *** This is one of the four cases for step 4 early start EC **
+-------------------------
+ This test case will run 
+ ships-step4 
+ With arguments 
+ inputs/ships2.txt inputs/cargo2.txt 
+-------------------------
+Running our code...
+Running your code
+We agreed on this testcase and valgrind was clean
+ *** This is one of the four cases for step 4 early start EC **
 You have already pass the basic tests for step1:
 **step1 basic tests passed for sz318 at 1731793445** : de18f67c09b5562155301bb2c51766c805d4d6c8  -
 You have already pass the basic tests for step2:
 **step2 basic tests passed for sz318 at 1731898945** : aaddb87b3a4265215286e7100f649d5a4e46b9ae  -
 You have already pass the basic tests for step3:
 **step3 basic tests passed for sz318 at 1732765943** : 35badb612dfd216d684ec2ea06a037ae6876efd2  -
+**step4 basic tests passed for sz318 at 1732827929** : 05e448cd3cf06729ed4d16ddd80f1a42e0e617c2  -
 You have PASSED all of your test cases
 Keep adding test cases until you are satisfied your program is correct
 
