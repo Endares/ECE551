@@ -26,10 +26,10 @@ class BstMap : public Map<K, V> {
   BstMap() : root(NULL) {}  // don't forget to initialize
 
   //copy constructor
-  BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
+  //BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
 
-  //cooy helper
-  Node * copy(Node * current) {
+  //copy helper
+  /*Node * copy(Node * current) {
     if (current == NULL) {
       return NULL;
     }
@@ -38,15 +38,15 @@ class BstMap : public Map<K, V> {
     root->right = copy(current->right);
     return root;
   }
-
+  */
   //assignment constructor
-  BstMap & operator=(const BstMap & rhs) {
+  /*BstMap & operator=(const BstMap & rhs) {
     if (this != &rhs) {
       destroy(root);
       root = copy(rhs.root);
     }
     return *this;
-  }
+    }*/
 
   virtual void add(const K & key, const V & value) {
     Node ** temp = find(key);
@@ -70,7 +70,7 @@ class BstMap : public Map<K, V> {
   }
   virtual const V & lookup(const K & key) const throw(std::invalid_argument) {
     Node ** temp = find(key);
-    if (!temp) {
+    if (!(*temp)) {
       throw std::invalid_argument("Key not found!");
     }
     else {
@@ -85,6 +85,7 @@ class BstMap : public Map<K, V> {
     else {
       if (!(*temp)->left && !(*temp)->right) {
         delete (*temp);
+        // set *temp to NULL, in case of duplicated delete when destruction
         *temp = NULL;
       }
       else if (!(*temp)->left) {
@@ -92,15 +93,14 @@ class BstMap : public Map<K, V> {
         (*temp)->key = substitute->key;
         (*temp)->value = substitute->value;
         delete substitute;
-        *temp = NULL;
+        substitute = NULL;
       }
       else {
         Node * substitute = findLeftMax(*temp);
         (*temp)->key = substitute->key;
         (*temp)->value = substitute->value;
         delete substitute;
-        *temp = NULL;
-        // set *temp to NULL, in case of duplicated delete when destruction
+        substitute = NULL;
       }
     }
   }
@@ -139,8 +139,8 @@ class BstMap : public Map<K, V> {
     return temp;
   }
   virtual ~BstMap<K, V>() {
-    destroy(root);
-    root = NULL;
+    // destroy(root);
+    // root = NULL;
   }
   void destroy(Node * cur) {
     if (cur) {
