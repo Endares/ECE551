@@ -24,6 +24,30 @@ class BstMap : public Map<K, V> {
 
  public:
   BstMap() : root(NULL) {}  // don't forget to initialize
+
+  //copy constructor
+  BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
+
+  //cooy helper
+  Node * copy(Node * current) {
+    if (current == NULL) {
+      return NULL;
+    }
+    Node * root = new Node(current->key, current->value);
+    root->left = copy(current->left);
+    root->right = copy(current->right);
+    return root;
+  }
+
+  //assignment constructor
+  BstMap & operator=(const BstMap & rhs) {
+    if (this != &rhs) {
+      destroy(root);
+      root = copy(rhs.root);
+    }
+    return *this;
+  }
+
   virtual void add(const K & key, const V & value) {
     Node ** temp = find(key);
     // doubly ptr to make sure new Node is inserted into the BST.

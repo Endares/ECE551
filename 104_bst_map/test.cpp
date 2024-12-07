@@ -27,5 +27,6 @@ int main(void) {
   std::cout << "\n";
   std::cout << "ans1 should be 1 and =" << ans1 << "\n";
   std::cout << "ans2 should be 10 and =" << ans2 << "\n";
+  BstMap<int, int> map2 = map;
   return EXIT_SUCCESS;
 }
