@@ -41,7 +41,7 @@ class BstMap : public Map<K, V> {
   BstMap & operator=(const BstMap & rhs) {
     if (this != &rhs) {
       BstMap<K, V> temp(rhs);
-      swap(root, temp.root);
+      std::swap(root, temp.root);
     }
     return *this;
   }
