@@ -17,7 +17,7 @@ class BstMap : public Map<K, V> {
     Node * right;
 
    public:
-    Node() {}
+    Node() : key(0), value(0), left(NULL), right(NULL) {}
     Node(K key, V value) : key(key), value(value), left(NULL), right(NULL) {}
   };
 
@@ -27,7 +27,7 @@ class BstMap : public Map<K, V> {
  public:
   BstMap() : root(NULL) {}  // don't forget to initialize
 
-  BstMap(const BstMap & b) { root = copy(b.root); }
+  BstMap(const BstMap & b) : root(NULL) { root = copy(b.root); }
   Node * copy(const Node * n2) {
     if (n2 == NULL) {
       return NULL;
@@ -40,8 +40,10 @@ class BstMap : public Map<K, V> {
 
   BstMap & operator=(const BstMap & rhs) {
     if (this != &rhs) {
-      BstMap<K, V> temp(rhs);
-      std::swap(root, temp.root);
+      destroy(root);
+      root = copy(rhs.root);
+      //      BstMap<K, V> temp(rhs);
+      //std::swap(root, temp.root);
     }
     return *this;
   }
@@ -76,7 +78,7 @@ class BstMap : public Map<K, V> {
   }
   virtual const V & lookup(const K & key) const throw(std::invalid_argument) {
     Node ** temp = find(key);
-    if (!(*temp)) {
+    if (*temp == NULL) {
       throw std::invalid_argument("Key not found!");
     }
     else {
