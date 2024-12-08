@@ -9,13 +9,16 @@
 #include <set>
 #include <vector>
 
-template<typename K, typename V, typename Compare = std::less<K> >
+template<typename K,
+         typename V,
+         typename Compare = std::less<K>,
+         typename CompareV = std::less<V> >
 class AVLMultiMap {
  private:
   class Node {
    public:
     K key;
-    std::set<V> vals;
+    std::set<V, CompareV> vals;
     int height;
     Node * left;
     Node * right;
@@ -32,7 +35,10 @@ class AVLMultiMap {
         key(key_), vals(), height(0), left(nullptr), right(nullptr) {
       vals.insert(val_);
     }
-    Node(const K & key_, const std::set<V> & vals_, Node * ileft, Node * iright) :
+    Node(const K & key_,
+         const std::set<V, CompareV> & vals_,
+         Node * ileft,
+         Node * iright) :
         key(key_), vals(vals_), left(ileft), right(iright) {
       updateHeight();
     }
@@ -199,8 +205,9 @@ class AVLMultiMap {
     recursiveDelete(curr->right);
     delete curr;
   }
-  void preOrderDumpHelper(std::vector<std::pair<std::pair<K, std::set<V> >, int> > & ans,
-                          const Node * curr) const {
+  void preOrderDumpHelper(
+      std::vector<std::pair<std::pair<K, std::set<V, CompareV> >, int> > & ans,
+      const Node * curr) const {
     if (curr == nullptr) {
       return;
     }
@@ -209,14 +216,32 @@ class AVLMultiMap {
     preOrderDumpHelper(ans, curr->right);
   }
 
+  void inOrderDumpHelper(
+      std::vector<std::pair<std::pair<K, std::set<V, CompareV> >, int> > & ans,
+      const Node * curr) const {
+    if (curr == nullptr) {
+      return;
+    }
+    inOrderDumpHelper(ans, curr->left);
+    ans.push_back(std::make_pair(std::make_pair(curr->key, curr->vals), curr->height));
+    inOrderDumpHelper(ans, curr->right);
+  }
+
  public:
-  std::vector<std::pair<std::pair<K, std::set<V> >, int> > preOrderDump() const {
-    std::vector<std::pair<std::pair<K, std::set<V> >, int> > ans;
+  std::vector<std::pair<std::pair<K, std::set<V, CompareV> >, int> > preOrderDump()
+      const {
+    std::vector<std::pair<std::pair<K, std::set<V, CompareV> >, int> > ans;
     preOrderDumpHelper(ans, root);
     return ans;
   }
 
-  // get the first element in set<V> with min K
+  std::vector<std::pair<std::pair<K, std::set<V, CompareV> >, int> > inOrderDump() const {
+    std::vector<std::pair<std::pair<K, std::set<V, CompareV> >, int> > ans;
+    inOrderDumpHelper(ans, root);
+    return ans;
+  }
+
+  // Useless here. get the first element in set<V> with min K
   V getMin() const {
     Node * curr = root;
     if (!curr) {
@@ -228,7 +253,6 @@ class AVLMultiMap {
     }
     return *curr->vals.begin();
   }
-
   // is empty
   bool empty() const noexcept { return root == NULL; }
 };

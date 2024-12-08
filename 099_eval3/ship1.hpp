@@ -29,6 +29,7 @@ class Ship {
       name(s), source(src), destination(dest), capacity(cap), load(0) {}
   virtual ~Ship() {}
   std::string getName() const { return name; }
+  std::string getRoute() const { return (source + "->" + destination); }
   // shouldn't be abstract, as AnimalShip doesn't have this method.
   virtual void addProperty(std::string & p){};
 

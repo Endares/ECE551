@@ -26,10 +26,15 @@ int main(int argc, char * argv[]) {
     std::cerr << "Failed to open the file " << argv[1] << std::endl;
     exit(EXIT_FAILURE);
   }
-  // Ship* in input  order
+  // Ship* in input order
   std::vector<Ship *> shipList;
   readShipFile(f, shipList);
   f.close();
+  // Ship* in remaining-capacity ascending order, tie broken by name's alphabetic order
+  std::map<std::string, AVLMultiMap<uint64_t, Ship *, compareByRemain, nameOrder> >
+      shipRouteMap;
+  makeAVLMap(shipList, shipRouteMap);
+  // printShipRouteMap(shipRouteMap);
 
   // read cargo
   std::vector<Cargo *> cargoList;
@@ -44,7 +49,7 @@ int main(int argc, char * argv[]) {
 
   // load cargo
   for (Cargo * ca : cargoList) {
-    handleCargo2(ca, shipList);
+    handleCargo2(ca, shipRouteMap[ca->getRoute()]);
   }
 
   // print in the order in input file

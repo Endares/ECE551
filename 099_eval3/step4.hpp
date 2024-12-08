@@ -114,6 +114,25 @@ void readShipFile(std::istream & is, std::vector<Ship *> & shipList) {
   }
 }
 
+/* Compare function for K, ship with smaller remaining capacity has higher priority */
+struct compareByRemain {
+  bool operator()(const uint64_t a, const uint64_t b) const { return a < b; }
+};
+
+/* Compare function for V, tie broken by ship's name in alphabetic order */
+struct nameOrder {
+  bool operator()(Ship * a, Ship * b) const { return a->getName() < b->getName(); }
+};
+
+/* Manage ships into a map: route - AVLmultimap */
+void makeAVLMap(
+    std::vector<Ship *> & shipList,
+    std::map<std::string, AVLMultiMap<uint64_t, Ship *, compareByRemain, nameOrder> > &
+        shipRouteMap) {
+  for (Ship * sh : shipList) {
+    shipRouteMap[sh->getRoute()].add(sh->getRemain(), sh);
+  }
+}
 void printCapableList(Cargo * c, std::map<std::string, Ship *> & capableList) {
   if (capableList.size() == 0) {
     std::cout << "No ships can carry the " << c->getName() << " from " << c->getSrc()
@@ -137,34 +156,32 @@ void loadCargo(Ship * sh, Cargo * c) {
             << " capacity remains" << std::endl;
 }
 
-/* Compare function, ship with smaller remaining capacity has higher priority */
-struct compareByRemain {
-  bool operator()(const uint64_t a, const uint64_t b) const { return a < b; }
-};
-
 /* Handle each cargo: spcify which ships it can load onto */
 /* capable ships are sorted by:
    1. remaining capacity;
    2. name's alphabetic order (set<V> will automatically do that)
  */
-void handleCargo2(Cargo * ca, std::vector<Ship *> shipList) {
-  // sorted by name's alphabetic order
-  AVLMultiMap<uint64_t, std::string, compareByRemain> capableList;
+void handleCargo2(
+    Cargo * ca,
+    AVLMultiMap<uint64_t, Ship *, compareByRemain, nameOrder> & sortedShipList) {
   std::map<std::string, Ship *> nameList;  // name -> Ship*
-  for (Ship * sh : shipList) {
-    if (sh->canAdd(ca)) {
-      capableList.add(sh->getRemain(), sh->getName());
-      nameList[sh->getName()] = sh;
+  std::vector<std::pair<std::pair<uint64_t, std::set<Ship *, nameOrder> >, int> >
+      capableList = sortedShipList.inOrderDump();
+  for (auto & temp : capableList) {
+    for (Ship * sh : (temp.first).second) {
+      if (sh->canAdd(ca)) {
+        // delete Node from AVLmultimap
+        sortedShipList.remove(sh->getRemain(), sh);
+        // load onto the first ship in the list
+        loadCargo(sh, ca);
+        // re-insert Node into AVLmultimap
+        sortedShipList.add(sh->getRemain(), sh);
+        return;
+      }
     }
   }
-  // load onto the first ship in the list
-  if (!capableList.empty()) {
-    loadCargo(nameList[capableList.getMin()], ca);
-  }
-  else {
-    std::cout << "No ships can carry the " << ca->getName() << " from " << ca->getSrc()
-              << " to " << ca->getDest() << std::endl;
-  }
+  std::cout << "No ships can carry the " << ca->getName() << " from " << ca->getSrc()
+            << " to " << ca->getDest() << std::endl;
 }
 
 /* Make a cargo according to input data */
@@ -246,5 +263,26 @@ void printCargo(std::vector<Ship *> & shipList) {
   std::cout << "---Done Loading---Here are the ships---" << std::endl;
   for (Ship * sh : shipList) {
     sh->printStatus();
+  }
+}
+
+/* For testing only.
+   Format: 
+   Route i:
+   remaing capacity: ship1, ship2, ...*/
+void printShipRouteMap(
+    const std::map<std::string,
+                   AVLMultiMap<uint64_t, Ship *, compareByRemain, nameOrder> > &
+        shipRouteMap) {
+  for (const auto & route : shipRouteMap) {
+    std::cout << "Route: " << route.first << std::endl;
+    auto inorder = route.second.inOrderDump();
+    for (auto & p : inorder) {
+      std::cout << "  " << p.first.first << ":" << std::endl;
+      for (Ship * sh : (p.first).second) {
+        std::cout << "    " << sh->getName();
+      }
+      std::cout << std::endl;
+    }
   }
 }

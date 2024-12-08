@@ -37,6 +37,7 @@ class Cargo {
   std::string getSrc() const { return source; }
   std::string getDest() const { return destination; }
 
+  std::string getRoute() const { return (source + "->" + destination); }
   // if this cargo has any hazard property
   bool isHazard() { return !properties.empty(); }
   void setTempRange(int min, int max) {
