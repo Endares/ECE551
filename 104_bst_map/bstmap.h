@@ -103,14 +103,14 @@ class BstMap : public Map<K, V> {
     else {
       // 1.n0/n1: replace with NULL/only child
       if (!root->left) {
-        Node * temp = root->left;
+        Node * temp = root->right;
         delete root;
         root = NULL;
         return temp;
       }
       // 2.n1: replace with only child
       else if (!root->right) {
-        Node * temp = root->right;
+        Node * temp = root->left;
         delete root;
         root = NULL;
         return temp;
