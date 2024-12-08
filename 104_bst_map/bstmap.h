@@ -89,36 +89,36 @@ class BstMap : public Map<K, V> {
         *temp = NULL;
       }
       else if (!(*temp)->left) {
-        Node * substitute = findRightMin(*temp);
-        (*temp)->key = substitute->key;
-        (*temp)->value = substitute->value;
-        delete substitute;
-        substitute = NULL;
+        Node ** substitute = findRightMin(*temp);
+        (*temp)->key = (*substitute)->key;
+        (*temp)->value = (*substitute)->value;
+        delete *substitute;
+        *substitute = NULL;
       }
       else {
-        Node * substitute = findLeftMax(*temp);
-        (*temp)->key = substitute->key;
-        (*temp)->value = substitute->value;
-        delete substitute;
-        substitute = NULL;
+        Node ** substitute = findLeftMax(*temp);
+        (*temp)->key = (*substitute)->key;
+        (*temp)->value = (*substitute)->value;
+        delete *substitute;
+        *substitute = NULL;
       }
     }
   }
 
-  Node * findRightMin(Node * cur) const {
-    Node * temp = cur;
-    temp = temp->right;
-    while (temp && temp->left) {
-      temp = temp->left;
+  Node ** findRightMin(Node * cur) const {
+    Node ** temp = &cur;
+    temp = &(*temp)->right;
+    while (*temp && (*temp)->left) {
+      temp = &(*temp)->left;
     }
     return temp;
   }
 
-  Node * findLeftMax(Node * cur) const {
-    Node * temp = cur;
-    temp = temp->left;
-    while (temp && temp->right) {
-      temp = temp->right;
+  Node ** findLeftMax(Node * cur) const {
+    Node ** temp = &cur;
+    temp = &(*temp)->left;
+    while (*temp && (*temp)->right) {
+      temp = &(*temp)->right;
     }
     return temp;
   }
