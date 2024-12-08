@@ -9,45 +9,48 @@
 template<typename K, typename V>
 class BstMap : public Map<K, V> {
  private:
+  //Nodes
   class Node {
    public:
     K key;
     V value;
     Node * left;
     Node * right;
-
-   public:
+    //constructor for Nodes
     Node() : key(0), value(0), left(NULL), right(NULL) {}
-    Node(K key, V value) : key(key), value(value), left(NULL), right(NULL) {}
+    //constructor for add
+    Node(const K & k, const V & v) : key(k), value(v), left(NULL), right(NULL) {}
   };
-
+  //root
  public:
   Node * root;
 
  public:
-  BstMap() : root(NULL) {}  // don't forget to initialize
+  //default constructor
+  BstMap() : root(NULL) {}
 
-  BstMap(const BstMap & b) : root(NULL) { root = copy(b.root); }
-  Node * copy(const Node * n2) {
-    if (n2 == NULL) {
+  //copy constructor
+  BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
+
+  //cooy helper
+  Node * copy(Node * current) {
+    if (current == NULL) {
       return NULL;
     }
-    Node * n1 = new Node(n2->key, n2->value);
-    n1->left = copy(n2->left);
-    n1->right = copy(n2->right);
-    return n1;
+    Node * root = new Node(current->key, current->value);
+    root->left = copy(current->left);
+    root->right = copy(current->right);
+    return root;
   }
 
+  //assignment constructor
   BstMap & operator=(const BstMap & rhs) {
     if (this != &rhs) {
       destroy(root);
       root = copy(rhs.root);
-      //      BstMap<K, V> temp(rhs);
-      //std::swap(root, temp.root);
     }
     return *this;
   }
-
   void inorder(Node * root) {
     if (!root)
       return;
