@@ -122,7 +122,6 @@ class BstSet : public Set<K> {
           temp = temp->left;
         }
         root->key = temp->key;
-        root->value = temp->value;
         root->right = deleteNode(root->right, temp->key);
       }
     }
