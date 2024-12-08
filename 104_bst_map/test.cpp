@@ -21,12 +21,13 @@ int main(void) {
   std::cout << "\n";
   int ans1 = map.lookup(60);
   int ans2 = map.lookup(35);
+  map.inorder(map.root);
   map.remove(19);
   std::cout << "\n";
   std::cout << "ans1 should be 1 and =" << ans1 << "\n";
   std::cout << "ans2 should be 10 and =" << ans2 << "\n";
-
   BstMap<int, int> map2 = map;
+  map2.inorder(map2.root);
   std::cout << "\n";
   return EXIT_SUCCESS;
 }
