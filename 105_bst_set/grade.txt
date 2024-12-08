@@ -1,47 +1,23 @@
-Grading at 12/08/2024:21:40:30.042705
-For commit ID 9ea00c2c7294cbcd02445ae8e151eb20b01096b8
-Grading at Sun Dec  8 04:40:29 PM EST 2024
+Grading at 12/08/2024:21:42:23.332448
+For commit ID 2b9cf48dfac0113eabc093fb1ea13da6e1805463
+Grading at Sun Dec  8 04:42:20 PM EST 2024
 -----------------------------------------------
 testcase 1 : Testing with BstSet<int>
 ...compiling...
-In file included from 90-tester.cpp:1:
-bstset.h: In instantiation of ‘BstSet<K>::Node* BstSet<K>::deleteNode(BstSet<K>::Node*, const K&) [with K = int]’:
-bstset.h:133:47:   required from ‘void BstSet<K>::remove(const K&) [with K = int]’
-bstset.h:133:16:   required from here
-bstset.h:125:15: error: ‘class BstSet<int>::Node’ has no member named ‘value’
-  125 |         root->value = temp->value;
-      |         ~~~~~~^~~~~
-bstset.h:125:29: error: ‘class BstSet<int>::Node’ has no member named ‘value’
-  125 |         root->value = temp->value;
-      |                       ~~~~~~^~~~~
-The code did not compile.  This test failed.
+The code compiled.
+Your file matched the expected output
+Testcase passed 
 -----------------------------------------------
 testcase 2 : Testing with BstSet<std::string>
 ...compiling...
-In file included from 90-tester.cpp:1:
-bstset.h: In instantiation of ‘BstSet<K>::Node* BstSet<K>::deleteNode(BstSet<K>::Node*, const K&) [with K = std::__cxx11::basic_string<char>]’:
-bstset.h:133:47:   required from ‘void BstSet<K>::remove(const K&) [with K = std::__cxx11::basic_string<char>]’
-bstset.h:133:16:   required from here
-bstset.h:125:15: error: ‘class BstSet<std::__cxx11::basic_string<char> >::Node’ has no member named ‘value’
-  125 |         root->value = temp->value;
-      |         ~~~~~~^~~~~
-bstset.h:125:29: error: ‘class BstSet<std::__cxx11::basic_string<char> >::Node’ has no member named ‘value’
-  125 |         root->value = temp->value;
-      |                       ~~~~~~^~~~~
-The code did not compile.  This test failed.
+The code compiled.
+Your file matched the expected output
+Testcase passed 
 -----------------------------------------------
 testcase 3 : Testing with BstSet<(a custom class we wrote)>
 ...compiling...
-In file included from 90-tester.cpp:1:
-bstset.h: In instantiation of ‘BstSet<K>::Node* BstSet<K>::deleteNode(BstSet<K>::Node*, const K&) [with K = Tester]’:
-bstset.h:133:47:   required from ‘void BstSet<K>::remove(const K&) [with K = Tester]’
-bstset.h:133:16:   required from here
-bstset.h:125:15: error: ‘class BstSet<Tester>::Node’ has no member named ‘value’
-  125 |         root->value = temp->value;
-      |         ~~~~~~^~~~~
-bstset.h:125:29: error: ‘class BstSet<Tester>::Node’ has no member named ‘value’
-  125 |         root->value = temp->value;
-      |                       ~~~~~~^~~~~
-The code did not compile.  This test failed.
+The code compiled.
+Your file matched the expected output
+Testcase passed 
 
-Overall Grade: F
+Overall Grade: A
