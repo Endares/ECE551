@@ -1,7 +1,8 @@
 #ifndef _BSTMAP_H__
 #define _BSTMAP_H__
-
+#include <cstdio>
 #include <cstdlib>
+#include <iostream>
 
 #include "map.h"
 // sorted according to key, not value!
@@ -17,36 +18,21 @@ class BstMap : public Map<K, V> {
 
    public:
     Node() {}
-    Node(const K & key, const V & value) :
-        key(key), value(value), left(NULL), right(NULL) {}
+    Node(K key, V value) : key(key), value(value), left(NULL), right(NULL) {}
   };
+
+ public:
   Node * root;
 
  public:
   BstMap() : root(NULL) {}  // don't forget to initialize
-
-  //copy constructor
-  //BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
-
-  //copy helper
-  /*Node * copy(Node * current) {
-    if (current == NULL) {
-      return NULL;
-    }
-    Node * root = new Node(current->key, current->value);
-    root->left = copy(current->left);
-    root->right = copy(current->right);
-    return root;
+  void inorder(Node * root) {
+    if (!root)
+      return;
+    inorder(root->left);
+    std::cout << root->key << ":" << root->value << std::endl;
+    inorder(root->right);
   }
-  */
-  //assignment constructor
-  /*BstMap & operator=(const BstMap & rhs) {
-    if (this != &rhs) {
-      destroy(root);
-      root = copy(rhs.root);
-    }
-    return *this;
-    }*/
 
   virtual void add(const K & key, const V & value) {
     Node ** temp = find(key);
@@ -77,52 +63,49 @@ class BstMap : public Map<K, V> {
       return (*temp)->value;
     }
   }
-  virtual void remove(const K & key) {
-    Node ** temp = find(key);
-    if (!(*temp)) {
-      throw std::invalid_argument("Key not found!");
+
+  // return the node to replace the deleted place
+  Node * deleteNode(Node * root, const K & key) {
+    if (!root) {
+      return NULL;
+    }
+    if (key < root->key) {
+      root->left = deleteNode(root->left, key);
+    }
+    else if (key > root->key) {
+      root->right = deleteNode(root->right, key);
     }
     else {
-      if (!(*temp)->left && !(*temp)->right) {
-        delete (*temp);
-        // set *temp to NULL, in case of duplicated delete when destruction
-        *temp = NULL;
+      // 1.n0/n1: replace with NULL/only child
+      if (!root->left) {
+        Node * temp = root->left;
+        delete root;
+        root = NULL;
+        return temp;
       }
-      else if (!(*temp)->left) {
-        Node ** substitute = findRightMin(*temp);
-        (*temp)->key = (*substitute)->key;
-        (*temp)->value = (*substitute)->value;
-        delete *substitute;
-        *substitute = NULL;
+      // 2.n1: replace with only child
+      else if (!root->right) {
+        Node * temp = root->right;
+        delete root;
+        root = NULL;
+        return temp;
       }
+      // 3.n2: replace with rightMin
       else {
-        Node ** substitute = findLeftMax(*temp);
-        (*temp)->key = (*substitute)->key;
-        (*temp)->value = (*substitute)->value;
-        delete *substitute;
-        *substitute = NULL;
+        Node * temp = root->right;
+        while (temp->left) {
+          temp = temp->left;
+        }
+        root->key = temp->key;
+        root->value = temp->value;
+        root->right = deleteNode(root->right, temp->key);
       }
     }
+    return root;
   }
 
-  Node ** findRightMin(Node * cur) const {
-    Node ** temp = &cur;
-    temp = &(*temp)->right;
-    while (*temp && (*temp)->left) {
-      temp = &(*temp)->left;
-    }
-    return temp;
-  }
-
-  Node ** findLeftMax(Node * cur) const {
-    Node ** temp = &cur;
-    temp = &(*temp)->left;
-    while (*temp && (*temp)->right) {
-      temp = &(*temp)->right;
-    }
-    return temp;
-  }
-
+  // if key not find, just don't delete
+  virtual void remove(const K & key) { root = deleteNode(root, key); }
   Node ** find(const K & key) const {
     Node ** temp = const_cast<Node **>(&root);
     while (*temp) {
@@ -138,10 +121,7 @@ class BstMap : public Map<K, V> {
     }
     return temp;
   }
-  virtual ~BstMap<K, V>() {
-    // destroy(root);
-    // root = NULL;
-  }
+  virtual ~BstMap<K, V>() { destroy(root); }
   void destroy(Node * cur) {
     if (cur) {
       destroy(cur->left);
