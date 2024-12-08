@@ -32,7 +32,7 @@ class BstMap : public Map<K, V> {
   //copy constructor
   BstMap(const BstMap & rhs) : root(NULL) { root = copy(rhs.root); }
 
-  //cooy helper
+  //copy helper
   Node * copy(Node * current) {
     if (current == NULL) {
       return NULL;
