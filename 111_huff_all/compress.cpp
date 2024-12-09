@@ -73,13 +73,13 @@ int main(int argc, char ** argv) {
   //hint 1: most of the work is already done.
   //hint 2: you can look at the main from the previous tester for 90% of this
   uint64_t * freqArray = readFrequencies(argv[1]);
+
+  assert(freqArray != NULL);
   Node * root = buildTree(freqArray);
+
   std::map<unsigned, BitString> theMap;
   // BitString for root is empty
-
-  BitString empty;
-  root->buildMap(empty, theMap);
-  // root->buildMap(BitString(), theMap);
+  root->buildMap(BitString(), theMap);
   writeCompressedOutput(argv[1], argv[2], theMap);
   delete[] freqArray;
   // need to deallocate root by hand, because root was created by new in buildTree.cpp
