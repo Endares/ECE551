@@ -79,7 +79,8 @@ int main(int argc, char ** argv) {
   root->buildMap(BitString(), theMap);
   writeCompressedOutput(argv[1], argv[2], theMap);
   delete[] freqArray;
-  //  delete root;
+  // need to deallocate root by hand, because root was created by new in buildTree.cpp
+  delete root;
   // destructor of root will recursively destroy the whole tree
   return EXIT_SUCCESS;
 }
