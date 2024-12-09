@@ -15,10 +15,10 @@ Node * buildTree(uint64_t * counts) {
   //WRITE ME!
   priority_queue_t pq = makePQ(counts);
   while (pq.size() > 1) {
-    // smallest: right child; second smallest: left child
-    Node * r = pq.top();
-    pq.pop();
+    // smallest: left child; second smallest: right child
     Node * l = pq.top();
+    pq.pop();
+    Node * r = pq.top();
     pq.pop();
     pq.push(new Node(l, r));
   }
