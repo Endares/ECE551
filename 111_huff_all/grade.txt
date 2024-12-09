@@ -1,0 +1,89 @@
+Grading at 12/09/2024:04:51:34.290315
+For commit ID 1e210b2a82a8e71721b1a2bbf7749bf5881e1030
+Grading at Sun Dec  8 11:51:30 PM EST 2024
+compiling
+g++ -ggdb3 -Wall -Werror -pedantic -std=gnu++98 -o compress  bitstring.o  buildTree.o  compress.o  node.o  readFreq.o
+Make succeed, compress created
+Testcase 1
+-----------------------
+Valgrind reported errors (test failed).
+==1563659== Memcheck, a memory error detector
+==1563659== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1563659== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1563659== Command: ./compress /etc/issue theirs.1.compressed
+==1563659== Parent PID: 1563658
+==1563659== 
+==1563659== 
+==1563659== HEAP SUMMARY:
+==1563659==     in use at exit: 1,120 bytes in 35 blocks
+==1563659==   total heap usage: 435 allocs, 400 frees, 211,352 bytes allocated
+==1563659== 
+==1563659== 1,120 (32 direct, 1,088 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 3
+==1563659==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1563659==    by 0x10FEAD: buildTree(unsigned long*) (buildTree.cpp:23)
+==1563659==    by 0x112133: main (compress.cpp:76)
+==1563659== 
+==1563659== LEAK SUMMARY:
+==1563659==    definitely lost: 32 bytes in 1 blocks
+==1563659==    indirectly lost: 1,088 bytes in 34 blocks
+==1563659==      possibly lost: 0 bytes in 0 blocks
+==1563659==    still reachable: 0 bytes in 0 blocks
+==1563659==         suppressed: 0 bytes in 0 blocks
+==1563659== 
+==1563659== For lists of detected and suppressed errors, rerun with: -s
+==1563659== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+Testcase 2
+-----------------------
+Valgrind reported errors (test failed).
+==1563751== Memcheck, a memory error detector
+==1563751== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1563751== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1563751== Command: ./compress /etc/services theirs.2.compressed
+==1563751== Parent PID: 1563750
+==1563751== 
+==1563751== 
+==1563751== HEAP SUMMARY:
+==1563751==     in use at exit: 5,152 bytes in 161 blocks
+==1563751==   total heap usage: 1,937 allocs, 1,776 frees, 645,728 bytes allocated
+==1563751== 
+==1563751== 5,152 (32 direct, 5,120 indirect) bytes in 1 blocks are definitely lost in loss record 3 of 3
+==1563751==    at 0x4849013: operator new(unsigned long) (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==1563751==    by 0x10FEAD: buildTree(unsigned long*) (buildTree.cpp:23)
+==1563751==    by 0x112133: main (compress.cpp:76)
+==1563751== 
+==1563751== LEAK SUMMARY:
+==1563751==    definitely lost: 32 bytes in 1 blocks
+==1563751==    indirectly lost: 5,120 bytes in 160 blocks
+==1563751==      possibly lost: 0 bytes in 0 blocks
+==1563751==    still reachable: 0 bytes in 0 blocks
+==1563751==         suppressed: 0 bytes in 0 blocks
+==1563751== 
+==1563751== For lists of detected and suppressed errors, rerun with: -s
+==1563751== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
+Testcase 3
+-----------------------
+Valgrind reported errors (test failed).
+==1563811== Memcheck, a memory error detector
+==1563811== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==1563811== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==1563811== Command: ./compress /usr/share/dict/words theirs.3.compressed
+==1563811== Parent PID: 1563810
+==1563811== 
+==1563811== 
+==1563811== HEAP SUMMARY:
+==1563811==     in use at exit: 103,320 bytes in 437 blocks
+==1563811==   total heap usage: 1,703 allocs, 1,266 frees, 577,064 bytes allocated
+==1563811== 
+==1563811== LEAK SUMMARY:
+==1563811==    definitely lost: 0 bytes in 0 blocks
+==1563811==    indirectly lost: 0 bytes in 0 blocks
+==1563811==      possibly lost: 0 bytes in 0 blocks
+==1563811==    still reachable: 103,320 bytes in 437 blocks
+==1563811==         suppressed: 0 bytes in 0 blocks
+==1563811== Reachable blocks (those to which a pointer was found) are not shown.
+==1563811== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==1563811== 
+==1563811== For lists of detected and suppressed errors, rerun with: -s
+==1563811== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Overall Grade: F
