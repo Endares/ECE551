@@ -1,0 +1,28 @@
+Grading at 12/09/2024:03:56:57.216715
+For commit ID e1b3f465b642f66d1bb6d2f671b4ca4886d6b03e
+Grading at Sun Dec  8 10:56:52 PM EST 2024
+compiling
+g++ -ggdb3 -Wall -Werror -pedantic -o testFreq testFreq.cpp readFreq.cpp
+Make succeed, testFreq created
+Testcase 1
+-----------------------
+Checking output:
+Your file matched the expected output
+Testcase passed 
+Testcase 2
+-----------------------
+Checking output:
+Your file matched the expected output
+Testcase passed 
+Testcase 3
+-----------------------
+Checking output:
+Your file matched the expected output
+Testcase passed 
+Testcase 4
+-----------------------
+Checking output:
+Your file matched the expected output
+Testcase passed 
+
+Overall Grade: A
