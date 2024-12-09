@@ -37,7 +37,7 @@ uint64_t * readFrequencies(const char * fname) {
 
   char c;
   while (f.get(c)) {  // read character by character
-    freqArray[static_cast<unsigned char>(c)]++;
+    ++freqArray[static_cast<unsigned char>(c)];
   }
 
   // eof
