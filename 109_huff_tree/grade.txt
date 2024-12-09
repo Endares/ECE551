@@ -1,136 +1,28 @@
-Grading at 12/09/2024:04:13:16.290705
-For commit ID ff4f86b0e4a47c4d8a15b44bbfe8ac4c880f319a
-Grading at Sun Dec  8 11:13:11 PM EST 2024
+Grading at 12/09/2024:04:14:31.267586
+For commit ID 958611b66132bba956ffb20639e1e9647dada5db
+Grading at Sun Dec  8 11:14:26 PM EST 2024
 compiling
 g++ -ggdb3 -Wall -Werror -pedantic -o testTree testTree.cpp readFreq.cpp buildTree.cpp
 Make succeed, testTree created
 Testcase 1
 -----------------------
 Checking output:
-Line_1_did_not_match
-Line_2_did_not_match
-Line_3_did_not_match
-Line_4_did_not_match
-Line_5_did_not_match
-Line_6_did_not_match
-Line_7_did_not_match
-Line_8_did_not_match
-Line_9_did_not_match
-Your file did not match the expected output
-**Testcase failed **
+Your file matched the expected output
+Testcase passed 
 Testcase 2
 -----------------------
 Checking output:
-Line_1_did_not_match
-Line_2_did_not_match
-Line_3_did_not_match
-Line_4_did_not_match
-Line_5_did_not_match
-Line_6_did_not_match
-Line_7_did_not_match
-Line_8_did_not_match
-Line_9_did_not_match
-Line_10_did_not_match
-Line_11_did_not_match
-Line_12_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_17_did_not_match
-Line_18_did_not_match
-Line_19_did_not_match
-Line_20_did_not_match
-Line_21_did_not_match
-Line_22_did_not_match
-Line_23_did_not_match
-Line_24_did_not_match
-Line_25_did_not_match
-Line_26_did_not_match
-Line_27_did_not_match
-Line_28_did_not_match
-Line_29_did_not_match
-Line_30_did_not_match
-Line_31_did_not_match
-Line_32_did_not_match
-Line_33_did_not_match
-Line_34_did_not_match
-Line_35_did_not_match
-Line_36_did_not_match
-Line_37_did_not_match
-Line_38_did_not_match
-Line_39_did_not_match
-Line_40_did_not_match
-Line_41_did_not_match
-Your file did not match the expected output
-**Testcase failed **
+Your file matched the expected output
+Testcase passed 
 Testcase 3
 -----------------------
 Checking output:
-Line_1_did_not_match
-Line_2_did_not_match
-Line_3_did_not_match
-Line_4_did_not_match
-Line_5_did_not_match
-Line_6_did_not_match
-Line_7_did_not_match
-Line_8_did_not_match
-Line_9_did_not_match
-Line_10_did_not_match
-Line_11_did_not_match
-Line_12_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_17_did_not_match
-Line_18_did_not_match
-Line_19_did_not_match
-Line_20_did_not_match
-Line_21_did_not_match
-Line_22_did_not_match
-Line_23_did_not_match
-Line_24_did_not_match
-Line_25_did_not_match
-Line_26_did_not_match
-Line_27_did_not_match
-Line_28_did_not_match
-Line_29_did_not_match
-Line_30_did_not_match
-Line_31_did_not_match
-Line_32_did_not_match
-Line_33_did_not_match
-Line_34_did_not_match
-Line_35_did_not_match
-Your file did not match the expected output
-**Testcase failed **
+Your file matched the expected output
+Testcase passed 
 Testcase 4
 -----------------------
 Checking output:
-Line_1_did_not_match
-Line_2_did_not_match
-Line_3_did_not_match
-Line_4_did_not_match
-Line_5_did_not_match
-Line_6_did_not_match
-Line_7_did_not_match
-Line_8_did_not_match
-Line_9_did_not_match
-Line_10_did_not_match
-Line_11_did_not_match
-Line_12_did_not_match
-Line_13_did_not_match
-Line_14_did_not_match
-Line_15_did_not_match
-Line_16_did_not_match
-Line_17_did_not_match
-Line_18_did_not_match
-Line_19_did_not_match
-Line_20_did_not_match
-Line_21_did_not_match
-Line_22_did_not_match
-Line_23_did_not_match
-Your file did not match the expected output
-**Testcase failed **
+Your file matched the expected output
+Testcase passed 
 
-Overall Grade: F
+Overall Grade: A
