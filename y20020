@@ -1,0 +1,362 @@
+08b0841 (HEAD -> master, origin/master, origin/HEAD) Did assignment 112
+e51e737 Did assignment 111
+2083a25 Released 112_ch29_rq
+dfb299a Grading
+ef6cf9e Did assignment 111
+8ec8245 Grading
+ab7603a Did assignment 111
+9f18105 Grading
+8fa61e2 Did assignment 111
+f8b1479 Grading
+95026a9 Did assignment 111
+cd5bbeb Grading
+bae295f Did assignment 111
+a8ae653 Did assignment 111
+e64632e Grading
+1e210b2 Did assignment 111
+3dba7a2 Released 111_huff_all
+fe0ac4c Grading
+7eef796 Did assignment 110
+b19f03e Released 110_huff_map
+3b47aa7 Grading
+958611b Did assignment 109
+f4c243f Grading
+ff4f86b Did assignment 109
+57f345c Released 109_huff_tree
+c1d0f00 Grading
+e1b3f46 Did assignment 108
+53d26a7 Released 108_huff_freq
+44b12f3 Grading
+42d9bd6 Did Assignment 107
+b1ab709 Released 107_ch24_rq
+08ad132 Grading
+f353115 Did Assignment 106
+52aa283 Released 106_ch23_rq
+c05127f Grading
+2b9cf48 Did Assignment 105
+fa7a0a3 Grading
+9ea00c2 Did Assignment 105
+4d768a9 Did Assignment 105
+ba7d46d Released 105_bst_set
+7d279dc Grading
+fdabcca Did Assignment 104
+6564fc8 Grading
+1597db0 Did Eval3 099
+497a340 Grading
+53c7ce6 Did Assignment 104
+2395de0 Grading
+aa63743 Did Assignment 104
+6ae526b Grading
+bcf92a9 Did Assignment 104
+c8912c2 Grading
+bc3bd1a Did Assignment 104
+d2c5067 Grading
+beb592d Did Assignment 104
+87ab043 Grading
+96aed00 Did Assignment 104
+ba04911 Grading
+2a79d7f Did Assignment 104
+4a48659 Grading
+2e0068b Did Assignment 104
+ed45aaa Grading
+0303ed0 Did Assignment 104
+0f026aa Grading
+66ea90c Did Assignment 104
+e698cdf Did Assignment 104
+0da2ea1 Released 903_eval3_late
+a0ce875 Grading
+1d46019 Did Eval3 99
+e2bda7f Grading
+6a15ca5 Did Eval3 99
+a5d319a Grading
+08e5875 Did Eval3 99
+5fa81d9 Grading
+0082968 Did Eval3 99
+cd457c0 Grading
+b62f950 Did Eval3 99
+770b08c Released 104_bst_map
+2395b41 Grading
+f4ed9be Did Assignment 103
+35fbd83 Grading
+3bf2d12 Did Assignment 103
+5a74e89 Released 103_binsrch
+b9090a7 Grading
+3c856f5 Did Assignment 102
+16bd558 Released 102_tests_binsrch
+827e740 Grading
+340f1d9 Did Assignment 101
+7da212c Released 101_traversals
+8f168f6 Grading
+53c46da Did Assignment 100
+6a2d370 Grading
+7b82784 Did Assignment 100
+f39c5a9 Grading
+5f20f12 Did Eval3 99
+d6f967a Grading
+bf5edc2 Did Eval3 99
+8e82692 Grading
+058677c Did Eval3 99
+6a65f98 Grading
+6e93799 Did Eval3 99
+1d479c9 Grading
+715a68c Did Eval3 99
+f49a4ba Released 100_ch22_rq
+86d97a2 Grading
+dd695c3 Did Assignment 98
+96816a9 Grading
+6a7ba2a Did Eval3 99
+8781de4 Grading
+4713591 Did Eval3 99
+ad56083 Grading
+ef2b00d Did Eval3 99
+89f297b Grading
+5b7995a Did assignment 98
+522c0e0 Did assignment 98
+327e3b2 Grading
+dd7a824 Grading
+9b7ccda Did assignment 98
+65b4293 Grading
+31fbad8 Did assignment 98
+6c2b8c2 Released 098_lls
+ac8cb80 Grading
+2b9700f Did assignment 97
+f2c7d1e Released 097_tests_lls
+9a19c7d Grading
+58cfa33 Did assignment 96
+2f0c43d Grading
+5fc9ab8 Did assignment 96
+37c6668 Did assignment 96
+dc6d505 Released 099_eval3
+2a7cf03 Released 096_ch21_rq
+2049016 Grading
+fe59262 Did assignment 95
+cbc9a8e Grading
+b846d56 Did assignment 94
+03bdea6 Released 095_ch20_rq
+8f33109 Grading
+06cf766 Did assignment 94
+40e0b50 Released 094_polynomial_3
+265eeaf Grading
+2e45a0c Did assignment 93
+c20d2d4 Released 093_polynomial_2
+0f42b3d Grading
+e515193 Did assignment 92
+48617c5 Released 092_polynomial_1
+79a09af Grading
+2d31799 Did assignment 91
+ff2a109 Grading
+46bf8e6 Did assignment 90
+c39a6a0 Did assignment 90
+251f90f Released 091_read_vec
+a66bfe9 Released 090_read_exn
+3eb2dbb Grading
+0cadf87 Did assignment 89
+bbf183c Grading
+fd57b75 Did assignment 89
+b302122 Released 089_ch19_rq
+f881e62 Grading
+409407a Did assignment 88
+1f4fa30 Grading
+59e1ed8 Released 088_expr3
+5db9f0d Grading
+4420380 Did assignment 87
+43379a0 Released 087_expr2
+bb2d52f Grading
+d2bb965 Did assignment 86
+1b69ab7 Grading
+c26afd5 Did assignment 86
+70eb027 Grading
+bb95bbb Did assignment 86
+3254e6d Released 086_expr1
+b81b2e7 Grading
+468da3f Did assignment 85
+90979cc Released 085_read_inh
+a86a052 Grading
+ddb9281 Did assignment 84
+2306b32 Released 084_ch18_rq
+c77d0af Grading
+d46c979 Did assignment 83
+7517c88 Grading
+f5793dc Did assignment 83
+c7db406 Grading
+80bf0ba Did assignment 83
+8cda5b2 Grading
+782569d Did assignment 82
+8cf4db2 Did assignment 82
+7b8fe6c Released 083_matrix_templ
+a4c899c Grading
+9eefe07 Did assignment 82
+b7b8740 Released 082_sort_cpp
+3591416 Grading
+f69cb3f Did assignment 81
+430dc29 Grading
+d12ba02 Did assignment 80
+58ce408 Released 081_read_templ2
+235ee48 Released 080_read_templ1
+daa54bb Grading
+1351b06 Did assignment 79
+3ada62d Grading
+38c68bd Did assignment 79
+1e718ee Grading
+c2fbe39 Did assignment 79
+40f661e Released 902_eval2_late
+97e8455 Released 079_ch17_rq
+d49e60e Grading
+f61e46b Did assignment 78
+3f53ff1 Grading
+84222b1 Did assignment 78
+6e3a38b Released 078_int_matrix
+1a2b2d6 Grading
+b70c1be Did assignment 77
+67d4511 Grading
+a129666 Did assignment 77
+1c9aa8b Released 077_int_array
+a6394c9 Grading
+0f6546c Did assignment 76
+942be17 Grading
+d998fed Did assignment 75
+4a201ea Released 076_read_strs
+9256094 Released 075_read_refs2
+f55a373 Grading
+b85e7e7 Did assignment 74
+1c64f8c Grading
+2cd2c3d Did assignment 74
+6eb9b4f Released 074_ch16_rq
+1ec9ae9 Grading
+4e25226 Did assignment 73
+1fbf779 Released 073_circle
+ba8f31f Grading
+8357b62 Did assignment 72
+43df8f2 Released 072_point
+9968c8e Grading
+5594b44 Did assignment 71
+159a976 Did assignment 71
+a8f5acd Grading
+8eac819 Did assignment 71
+3ee4735 Grading
+4eabb15 Did assignment 71
+e649bfd Released 071_vector_ctor
+14caf96 Grading
+f5fc30d Did assignment 70
+95baef3 Released 070_read_constr2
+402b3f3 Grading
+7a9551a Did assignment 69
+5f99752 Grading
+3ab9f85 Did assignment 69
+08ea2c5 Released 069_read_constr1
+26e21a7 Grading
+8d3539d Did assignment 68
+08f7926 Grading
+9fd41be Did assignment 68
+f8a54d0 Grading
+7796c7e Did eval2 063
+b5a0c9d Grading
+55ff695 Did eval2 063
+4d343ff Grading
+4003cdc Did eval2 063
+e39366a Did eval2 063
+e15db54 Grading
+8b4a6fd Did eval2 063
+05b7cff Grading
+44c35e9 Released 063_eval2
+5681b20 Released 068_ch15_rq
+eb9d9c2 Grading
+80115b4 Did assignment 67
+cb82555 Released 067_vector_2d
+305de95 Grading
+df586b5 Did assignment 66
+bdcf6c9 Grading
+5055ebc Did assignment 66
+e4fc3c3 Grading
+9183617 Did assignment 66
+f2c3d8c Grading
+8c363cf Did assignment 66
+b3ea1a7 Grading
+a6571f8 Did assignment 66
+147da63 Grading
+6288215 Did assignment 65
+45ae1e7 Grading
+187444f Did assignment 65
+ccdc84c Released 066_read_refs1
+b4498bd Released 065_read_cpp
+ecc8d2a Grading
+fcda76f Did assignment 64
+2ed6e89 Released 064_ch14_rq
+18fd0f1 Released 901_eval1_late
+6df42af Grading
+5b0d511 Did assignment 62
+3ab2224 Grading
+fc7f370 Did assignment 62
+9a0afce Did assignment 62
+aa1f7fb Released 062_put_together
+1633d52 Grading
+4a79057 Did assignment 61
+14e2440 Released 061_counts
+70eba3b Grading
+1075d79 Did assignment 60
+a28a190 Grading
+3a59c85 Released 060_outname
+72126c2 Grading
+b32ae1b Did assignment 59
+c09e6b9 Released 059_kvs
+264b9bc Grading
+ea3071a Did assignment 58
+4a99824 Grading
+04e9435 Did assignment 58
+a70d5e0 Grading
+1359bf5 Did assignment 58
+5643b0f Released 058_ch13_rq
+865c712 Grading
+ab2fc59 Did assignment 57
+472fa6b Grading
+f8c3c31 Did assignment 57
+67d40f4 Released 057_minesweeper
+7a857d9 Grading
+b056f51 Did assignment 56
+164de66 Released 056_sort_lines
+456e854 Grading
+dd56b7b Did assignment 55
+601434a Grading
+ab5dce3 Did assignment 55
+8c97c42 Released 055_fix_vg_encr
+71a13a6 Grading
+69b190b Did assignment 54
+b74a2ba Grading
+7fa0155 Did assignment 54
+66e42fd Grading
+abb92dc Did assignment 54
+520cd05 Released 054_read_leaks
+a43b3ec Grading
+2101b00 Grading
+0bf830c Did eval1 046
+1f6f80a Grading
+f73eedf Did assignment 53
+277151c Grading
+f8f889d Did eval1 046
+2d7a0ad Did assignment 53
+f0ff4a6 Did assignment 53
+4cca7be Grading
+e4c124e Did assignment 53
+d957d3e Grading
+6053430 Did assignment 53
+724a24a Grading
+0ddfd54 Did assignment 53
+a8a0384 Did assignment 51
+96ec98f Grading
+2ecd196 Did eval1 046
+85dc390 Grading
+469cb21 Did eval1 046
+8349a0a Did eval1 046
+dddb1d0 Grading
+34a02bb Did eval1 046
+7ddecaa Did eval1 046
+3623ab0 Grading
+e557ac4 Did eval1 046
+0c4c672 Did eval1 046
+26621fb Grading
+8430845 Did eval1 046
+813cc63 Grading
+cda5307 Did eval1 046
+15defb6 Grading
+9858a01 Did eval1 046
+5b4b347 Did eval1 046
