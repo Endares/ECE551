@@ -43,7 +43,8 @@ void writeCompressedOutput(const char * inFile,
   char c;
   while (f.get(c)) {  // read character by character
     // const_iterator for const & theMap
-    std::map<unsigned, BitString>::const_iterator it = theMap.find((unsigned char)c);
+    std::map<unsigned, BitString>::const_iterator it =
+        theMap.find((unsigned char)c);  // must have type convert, or will not find
     if (it == theMap.end()) {
       std::cerr << "Character " << c << " not visited" << std::endl;
       exit(EXIT_FAILURE);
