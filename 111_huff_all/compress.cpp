@@ -43,11 +43,12 @@ void writeCompressedOutput(const char * inFile,
   char c;
   while (f.get(c)) {  // read character by character
     // const_iterator for const & theMap
-    std::map<unsigned, BitString>::const_iterator it = theMap.find(c);
+    std::map<unsigned, BitString>::const_iterator it = theMap.find((unsigned char)c);
     if (it == theMap.end()) {
-      std::cerr << "Character not visited" << std::endl;
+      std::cerr << "Character " << c << " not visited" << std::endl;
       exit(EXIT_FAILURE);
     }
+    //    std::cout << "yes\n" << std::endl;
     bfw.writeBitString(it->second);
   }
 
@@ -73,8 +74,6 @@ int main(int argc, char ** argv) {
   //hint 1: most of the work is already done.
   //hint 2: you can look at the main from the previous tester for 90% of this
   uint64_t * freqArray = readFrequencies(argv[1]);
-
-  assert(freqArray != NULL);
   Node * root = buildTree(freqArray);
 
   std::map<unsigned, BitString> theMap;
